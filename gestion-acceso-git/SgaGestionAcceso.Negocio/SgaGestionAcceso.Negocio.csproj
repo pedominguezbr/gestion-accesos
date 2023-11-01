@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A729A4EF-D103-4CBC-B6B5-2775A248BFDD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SgaGestionAcceso.Negocio</RootNamespace>
+    <AssemblyName>SgaGestionAcceso.Negocio</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BL\BLAgencia.cs" />
+    <Compile Include="BL\BLAplicacion.cs" />
+    <Compile Include="BL\BLAplicacionAutorizante.cs" />
+    <Compile Include="BL\BLAplicacionAutorizanteHistorico.cs" />
+    <Compile Include="BL\BLAprovisionamiento.cs" />
+    <Compile Include="BL\BLAutorizante.cs" />
+    <Compile Include="BL\BLDetalleAprovisionamiento.cs" />
+    <Compile Include="BL\BLDetalleEscaneoValidador.cs" />
+    <Compile Include="BL\BLDetalleGenAgenValidador.cs" />
+    <Compile Include="BL\BLDetalleSolicitud.cs" />
+    <Compile Include="BL\BLDetSolAplicaPuesto.cs" />
+    <Compile Include="BL\BLEscaneoAgenciaSucursal.cs" />
+    <Compile Include="BL\BLEstado.cs" />
+    <Compile Include="BL\BLGenAgenValidador.cs" />
+    <Compile Include="BL\BLMenu.cs" />
+    <Compile Include="BL\BLParametroGeneracionCuenta.cs" />
+    <Compile Include="BL\BLPermisoMenu.cs" />
+    <Compile Include="BL\BLPermisoUsuario.cs" />
+    <Compile Include="BL\BLPersona.cs" />
+    <Compile Include="BL\BLPuesto.cs" />
+    <Compile Include="BL\BLReporte.cs" />
+    <Compile Include="BL\BLRol.cs" />
+    <Compile Include="BL\BLSolicitudAcceso.cs" />
+    <Compile Include="BL\BLSucursal.cs" />
+    <Compile Include="BL\BLTipoAcceso.cs" />
+    <Compile Include="BL\BLUbigeo.cs" />
+    <Compile Include="BL\BLUsuario.cs" />
+    <Compile Include="BL\BLUsuarioObservado.cs" />
+    <Compile Include="BL\BLValidacionEndPoint.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SgaGestionAcceso.AccesoDatos\SgaGestionAcceso.AccesoDatos.csproj">
+      <Project>{F815B980-C720-4C31-AB4C-15DC25343D6B}</Project>
+      <Name>SgaGestionAcceso.AccesoDatos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SgaGestionAcceso.Entidad\SgaGestionAcceso.Entidad.csproj">
+      <Project>{849C360A-1AA2-4EBC-A248-3AFD44746D41}</Project>
+      <Name>SgaGestionAcceso.Entidad</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SgaGestionAcceso.Helper\SgaGestionAcceso.Helper.csproj">
+      <Project>{361A38C7-4E55-4DAD-B8BF-281C5CF7FD56}</Project>
+      <Name>SgaGestionAcceso.Helper</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

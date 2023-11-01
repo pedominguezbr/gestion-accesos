@@ -1,0 +1,535 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BE6733FD-89BD-4E1F-8689-34E521A1AA91}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SgaGestionAcceso.WEB</RootNamespace>
+    <AssemblyName>SgaGestionAcceso.WEB</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>C:\Documents and Settings\Synopsis\Escritorio\AjaxControlToolkit.Binary.NET4\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip, Version=1.9.1.8, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>obj\Debug\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AgenciaSucursal\frmAgencia.aspx" />
+    <Content Include="AgenciaSucursal\frmAgenciaConsulta.aspx" />
+    <Content Include="AgenciaSucursal\frmSucursal.aspx" />
+    <Content Include="AplicacionAutorizante\frmAplicacionAutorizante.aspx" />
+    <Content Include="AplicacionAutorizante\frmAplicacionAutorizanteConsulta.aspx" />
+    <Content Include="AplicacionAutorizante\frmAplicacionAutorizanteHistorico.aspx" />
+    <Content Include="Aprovisionamiento\frmAprovisionamiento.aspx" />
+    <Content Include="Aprovisionamiento\frmAprovisionamientoProcesado.aspx" />
+    <Content Include="Aprovisionamiento\frmAprovisionamientoSeguim.aspx" />
+    <Content Include="Autorizante\frmAutorizante.aspx" />
+    <Content Include="Autorizante\frmAutorizanteConsulta.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="ExeValidadores\Cliente.exe" />
+    <Content Include="GenAgenteValidador\frmAgenteValidadorSeguim.aspx" />
+    <Content Include="GenAgenteValidador\frmGeneracionAgenteValidador.aspx" />
+    <Content Include="Login\frmBienvenido.aspx" />
+    <Content Include="Login\frmLogin.aspx" />
+    <Content Include="Menu\frmMenu.aspx" />
+    <Content Include="Menu\frmMenuConsulta.aspx" />
+    <Content Include="Permisos\frmPermisoMenu.aspx" />
+    <Content Include="Permisos\frmPermisoMenuConsulta.aspx" />
+    <Content Include="Permisos\frmPermisoUsuario.aspx" />
+    <Content Include="Persona\frmPersona.aspx" />
+    <Content Include="Persona\frmPersonaConsulta.aspx" />
+    <Content Include="Recursos\css\clean.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recursos\css\ie.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recursos\css\ie7.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recursos\css\main.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recursos\images\buttons\btn_add.png" />
+    <Content Include="Recursos\images\buttons\btn_bg.png" />
+    <Content Include="Recursos\images\buttons\btn_cancel.png" />
+    <Content Include="Recursos\images\buttons\btn_chart.png" />
+    <Content Include="Recursos\images\buttons\btn_check.png" />
+    <Content Include="Recursos\images\buttons\btn_descargar.gif" />
+    <Content Include="Recursos\images\buttons\btn_flag.png" />
+    <Content Include="Recursos\images\buttons\btn_lock.png" />
+    <Content Include="Recursos\images\buttons\btn_mail.png" />
+    <Content Include="Recursos\images\buttons\btn_salir.png" />
+    <Content Include="Recursos\images\buttons\btn_save.png" />
+    <Content Include="Recursos\images\buttons\btn_search.png" />
+    <Content Include="Recursos\images\buttons\btn_unlock.png" />
+    <Content Include="Recursos\images\buttons\btn_wizard.png" />
+    <Content Include="Recursos\images\common\bg.png" />
+    <Content Include="Recursos\images\common\block-bg.png" />
+    <Content Include="Recursos\images\common\error.png" />
+    <Content Include="Recursos\images\common\info.png" />
+    <Content Include="Recursos\images\common\menu-left-link.gif" />
+    <Content Include="Recursos\images\common\menu-left-linkh.gif" />
+    <Content Include="Recursos\images\common\menu.bmp" />
+    <Content Include="Recursos\images\common\minus.png" />
+    <Content Include="Recursos\images\common\plus.png" />
+    <Content Include="Recursos\images\common\sombra-inv.png" />
+    <Content Include="Recursos\images\common\sombra.png" />
+    <Content Include="Recursos\images\common\success.png" />
+    <Content Include="Recursos\images\common\table-head-bg.png" />
+    <Content Include="Recursos\images\common\table-head.png" />
+    <Content Include="Recursos\images\common\warning.png" />
+    <Content Include="Recursos\images\tables\add.png" />
+    <Content Include="Recursos\images\tables\btn_anular.png" />
+    <Content Include="Recursos\images\tables\btn_check.png" />
+    <Content Include="Recursos\images\tables\btn_consultar.png" />
+    <Content Include="Recursos\images\tables\btn_descargar.gif" />
+    <Content Include="Recursos\images\tables\btn_modificar.png" />
+    <Content Include="Recursos\images\tables\btn_modificarpermiso.png" />
+    <Content Include="Recursos\images\tables\calendar.png" />
+    <Content Include="Recursos\images\tables\delete.png" />
+    <Content Include="Recursos\images\tables\file.png" />
+    <Content Include="Recursos\images\tables\open.png" />
+    <Content Include="Recursos\images\top-menu\abutton-gray.png" />
+    <Content Include="Recursos\images\top-menu\abutton-red.png" />
+    <Content Include="Recursos\images\top-menu\abutton2.png" />
+    <Content Include="Recursos\images\top-menu\menu_div.png" />
+    <Content Include="Recursos\script\jquery-1.10.2.min.js" />
+    <Content Include="Reporte.aspx" />
+    <Content Include="Rol\frmRol.aspx" />
+    <Content Include="Rol\frmRolConsulta.aspx" />
+    <Content Include="Solicitud\frmDetalleSolicitud.aspx" />
+    <Content Include="Solicitud\frmSolicitudAcceso.aspx" />
+    <Content Include="Solicitud\frmSolicitudAccesoSeguim.aspx" />
+    <Content Include="Usuario\frmUsuario.aspx" />
+    <Content Include="Usuario\frmUsuarioConsulta.aspx" />
+    <Content Include="Validacion\frmValidacionSeguim.aspx" />
+    <Content Include="Validacion\frmValidacionSolicitud.aspx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\WsReniec1\BEPersona.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WsReniec1\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\WsReniec1\WsReniec.disco" />
+    <Content Include="ValPuntoAcceso\frmValidacionendPoint.aspx" />
+    <Content Include="ValPuntoAcceso\frmValPuntoAccesoSeguim.aspx" />
+    <Content Include="VisorReporte.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <None Include="Web References\WsReniec1\WsReniec.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AgenciaSucursal\frmAgencia.aspx.cs">
+      <DependentUpon>frmAgencia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgenciaSucursal\frmAgencia.aspx.designer.cs">
+      <DependentUpon>frmAgencia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgenciaSucursal\frmAgenciaConsulta.aspx.cs">
+      <DependentUpon>frmAgenciaConsulta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgenciaSucursal\frmAgenciaConsulta.aspx.designer.cs">
+      <DependentUpon>frmAgenciaConsulta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgenciaSucursal\frmSucursal.aspx.cs">
+      <DependentUpon>frmSucursal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgenciaSucursal\frmSucursal.aspx.designer.cs">
+      <DependentUpon>frmSucursal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AplicacionAutorizante\frmAplicacionAutorizante.aspx.cs">
+      <DependentUpon>frmAplicacionAutorizante.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AplicacionAutorizante\frmAplicacionAutorizante.aspx.designer.cs">
+      <DependentUpon>frmAplicacionAutorizante.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AplicacionAutorizante\frmAplicacionAutorizanteConsulta.aspx.cs">
+      <DependentUpon>frmAplicacionAutorizanteConsulta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AplicacionAutorizante\frmAplicacionAutorizanteConsulta.aspx.designer.cs">
+      <DependentUpon>frmAplicacionAutorizanteConsulta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AplicacionAutorizante\frmAplicacionAutorizanteHistorico.aspx.cs">
+      <DependentUpon>frmAplicacionAutorizanteHistorico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AplicacionAutorizante\frmAplicacionAutorizanteHistorico.aspx.designer.cs">
+      <DependentUpon>frmAplicacionAutorizanteHistorico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aprovisionamiento\frmAprovisionamiento.aspx.cs">
+      <DependentUpon>frmAprovisionamiento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aprovisionamiento\frmAprovisionamiento.aspx.designer.cs">
+      <DependentUpon>frmAprovisionamiento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aprovisionamiento\frmAprovisionamientoProcesado.aspx.cs">
+      <DependentUpon>frmAprovisionamientoProcesado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aprovisionamiento\frmAprovisionamientoProcesado.aspx.designer.cs">
+      <DependentUpon>frmAprovisionamientoProcesado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aprovisionamiento\frmAprovisionamientoSeguim.aspx.cs">
+      <DependentUpon>frmAprovisionamientoSeguim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aprovisionamiento\frmAprovisionamientoSeguim.aspx.designer.cs">
+      <DependentUpon>frmAprovisionamientoSeguim.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Autorizante\frmAutorizante.aspx.cs">
+      <DependentUpon>frmAutorizante.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Autorizante\frmAutorizante.aspx.designer.cs">
+      <DependentUpon>frmAutorizante.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Autorizante\frmAutorizanteConsulta.aspx.cs">
+      <DependentUpon>frmAutorizanteConsulta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Autorizante\frmAutorizanteConsulta.aspx.designer.cs">
+      <DependentUpon>frmAutorizanteConsulta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GenAgenteValidador\frmAgenteValidadorSeguim.aspx.cs">
+      <DependentUpon>frmAgenteValidadorSeguim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GenAgenteValidador\frmAgenteValidadorSeguim.aspx.designer.cs">
+      <DependentUpon>frmAgenteValidadorSeguim.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GenAgenteValidador\frmGeneracionAgenteValidador.aspx.cs">
+      <DependentUpon>frmGeneracionAgenteValidador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GenAgenteValidador\frmGeneracionAgenteValidador.aspx.designer.cs">
+      <DependentUpon>frmGeneracionAgenteValidador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login\frmBienvenido.aspx.cs">
+      <DependentUpon>frmBienvenido.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\frmBienvenido.aspx.designer.cs">
+      <DependentUpon>frmBienvenido.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login\frmLogin.aspx.cs">
+      <DependentUpon>frmLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\frmLogin.aspx.designer.cs">
+      <DependentUpon>frmLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\frmMenu.aspx.cs">
+      <DependentUpon>frmMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Menu\frmMenu.aspx.designer.cs">
+      <DependentUpon>frmMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\frmMenuConsulta.aspx.cs">
+      <DependentUpon>frmMenuConsulta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Menu\frmMenuConsulta.aspx.designer.cs">
+      <DependentUpon>frmMenuConsulta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Permisos\frmPermisoMenu.aspx.cs">
+      <DependentUpon>frmPermisoMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Permisos\frmPermisoMenu.aspx.designer.cs">
+      <DependentUpon>frmPermisoMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Permisos\frmPermisoMenuConsulta.aspx.cs">
+      <DependentUpon>frmPermisoMenuConsulta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Permisos\frmPermisoMenuConsulta.aspx.designer.cs">
+      <DependentUpon>frmPermisoMenuConsulta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Permisos\frmPermisoUsuario.aspx.cs">
+      <DependentUpon>frmPermisoUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Permisos\frmPermisoUsuario.aspx.designer.cs">
+      <DependentUpon>frmPermisoUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Persona\frmPersona.aspx.cs">
+      <DependentUpon>frmPersona.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Persona\frmPersona.aspx.designer.cs">
+      <DependentUpon>frmPersona.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Persona\frmPersonaConsulta.aspx.cs">
+      <DependentUpon>frmPersonaConsulta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Persona\frmPersonaConsulta.aspx.designer.cs">
+      <DependentUpon>frmPersonaConsulta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte.aspx.cs">
+      <DependentUpon>Reporte.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporte.aspx.designer.cs">
+      <DependentUpon>Reporte.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Rol\frmRol.aspx.cs">
+      <DependentUpon>frmRol.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Rol\frmRol.aspx.designer.cs">
+      <DependentUpon>frmRol.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Rol\frmRolConsulta.aspx.cs">
+      <DependentUpon>frmRolConsulta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Rol\frmRolConsulta.aspx.designer.cs">
+      <DependentUpon>frmRolConsulta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Solicitud\frmDetalleSolicitud.aspx.cs">
+      <DependentUpon>frmDetalleSolicitud.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Solicitud\frmDetalleSolicitud.aspx.designer.cs">
+      <DependentUpon>frmDetalleSolicitud.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Solicitud\frmSolicitudAcceso.aspx.cs">
+      <DependentUpon>frmSolicitudAcceso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Solicitud\frmSolicitudAcceso.aspx.designer.cs">
+      <DependentUpon>frmSolicitudAcceso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Solicitud\frmSolicitudAccesoSeguim.aspx.cs">
+      <DependentUpon>frmSolicitudAccesoSeguim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Solicitud\frmSolicitudAccesoSeguim.aspx.designer.cs">
+      <DependentUpon>frmSolicitudAccesoSeguim.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SgaGestionAcceso.Master.cs">
+      <DependentUpon>SgaGestionAcceso.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SgaGestionAcceso.Master.designer.cs">
+      <DependentUpon>SgaGestionAcceso.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SgaLoginGestionAcceso.Master.cs">
+      <DependentUpon>SgaLoginGestionAcceso.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SgaLoginGestionAcceso.Master.designer.cs">
+      <DependentUpon>SgaLoginGestionAcceso.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Usuario\frmUsuario.aspx.cs">
+      <DependentUpon>frmUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usuario\frmUsuario.aspx.designer.cs">
+      <DependentUpon>frmUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Usuario\frmUsuarioConsulta.aspx.cs">
+      <DependentUpon>frmUsuarioConsulta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usuario\frmUsuarioConsulta.aspx.designer.cs">
+      <DependentUpon>frmUsuarioConsulta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Validacion\frmValidacionSeguim.aspx.cs">
+      <DependentUpon>frmValidacionSeguim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Validacion\frmValidacionSeguim.aspx.designer.cs">
+      <DependentUpon>frmValidacionSeguim.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Validacion\frmValidacionSolicitud.aspx.cs">
+      <DependentUpon>frmValidacionSolicitud.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Validacion\frmValidacionSolicitud.aspx.designer.cs">
+      <DependentUpon>frmValidacionSolicitud.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ValPuntoAcceso\frmValidacionendPoint.aspx.cs">
+      <DependentUpon>frmValidacionendPoint.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ValPuntoAcceso\frmValidacionendPoint.aspx.designer.cs">
+      <DependentUpon>frmValidacionendPoint.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ValPuntoAcceso\frmValPuntoAccesoSeguim.aspx.cs">
+      <DependentUpon>frmValPuntoAccesoSeguim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ValPuntoAcceso\frmValPuntoAccesoSeguim.aspx.designer.cs">
+      <DependentUpon>frmValPuntoAccesoSeguim.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VisorReporte.aspx.cs">
+      <DependentUpon>VisorReporte.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VisorReporte.aspx.designer.cs">
+      <DependentUpon>VisorReporte.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WsReniec1\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\images\buttons\vssver2.scc" />
+    <None Include="Recursos\images\common\vssver2.scc" />
+    <None Include="Recursos\images\tables\vssver2.scc" />
+    <None Include="Recursos\images\top-menu\vssver2.scc" />
+    <Content Include="SgaGestionAcceso.Master" />
+    <Content Include="SgaLoginGestionAcceso.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SgaGestionAcceso.AccesoDatos\SgaGestionAcceso.AccesoDatos.csproj">
+      <Project>{F815B980-C720-4C31-AB4C-15DC25343D6B}</Project>
+      <Name>SgaGestionAcceso.AccesoDatos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SgaGestionAcceso.Entidad\SgaGestionAcceso.Entidad.csproj">
+      <Project>{849C360A-1AA2-4EBC-A248-3AFD44746D41}</Project>
+      <Name>SgaGestionAcceso.Entidad</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SgaGestionAcceso.Helper\SgaGestionAcceso.Helper.csproj">
+      <Project>{361A38C7-4E55-4DAD-B8BF-281C5CF7FD56}</Project>
+      <Name>SgaGestionAcceso.Helper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SgaGestionAcceso.Negocio\SgaGestionAcceso.Negocio.csproj">
+      <Project>{A729A4EF-D103-4CBC-B6B5-2775A248BFDD}</Project>
+      <Name>SgaGestionAcceso.Negocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://localhost/WsReniec/WsReniec.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WsReniec1\</RelPath>
+      <UpdateFromURL>http://localhost/WsReniec/WsReniec.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>SgaGestionAcceso_WEB_WsReniec1_WsReniec</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="FileAutorizaciones\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>28925</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

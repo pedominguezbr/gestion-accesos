@@ -1,0 +1,511 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="SgaGestionAcceso.DiagramaClases.BEPersona">
+    <Position X="10.25" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAEAAAAAAAIQCAAAAAg=</HashCode>
+      <FileName>BEPersona.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SgaGestionAcceso.DiagramaClases.BESolicitante">
+    <Position X="12.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BESolicitante.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SgaGestionAcceso.DiagramaClases.BEAutorizante">
+    <Position X="12.75" Y="3.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BEAutorizante.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SgaGestionAcceso.DiagramaClases.BEUsuarioSistema">
+    <Position X="12.75" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BEUsuarioSistema.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SgaGestionAcceso.DiagramaClases.BERepresentateLegal">
+    <Position X="10.25" Y="3" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BERepresentateLegal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SgaGestionAcceso.DiagramaClases.BEAgencia">
+    <Position X="0.5" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAggAAAAACAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>BEAgencia.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SgaGestionAcceso.DiagramaClases.BEAgenciaList" Collapsed="true">
+    <Position X="3.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BEAgencia.cs</FileName>
+      <NewMemberFileName>BEAplicacion.cs</NewMemberFileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SgaGestionAcceso.DiagramaClases.BEAplicacion">
+    <Position X="0.5" Y="2.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAAACAAgAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>BEAplicacion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SgaGestionAcceso.DiagramaClases.BEAplicacionList" Collapsed="true">
+    <Position X="3.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BEAplicacion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SgaGestionAcceso.DiagramaClases.BEDetalleAprovisionamientoList" Collapsed="true">
+    <Position X="12.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BEDetalleAprovisionamiento.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SgaGestionAcceso.DiagramaClases.BEEstado">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>BEEstado.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SgaGestionAcceso.DiagramaClases.BEEstadoList" Collapsed="true">
+    <Position X="3.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BEEstado.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SgaGestionAcceso.DiagramaClases.BEPersonaList" Collapsed="true">
+    <Position X="3.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BEPersona.cs</FileName>
+      <NewMemberFileName>BEEstado.cs</NewMemberFileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SgaGestionAcceso.DiagramaClases.BEPuesto">
+    <Position X="5.5" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAACAIAgAAAAAAAAAgBAAAAAAAAAQgAAAAAAAAAg=</HashCode>
+      <FileName>BEPuesto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SgaGestionAcceso.DiagramaClases.BEPuestoList" Collapsed="true">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BEPuesto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SgaGestionAcceso.DiagramaClases.BERepresentateLegalList" Collapsed="true">
+    <Position X="10.25" Y="4" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BERepresentateLegal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SgaGestionAcceso.DiagramaClases.BEUsuarioObservadoList" Collapsed="true">
+    <Position X="8.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BEUsuarioObservado.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SgaGestionAcceso.DiagramaClases.BESolicitudAcceso">
+    <Position X="0.5" Y="7.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AwAAIABAAACAAAAAAAAAAEAAIQAAAAABAAAQIAAAAAg=</HashCode>
+      <FileName>BESolicitudAcceso.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SgaGestionAcceso.DiagramaClases.BESolicitudAccesoList" Collapsed="true">
+    <Position X="0.5" Y="6.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BESolicitudAcceso.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SgaGestionAcceso.DiagramaClases.BESucursal">
+    <Position X="5.5" Y="3" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAIAAAAAAAAAECAAgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BESucursal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SgaGestionAcceso.DiagramaClases.BESucursalList" Collapsed="true">
+    <Position X="8.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BESucursal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SgaGestionAcceso.DiagramaClases.BETipoAcceso">
+    <Position X="8.25" Y="3.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>BETipoAcceso.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SgaGestionAcceso.DiagramaClases.BETipoAccesoList" Collapsed="true">
+    <Position X="8.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BETipoAcceso.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SgaGestionAcceso.DiagramaClases.BEUbigeo">
+    <Position X="3.25" Y="3.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQQAAAAEAAQAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BEUbigeo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SgaGestionAcceso.DiagramaClases.BEDetSolAplicaciPuesto">
+    <Position X="7" Y="7.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAQAAAAAAAAACAAAAAAAAQAAAAAAg=</HashCode>
+      <FileName>BEDetSolAplicaciPuesto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SgaGestionAcceso.DiagramaClases.BEDetSolAplicaciPuestoList" Collapsed="true">
+    <Position X="8.25" Y="5.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BEDetSolAplicaciPuesto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SgaGestionAcceso.DiagramaClases.BEDetalleSolicitud">
+    <Position X="3.5" Y="7.25" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAUAAABAAg=</HashCode>
+      <FileName>BEDetalleSolicitud.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SgaGestionAcceso.DiagramaClases.BEDetalleEscaneoValidadorList" Collapsed="true">
+    <Position X="3.5" Y="6.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BEDetalleEscaneoValidador.cs</FileName>
+      <NewMemberFileName>BEEscaneoAgenciaSucursal.cs</NewMemberFileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SgaGestionAcceso.DiagramaClases.BLAgencia">
+    <Position X="0.5" Y="10.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BLAgencia.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SgaGestionAcceso.DiagramaClases.BLAplicacion">
+    <Position X="0.5" Y="13.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>BLAplicacion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SgaGestionAcceso.DiagramaClases.BLDetalleSolicitud">
+    <Position X="3.25" Y="14" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAAAAABAEAAAAAAAAAAAEAAAAAIA=</HashCode>
+      <FileName>BLDetalleSolicitud.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SgaGestionAcceso.DiagramaClases.BLTipoAcceso">
+    <Position X="0.5" Y="14.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>BLTipoAcceso.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SgaGestionAcceso.DiagramaClases.BLPersona">
+    <Position X="0.5" Y="15.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BLPersona.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SgaGestionAcceso.DiagramaClases.BLSolicitudAcceso">
+    <Position X="3.25" Y="12" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>QgAAAAgAAAAAAAAAAAAAAABAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BLSolicitudAcceso.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SgaGestionAcceso.DiagramaClases.BLEstado">
+    <Position X="0.5" Y="17" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BLEstado.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SgaGestionAcceso.DiagramaClases.BLSucursal">
+    <Position X="0.5" Y="12" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>BLSucursal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SgaGestionAcceso.DiagramaClases.BLPuesto">
+    <Position X="3.25" Y="10.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>BLPuesto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SgaGestionAcceso.DiagramaClases.BLDetSolAplicaPuesto">
+    <Position X="3.25" Y="16" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAEAAAAAAAAAIAAAAAAAAAAAAAAAAIQA=</HashCode>
+      <FileName>BLDetSolAplicaPuesto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SgaGestionAcceso.DiagramaClases.DAAgencia">
+    <Position X="7.75" Y="10.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DAAgencia.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SgaGestionAcceso.DiagramaClases.DASucursal">
+    <Position X="7.75" Y="12" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>DASucursal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SgaGestionAcceso.DiagramaClases.DAAplicacion">
+    <Position X="7.75" Y="13.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>DAAplicacion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SgaGestionAcceso.DiagramaClases.DATipoAcceso">
+    <Position X="7.75" Y="14.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>DATipoAcceso.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SgaGestionAcceso.DiagramaClases.DAPersona">
+    <Position X="7.75" Y="15.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DAPersona.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SgaGestionAcceso.DiagramaClases.DAEstado">
+    <Position X="7.75" Y="17" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DAEstado.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SgaGestionAcceso.DiagramaClases.DAPuesto">
+    <Position X="10.75" Y="10.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>DAPuesto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SgaGestionAcceso.DiagramaClases.DASolicitudAcceso">
+    <Position X="10.75" Y="12" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>QgAAAAgAAAAAAAAAAAAAAABAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DASolicitudAcceso.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SgaGestionAcceso.DiagramaClases.DADetalleSolicitud">
+    <Position X="10.75" Y="14" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAAAAABAEAAAAAAAAAAAEAAAAAIA=</HashCode>
+      <FileName>DADetalleSolicitud.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SgaGestionAcceso.DiagramaClases.DADetSolAplicaPuesto">
+    <Position X="10.75" Y="16" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAEAAAAAAAAAIAAAAAAAAAAAAAAAAIQA=</HashCode>
+      <FileName>DADetSolAplicaPuesto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SgaGestionAcceso.DiagramaClases.BEBusquedaSolicitud">
+    <Position X="4.25" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAACAAAAAAAAEAAAQAAAAAAAAAQAAAAAAg=</HashCode>
+      <FileName>BEBusquedaSolicitud.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SgaGestionAcceso.DiagramaClases.BEUsuarioObservado">
+    <Position X="5.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAIAAAAAAAAABAAAAAUAAAAAAA=</HashCode>
+      <FileName>BEUsuarioObservado.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SgaGestionAcceso.DiagramaClases.BEAprovisionamiento">
+    <Position X="12.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAAAAAAAAIAAAAAAAABAAAAIAAAAEAAA=</HashCode>
+      <FileName>BEAprovisionamiento.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SgaGestionAcceso.DiagramaClases.BEDetalleAprovisionamiento">
+    <Position X="14.75" Y="6" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAgAAAAAAAAAAAAAgAAACBAAAAAEAAAUAAg=</HashCode>
+      <FileName>BEDetalleAprovisionamiento.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SgaGestionAcceso.DiagramaClases.BLAprovisionamiento">
+    <Position X="3.25" Y="18.25" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>BLAprovisionamiento.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SgaGestionAcceso.DiagramaClases.BLDetalleAprovisionamiento">
+    <Position X="3.25" Y="19.5" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAQAAAAAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>BLDetalleAprovisionamiento.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SgaGestionAcceso.DiagramaClases.DAAprovisionamiento">
+    <Position X="8.25" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>DAAprovisionamiento.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SgaGestionAcceso.DiagramaClases.DADetalleAprovisionamiento">
+    <Position X="8.5" Y="20.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAQAAAAAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>DADetalleAprovisionamiento.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SgaGestionAcceso.DiagramaClases.BEParametroGeneracionCuenta">
+    <Position X="6.25" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAQAABIAAAAUAIAAAAA=</HashCode>
+      <FileName>BEParametroGeneracionCuenta.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SgaGestionAcceso.DiagramaClases.DAParametroGeneracionCuenta">
+    <Position X="8.25" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DAParametroGeneracionCuenta.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SgaGestionAcceso.DiagramaClases.BLParametroGeneracionCuenta">
+    <Position X="8.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BLParametroGeneracionCuenta.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SgaGestionAcceso.DiagramaClases.BEGenAgenValidador">
+    <Position X="0.5" Y="18.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAIAAAAAAAAAAAAAAAQAAAABAAAAKAAAEAAAA=</HashCode>
+      <FileName>BEGenAgenValidador.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SgaGestionAcceso.DiagramaClases.BEDetalleGenAgenValidador">
+    <Position X="0.5" Y="20.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAAAAIAABAAAAAAABAEAAAAAAEAAQg=</HashCode>
+      <FileName>BEDetalleGenAgenValidador.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SgaGestionAcceso.DiagramaClases.BLGenAgenValidador">
+    <Position X="3.75" Y="21" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BLGenAgenValidador.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SgaGestionAcceso.DiagramaClases.DAGenAgenValidador">
+    <Position X="6.75" Y="21" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DAGenAgenValidador.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SgaGestionAcceso.DiagramaClases.BLDetalleGenAgenValidador">
+    <Position X="3.5" Y="22.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BLDetalleGenAgenValidador.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SgaGestionAcceso.DiagramaClases.DADetalleGenAgenValidador">
+    <Position X="6" Y="22.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DADetalleGenAgenValidador.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SgaGestionAcceso.DiagramaClases.BEEscaneoAgenciaSucursal">
+    <Position X="0.75" Y="23.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEAAAAAAAAAAQAAABABAgAAAAAQAAg=</HashCode>
+      <FileName>BEEscaneoAgenciaSucursal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SgaGestionAcceso.DiagramaClases.BEDetalleEscaneoValidador">
+    <Position X="0.75" Y="25.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQBAAAAIAACAAAAAAAAAAAAAAAAABAAAAAgAAAQAAA=</HashCode>
+      <FileName>BEDetalleEscaneoValidador.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SgaGestionAcceso.DiagramaClases.BEDatosEscaneoValidador">
+    <Position X="2.25" Y="25.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAACAAAAAAAAAAAAAgAAARAAAAAAAAAAAAA=</HashCode>
+      <FileName>BEDatosEscaneoValidador.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SgaGestionAcceso.DiagramaClases.BLEscaneoAgenciaSucursal">
+    <Position X="4.5" Y="25.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BLEscaneoAgenciaSucursal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SgaGestionAcceso.DiagramaClases.DAEscaneoAgenciaSucursal">
+    <Position X="7.25" Y="25.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DAEscaneoAgenciaSucursal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SgaGestionAcceso.DiagramaClases.DADetalleEscaneoValidador">
+    <Position X="4.75" Y="26.75" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DADetalleEscaneoValidador.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SgaGestionAcceso.DiagramaClases.BLDetalleEscaneoValidador">
+    <Position X="4.75" Y="28.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BLDetalleEscaneoValidador.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

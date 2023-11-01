@@ -1,0 +1,28 @@
+E:\Proyectos\GestionAcceso\SgaGestionAcceso.DiagramaClases\bin\Debug\SgaGestionAcceso.DiagramaClases.dll
+E:\Proyectos\GestionAcceso\SgaGestionAcceso.DiagramaClases\bin\Debug\SgaGestionAcceso.DiagramaClases.pdb
+E:\Proyectos\GestionAcceso\SgaGestionAcceso.DiagramaClases\obj\Debug\ResolveAssemblyReference.cache
+E:\Proyectos\GestionAcceso\SgaGestionAcceso.DiagramaClases\obj\Debug\SgaGestionAcceso.DiagramaClases.dll
+E:\Proyectos\GestionAcceso\SgaGestionAcceso.DiagramaClases\obj\Debug\SgaGestionAcceso.DiagramaClases.pdb
+D:\Pedro_Dominguez\Sistema GES A\GestionAcceso\SgaGestionAcceso.DiagramaClases\bin\Debug\SgaGestionAcceso.DiagramaClases.dll
+D:\Pedro_Dominguez\Sistema GES A\GestionAcceso\SgaGestionAcceso.DiagramaClases\bin\Debug\SgaGestionAcceso.DiagramaClases.pdb
+D:\Pedro_Dominguez\Sistema GES A\GestionAcceso\SgaGestionAcceso.DiagramaClases\obj\Debug\ResolveAssemblyReference.cache
+D:\Pedro_Dominguez\Sistema GES A\GestionAcceso\SgaGestionAcceso.DiagramaClases\obj\Debug\SgaGestionAcceso.DiagramaClases.dll
+D:\Pedro_Dominguez\Sistema GES A\GestionAcceso\SgaGestionAcceso.DiagramaClases\obj\Debug\SgaGestionAcceso.DiagramaClases.pdb
+C:\Users\aguerrerog\Downloads\GestionAcceso\SgaGestionAcceso.DiagramaClases\bin\Debug\SgaGestionAcceso.DiagramaClases.dll
+C:\Users\aguerrerog\Downloads\GestionAcceso\SgaGestionAcceso.DiagramaClases\bin\Debug\SgaGestionAcceso.DiagramaClases.pdb
+C:\Users\aguerrerog\Downloads\GestionAcceso\SgaGestionAcceso.DiagramaClases\obj\Debug\SgaGestionAcceso.DiagramaClases.dll
+C:\Users\aguerrerog\Downloads\GestionAcceso\SgaGestionAcceso.DiagramaClases\obj\Debug\SgaGestionAcceso.DiagramaClases.pdb
+C:\Users\aguerrerog\Desktop\GestionAcceso\SgaGestionAcceso.DiagramaClases\bin\Debug\SgaGestionAcceso.DiagramaClases.dll
+C:\Users\aguerrerog\Desktop\GestionAcceso\SgaGestionAcceso.DiagramaClases\bin\Debug\SgaGestionAcceso.DiagramaClases.pdb
+C:\Users\aguerrerog\Desktop\GestionAcceso\SgaGestionAcceso.DiagramaClases\obj\Debug\SgaGestionAcceso.DiagramaClases.dll
+C:\Users\aguerrerog\Desktop\GestionAcceso\SgaGestionAcceso.DiagramaClases\obj\Debug\SgaGestionAcceso.DiagramaClases.pdb
+E:\RepoGIT\gestion-acceso-git\SgaGestionAcceso.DiagramaClases\bin\Debug\SgaGestionAcceso.DiagramaClases.dll
+E:\RepoGIT\gestion-acceso-git\SgaGestionAcceso.DiagramaClases\bin\Debug\SgaGestionAcceso.DiagramaClases.pdb
+E:\RepoGIT\gestion-acceso-git\SgaGestionAcceso.DiagramaClases\obj\Debug\ResolveAssemblyReference.cache
+E:\RepoGIT\gestion-acceso-git\SgaGestionAcceso.DiagramaClases\obj\Debug\SgaGestionAcceso.DiagramaClases.dll
+E:\RepoGIT\gestion-acceso-git\SgaGestionAcceso.DiagramaClases\obj\Debug\SgaGestionAcceso.DiagramaClases.pdb
+D:\PDOMINGUEZ\GESTION_ACCESO\SgaGestionAcceso.DiagramaClases\bin\Debug\SgaGestionAcceso.DiagramaClases.dll
+D:\PDOMINGUEZ\GESTION_ACCESO\SgaGestionAcceso.DiagramaClases\bin\Debug\SgaGestionAcceso.DiagramaClases.pdb
+D:\PDOMINGUEZ\GESTION_ACCESO\SgaGestionAcceso.DiagramaClases\obj\Debug\ResolveAssemblyReference.cache
+D:\PDOMINGUEZ\GESTION_ACCESO\SgaGestionAcceso.DiagramaClases\obj\Debug\SgaGestionAcceso.DiagramaClases.dll
+D:\PDOMINGUEZ\GESTION_ACCESO\SgaGestionAcceso.DiagramaClases\obj\Debug\SgaGestionAcceso.DiagramaClases.pdb

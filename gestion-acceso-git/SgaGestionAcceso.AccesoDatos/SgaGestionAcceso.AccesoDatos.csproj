@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F815B980-C720-4C31-AB4C-15DC25343D6B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SgaGestionAcceso.AccesoDatos</RootNamespace>
+    <AssemblyName>SgaGestionAcceso.AccesoDatos</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=4.1.0.0, Culture=neutral, PublicKeyToken=e44a2bc38ed2c13c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\PolizasPacifico\SynPolizasPacifico.AccesoDatos\bin\Debug\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DAValidacionEndPoint.cs" />
+    <Compile Include="DA\DAAgencia.cs" />
+    <Compile Include="DA\DAAplicacion.cs" />
+    <Compile Include="DA\DAAplicacionAutorizante.cs" />
+    <Compile Include="DA\DAAplicacionAutorizanteHistorico.cs" />
+    <Compile Include="DA\DAAprovisionamiento.cs" />
+    <Compile Include="DA\DAAutorizante.cs" />
+    <Compile Include="DA\DADetalleAprovisionamiento.cs" />
+    <Compile Include="DA\DADetalleEscaneoValidador.cs" />
+    <Compile Include="DA\DADetalleGenAgenValidador.cs" />
+    <Compile Include="DA\DADetalleSolicitud.cs" />
+    <Compile Include="DA\DADetSolAplicaPuesto.cs" />
+    <Compile Include="DA\DAEscaneoAgenciaSucursal.cs" />
+    <Compile Include="DA\DAEstado.cs" />
+    <Compile Include="DA\DAGenAgenValidador.cs" />
+    <Compile Include="DA\DAMenu.cs" />
+    <Compile Include="DA\DAParametroGeneracionCuenta.cs" />
+    <Compile Include="DA\DAPermisoMenu.cs" />
+    <Compile Include="DA\DAPermisoUsuario.cs" />
+    <Compile Include="DA\DAPersona.cs" />
+    <Compile Include="DA\DAPuesto.cs" />
+    <Compile Include="DA\DAReporte.cs" />
+    <Compile Include="DA\DARol.cs" />
+    <Compile Include="DA\DASolicitudAcceso.cs" />
+    <Compile Include="DA\DASucursal.cs" />
+    <Compile Include="DA\DATipoAcceso.cs" />
+    <Compile Include="DA\DAUbigeo.cs" />
+    <Compile Include="DA\DAUsuario.cs" />
+    <Compile Include="DA\DAUsuarioObservado.cs" />
+    <Compile Include="Entidades.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SGA_GestionAcceso.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SGA_GestionAcceso.edmx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SgaGestionAcceso.Entidad\SgaGestionAcceso.Entidad.csproj">
+      <Project>{849C360A-1AA2-4EBC-A248-3AFD44746D41}</Project>
+      <Name>SgaGestionAcceso.Entidad</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SgaGestionAcceso.Helper\SgaGestionAcceso.Helper.csproj">
+      <Project>{361A38C7-4E55-4DAD-B8BF-281C5CF7FD56}</Project>
+      <Name>SgaGestionAcceso.Helper</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="SGA_GestionAcceso.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>SGA_GestionAcceso.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

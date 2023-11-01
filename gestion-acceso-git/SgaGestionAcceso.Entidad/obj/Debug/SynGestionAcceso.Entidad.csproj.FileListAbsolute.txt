@@ -1,0 +1,5 @@
+E:\Proyectos\GestionAcceso\SynGestionAcceso.Entidad\bin\Debug\SynGestionAcceso.Entidad.dll
+E:\Proyectos\GestionAcceso\SynGestionAcceso.Entidad\bin\Debug\SynGestionAcceso.Entidad.pdb
+E:\Proyectos\GestionAcceso\SynGestionAcceso.Entidad\obj\Debug\ResolveAssemblyReference.cache
+E:\Proyectos\GestionAcceso\SynGestionAcceso.Entidad\obj\Debug\SynGestionAcceso.Entidad.dll
+E:\Proyectos\GestionAcceso\SynGestionAcceso.Entidad\obj\Debug\SynGestionAcceso.Entidad.pdb

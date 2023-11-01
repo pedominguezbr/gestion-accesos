@@ -1,0 +1,22 @@
+nueva ficha: 
+Fecha de Registro
+fecha de medicion
+Agente: Datos por cada
+
+Datos Validos:
+
+
+Catalogo:
+Mantenimiento: Soporte de Datos
+
+Agregar en la opcion de Roles en el Login
+Mantenimiento debe de estar en otra opcion principal
+
+Agregar empresa y asociarlo al trabajador, puesto y area.:
+Mapa de la empresa ir pensando para el final
+
+
+
+
+
+

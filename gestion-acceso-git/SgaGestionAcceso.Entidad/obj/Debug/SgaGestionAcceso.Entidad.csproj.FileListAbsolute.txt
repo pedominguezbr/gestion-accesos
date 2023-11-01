@@ -1,0 +1,28 @@
+E:\Proyectos\GestionAcceso\SgaGestionAcceso.Entidad\bin\Debug\SgaGestionAcceso.Entidad.dll
+E:\Proyectos\GestionAcceso\SgaGestionAcceso.Entidad\bin\Debug\SgaGestionAcceso.Entidad.pdb
+E:\Proyectos\GestionAcceso\SgaGestionAcceso.Entidad\obj\Debug\ResolveAssemblyReference.cache
+E:\Proyectos\GestionAcceso\SgaGestionAcceso.Entidad\obj\Debug\SgaGestionAcceso.Entidad.dll
+E:\Proyectos\GestionAcceso\SgaGestionAcceso.Entidad\obj\Debug\SgaGestionAcceso.Entidad.pdb
+D:\Pedro_Dominguez\Sistema GES A\GestionAcceso\SgaGestionAcceso.Entidad\bin\Debug\SgaGestionAcceso.Entidad.dll
+D:\Pedro_Dominguez\Sistema GES A\GestionAcceso\SgaGestionAcceso.Entidad\bin\Debug\SgaGestionAcceso.Entidad.pdb
+D:\Pedro_Dominguez\Sistema GES A\GestionAcceso\SgaGestionAcceso.Entidad\obj\Debug\ResolveAssemblyReference.cache
+D:\Pedro_Dominguez\Sistema GES A\GestionAcceso\SgaGestionAcceso.Entidad\obj\Debug\SgaGestionAcceso.Entidad.dll
+D:\Pedro_Dominguez\Sistema GES A\GestionAcceso\SgaGestionAcceso.Entidad\obj\Debug\SgaGestionAcceso.Entidad.pdb
+C:\Users\aguerrerog\Downloads\GestionAcceso\SgaGestionAcceso.Entidad\bin\Debug\SgaGestionAcceso.Entidad.dll
+C:\Users\aguerrerog\Downloads\GestionAcceso\SgaGestionAcceso.Entidad\bin\Debug\SgaGestionAcceso.Entidad.pdb
+C:\Users\aguerrerog\Downloads\GestionAcceso\SgaGestionAcceso.Entidad\obj\Debug\SgaGestionAcceso.Entidad.dll
+C:\Users\aguerrerog\Downloads\GestionAcceso\SgaGestionAcceso.Entidad\obj\Debug\SgaGestionAcceso.Entidad.pdb
+C:\Users\aguerrerog\Desktop\GestionAcceso\SgaGestionAcceso.Entidad\bin\Debug\SgaGestionAcceso.Entidad.dll
+C:\Users\aguerrerog\Desktop\GestionAcceso\SgaGestionAcceso.Entidad\bin\Debug\SgaGestionAcceso.Entidad.pdb
+C:\Users\aguerrerog\Desktop\GestionAcceso\SgaGestionAcceso.Entidad\obj\Debug\SgaGestionAcceso.Entidad.dll
+C:\Users\aguerrerog\Desktop\GestionAcceso\SgaGestionAcceso.Entidad\obj\Debug\SgaGestionAcceso.Entidad.pdb
+E:\RepoGIT\gestion-acceso-git\SgaGestionAcceso.Entidad\bin\Debug\SgaGestionAcceso.Entidad.dll
+E:\RepoGIT\gestion-acceso-git\SgaGestionAcceso.Entidad\bin\Debug\SgaGestionAcceso.Entidad.pdb
+E:\RepoGIT\gestion-acceso-git\SgaGestionAcceso.Entidad\obj\Debug\ResolveAssemblyReference.cache
+E:\RepoGIT\gestion-acceso-git\SgaGestionAcceso.Entidad\obj\Debug\SgaGestionAcceso.Entidad.dll
+E:\RepoGIT\gestion-acceso-git\SgaGestionAcceso.Entidad\obj\Debug\SgaGestionAcceso.Entidad.pdb
+D:\PDOMINGUEZ\GESTION_ACCESO\SgaGestionAcceso.Entidad\bin\Debug\SgaGestionAcceso.Entidad.dll
+D:\PDOMINGUEZ\GESTION_ACCESO\SgaGestionAcceso.Entidad\bin\Debug\SgaGestionAcceso.Entidad.pdb
+D:\PDOMINGUEZ\GESTION_ACCESO\SgaGestionAcceso.Entidad\obj\Debug\ResolveAssemblyReference.cache
+D:\PDOMINGUEZ\GESTION_ACCESO\SgaGestionAcceso.Entidad\obj\Debug\SgaGestionAcceso.Entidad.dll
+D:\PDOMINGUEZ\GESTION_ACCESO\SgaGestionAcceso.Entidad\obj\Debug\SgaGestionAcceso.Entidad.pdb

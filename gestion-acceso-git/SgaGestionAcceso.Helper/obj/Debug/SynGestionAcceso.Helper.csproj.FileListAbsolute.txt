@@ -1,0 +1,5 @@
+E:\Proyectos\GestionAcceso\SynGestionAcceso.Helper\bin\Debug\SynGestionAcceso.Helper.dll
+E:\Proyectos\GestionAcceso\SynGestionAcceso.Helper\bin\Debug\SynGestionAcceso.Helper.pdb
+E:\Proyectos\GestionAcceso\SynGestionAcceso.Helper\obj\Debug\ResolveAssemblyReference.cache
+E:\Proyectos\GestionAcceso\SynGestionAcceso.Helper\obj\Debug\SynGestionAcceso.Helper.dll
+E:\Proyectos\GestionAcceso\SynGestionAcceso.Helper\obj\Debug\SynGestionAcceso.Helper.pdb

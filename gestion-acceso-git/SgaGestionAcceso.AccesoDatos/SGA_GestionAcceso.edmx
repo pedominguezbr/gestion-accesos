@@ -1,0 +1,2479 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="SGA_GestionAccesoModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="SGA_GestionAccesoModelStoreContainer">
+          <EntitySet Name="Agencia" EntityType="SGA_GestionAccesoModel.Store.Agencia" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Aplicacion" EntityType="SGA_GestionAccesoModel.Store.Aplicacion" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="apps" EntityType="SGA_GestionAccesoModel.Store.apps" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Aprovisionamiento" EntityType="SGA_GestionAccesoModel.Store.Aprovisionamiento" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Autorizante" EntityType="SGA_GestionAccesoModel.Store.Autorizante" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="DatosEscaneoValidador" EntityType="SGA_GestionAccesoModel.Store.DatosEscaneoValidador" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="DetalleAprovisionamiento" EntityType="SGA_GestionAccesoModel.Store.DetalleAprovisionamiento" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="DetalleEscaneoValidador" EntityType="SGA_GestionAccesoModel.Store.DetalleEscaneoValidador" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="DetalleGenAgenValidador" EntityType="SGA_GestionAccesoModel.Store.DetalleGenAgenValidador" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="DetalleSolicAplicaPuesto" EntityType="SGA_GestionAccesoModel.Store.DetalleSolicAplicaPuesto" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="DetalleSolicitudAcceso" EntityType="SGA_GestionAccesoModel.Store.DetalleSolicitudAcceso" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="EscaneoAgenciaSucursal" EntityType="SGA_GestionAccesoModel.Store.EscaneoAgenciaSucursal" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Estado" EntityType="SGA_GestionAccesoModel.Store.Estado" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="GenAgenValidador" EntityType="SGA_GestionAccesoModel.Store.GenAgenValidador" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Menu" EntityType="SGA_GestionAccesoModel.Store.Menu" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ParametroGeneracionCuenta" EntityType="SGA_GestionAccesoModel.Store.ParametroGeneracionCuenta" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="PermisoMenu" EntityType="SGA_GestionAccesoModel.Store.PermisoMenu" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="PermisoUsuario" EntityType="SGA_GestionAccesoModel.Store.PermisoUsuario" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Persona" EntityType="SGA_GestionAccesoModel.Store.Persona" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="procesos" EntityType="SGA_GestionAccesoModel.Store.procesos" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Puesto" EntityType="SGA_GestionAccesoModel.Store.Puesto" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ResultadoValidacionEquipo" EntityType="SGA_GestionAccesoModel.Store.ResultadoValidacionEquipo" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Rol" EntityType="SGA_GestionAccesoModel.Store.Rol" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="SolicitudAcceso" EntityType="SGA_GestionAccesoModel.Store.SolicitudAcceso" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Sucursal" EntityType="SGA_GestionAccesoModel.Store.Sucursal" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="SwMalicioso" EntityType="SGA_GestionAccesoModel.Store.SwMalicioso" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="TipoAcceso" EntityType="SGA_GestionAccesoModel.Store.TipoAcceso" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Ubigeo" EntityType="SGA_GestionAccesoModel.Store.Ubigeo" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="UsuarioObservado" EntityType="SGA_GestionAccesoModel.Store.UsuarioObservado" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="UsuarioSistema" EntityType="SGA_GestionAccesoModel.Store.UsuarioSistema" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="xmls" EntityType="SGA_GestionAccesoModel.Store.xmls" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_apps_xmls" Association="SGA_GestionAccesoModel.Store.FK_apps_xmls">
+            <End Role="xmls" EntitySet="xmls" />
+            <End Role="apps" EntitySet="apps" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Aprovisionamiento_SolicitudAcceso" Association="SGA_GestionAccesoModel.Store.FK_Aprovisionamiento_SolicitudAcceso">
+            <End Role="SolicitudAcceso" EntitySet="SolicitudAcceso" />
+            <End Role="Aprovisionamiento" EntitySet="Aprovisionamiento" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Autorizante_Persona" Association="SGA_GestionAccesoModel.Store.FK_Autorizante_Persona">
+            <End Role="Persona" EntitySet="Persona" />
+            <End Role="Autorizante" EntitySet="Autorizante" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DatosEscaneoValidador_DetalleEscaneoValidador" Association="SGA_GestionAccesoModel.Store.FK_DatosEscaneoValidador_DetalleEscaneoValidador">
+            <End Role="DetalleEscaneoValidador" EntitySet="DetalleEscaneoValidador" />
+            <End Role="DatosEscaneoValidador" EntitySet="DatosEscaneoValidador" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DetalleAprovisionamiento_Aplicacion" Association="SGA_GestionAccesoModel.Store.FK_DetalleAprovisionamiento_Aplicacion">
+            <End Role="Aplicacion" EntitySet="Aplicacion" />
+            <End Role="DetalleAprovisionamiento" EntitySet="DetalleAprovisionamiento" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DetalleAprovisionamiento_Aprovisionamiento" Association="SGA_GestionAccesoModel.Store.FK_DetalleAprovisionamiento_Aprovisionamiento">
+            <End Role="Aprovisionamiento" EntitySet="Aprovisionamiento" />
+            <End Role="DetalleAprovisionamiento" EntitySet="DetalleAprovisionamiento" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DetalleAprovisionamiento_Persona" Association="SGA_GestionAccesoModel.Store.FK_DetalleAprovisionamiento_Persona">
+            <End Role="Persona" EntitySet="Persona" />
+            <End Role="DetalleAprovisionamiento" EntitySet="DetalleAprovisionamiento" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DetalleEscaneoValidador_DetalleGenAgenValidador" Association="SGA_GestionAccesoModel.Store.FK_DetalleEscaneoValidador_DetalleGenAgenValidador">
+            <End Role="DetalleGenAgenValidador" EntitySet="DetalleGenAgenValidador" />
+            <End Role="DetalleEscaneoValidador" EntitySet="DetalleEscaneoValidador" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DetalleEscaneoValidador_EscaneoAgenciaSucursal" Association="SGA_GestionAccesoModel.Store.FK_DetalleEscaneoValidador_EscaneoAgenciaSucursal">
+            <End Role="EscaneoAgenciaSucursal" EntitySet="EscaneoAgenciaSucursal" />
+            <End Role="DetalleEscaneoValidador" EntitySet="DetalleEscaneoValidador" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DetalleSolicAplicaPuesto_Aplicacion" Association="SGA_GestionAccesoModel.Store.FK_DetalleSolicAplicaPuesto_Aplicacion">
+            <End Role="Aplicacion" EntitySet="Aplicacion" />
+            <End Role="DetalleSolicAplicaPuesto" EntitySet="DetalleSolicAplicaPuesto" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DetalleSolicAplicaPuesto_DetalleSolicitudAcceso" Association="SGA_GestionAccesoModel.Store.FK_DetalleSolicAplicaPuesto_DetalleSolicitudAcceso">
+            <End Role="DetalleSolicitudAcceso" EntitySet="DetalleSolicitudAcceso" />
+            <End Role="DetalleSolicAplicaPuesto" EntitySet="DetalleSolicAplicaPuesto" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DetalleSolicAplicaPuesto_Puesto" Association="SGA_GestionAccesoModel.Store.FK_DetalleSolicAplicaPuesto_Puesto">
+            <End Role="Puesto" EntitySet="Puesto" />
+            <End Role="DetalleSolicAplicaPuesto" EntitySet="DetalleSolicAplicaPuesto" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DetalleSolicitudAcceso_Persona" Association="SGA_GestionAccesoModel.Store.FK_DetalleSolicitudAcceso_Persona">
+            <End Role="Persona" EntitySet="Persona" />
+            <End Role="DetalleSolicitudAcceso" EntitySet="DetalleSolicitudAcceso" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DetalleSolicitudAcceso_SolicitudAcceso" Association="SGA_GestionAccesoModel.Store.FK_DetalleSolicitudAcceso_SolicitudAcceso">
+            <End Role="SolicitudAcceso" EntitySet="SolicitudAcceso" />
+            <End Role="DetalleSolicitudAcceso" EntitySet="DetalleSolicitudAcceso" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EscaneoAgenciaSucursal_Agencia" Association="SGA_GestionAccesoModel.Store.FK_EscaneoAgenciaSucursal_Agencia">
+            <End Role="Agencia" EntitySet="Agencia" />
+            <End Role="EscaneoAgenciaSucursal" EntitySet="EscaneoAgenciaSucursal" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EscaneoAgenciaSucursal_Sucursal" Association="SGA_GestionAccesoModel.Store.FK_EscaneoAgenciaSucursal_Sucursal">
+            <End Role="Sucursal" EntitySet="Sucursal" />
+            <End Role="EscaneoAgenciaSucursal" EntitySet="EscaneoAgenciaSucursal" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PermisoMenu_Menu" Association="SGA_GestionAccesoModel.Store.FK_PermisoMenu_Menu">
+            <End Role="Menu" EntitySet="Menu" />
+            <End Role="PermisoMenu" EntitySet="PermisoMenu" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PermisoMenu_Rol" Association="SGA_GestionAccesoModel.Store.FK_PermisoMenu_Rol">
+            <End Role="Rol" EntitySet="Rol" />
+            <End Role="PermisoMenu" EntitySet="PermisoMenu" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PermisoUsuario_Rol" Association="SGA_GestionAccesoModel.Store.FK_PermisoUsuario_Rol">
+            <End Role="Rol" EntitySet="Rol" />
+            <End Role="PermisoUsuario" EntitySet="PermisoUsuario" />
+          </AssociationSet>
+          <AssociationSet Name="FK_procesos_xmls" Association="SGA_GestionAccesoModel.Store.FK_procesos_xmls">
+            <End Role="xmls" EntitySet="xmls" />
+            <End Role="procesos" EntitySet="procesos" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Puesto_Aplicacion" Association="SGA_GestionAccesoModel.Store.FK_Puesto_Aplicacion">
+            <End Role="Aplicacion" EntitySet="Aplicacion" />
+            <End Role="Puesto" EntitySet="Puesto" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SolicitudAcceso_Agencia" Association="SGA_GestionAccesoModel.Store.FK_SolicitudAcceso_Agencia">
+            <End Role="Agencia" EntitySet="Agencia" />
+            <End Role="SolicitudAcceso" EntitySet="SolicitudAcceso" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SolicitudAcceso_Autorizante" Association="SGA_GestionAccesoModel.Store.FK_SolicitudAcceso_Autorizante">
+            <End Role="Autorizante" EntitySet="Autorizante" />
+            <End Role="SolicitudAcceso" EntitySet="SolicitudAcceso" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SolicitudAcceso_Estado" Association="SGA_GestionAccesoModel.Store.FK_SolicitudAcceso_Estado">
+            <End Role="Estado" EntitySet="Estado" />
+            <End Role="SolicitudAcceso" EntitySet="SolicitudAcceso" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SolicitudAcceso_Sucursal" Association="SGA_GestionAccesoModel.Store.FK_SolicitudAcceso_Sucursal">
+            <End Role="Sucursal" EntitySet="Sucursal" />
+            <End Role="SolicitudAcceso" EntitySet="SolicitudAcceso" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SolicitudAcceso_TipoAcceso" Association="SGA_GestionAccesoModel.Store.FK_SolicitudAcceso_TipoAcceso">
+            <End Role="TipoAcceso" EntitySet="TipoAcceso" />
+            <End Role="SolicitudAcceso" EntitySet="SolicitudAcceso" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Sucursal_Agencia" Association="SGA_GestionAccesoModel.Store.FK_Sucursal_Agencia">
+            <End Role="Agencia" EntitySet="Agencia" />
+            <End Role="Sucursal" EntitySet="Sucursal" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Sucursal_Ubigeo" Association="SGA_GestionAccesoModel.Store.FK_Sucursal_Ubigeo">
+            <End Role="Ubigeo" EntitySet="Ubigeo" />
+            <End Role="Sucursal" EntitySet="Sucursal" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UsuarioSistema_Persona" Association="SGA_GestionAccesoModel.Store.FK_UsuarioSistema_Persona">
+            <End Role="Persona" EntitySet="Persona" />
+            <End Role="UsuarioSistema" EntitySet="UsuarioSistema" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Agencia">
+          <Key>
+            <PropertyRef Name="IdAgencia" />
+          </Key>
+          <Property Name="IdAgencia" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="NombreAgencia" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="IdRepresentante" Type="int" Nullable="false" />
+          <Property Name="RUC" Type="char" MaxLength="11" />
+          <Property Name="Nemotecnico_ag" Type="varchar" MaxLength="50" />
+          <Property Name="Estado" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Aplicacion">
+          <Key>
+            <PropertyRef Name="IdAplicacion" />
+          </Key>
+          <Property Name="IdAplicacion" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="NombreAplicacion" Type="varchar" Nullable="false" MaxLength="150" />
+          <Property Name="UsuarioCreacion" Type="char" Nullable="false" MaxLength="10" />
+          <Property Name="FechaCreacion" Type="datetime" />
+          <Property Name="Estado" Type="bit" Nullable="false" />
+          <Property Name="IdLogicaGeneracionUsuario" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="apps">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="varchar" MaxLength="100" />
+          <Property Name="Version" Type="varchar" MaxLength="50" />
+          <Property Name="Publisher" Type="varchar" MaxLength="80" />
+          <Property Name="InstallDate" Type="varchar" MaxLength="50" />
+          <Property Name="pcid" Type="uniqueidentifier" />
+        </EntityType>
+        <EntityType Name="Aprovisionamiento">
+          <Key>
+            <PropertyRef Name="IdAprovisionamiento" />
+          </Key>
+          <Property Name="IdAprovisionamiento" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="NumeroCertificado" Type="varchar" MaxLength="50" />
+          <Property Name="IdSolicitud" Type="int" Nullable="false" />
+          <Property Name="FechaAprovisionamiento" Type="date" Nullable="false" />
+          <Property Name="EstadoActivo" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Autorizante">
+          <Key>
+            <PropertyRef Name="IdAutorizante" />
+          </Key>
+          <Property Name="IdAutorizante" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="FechaIngreso" Type="datetime" />
+          <Property Name="FechaCese" Type="datetime" />
+          <Property Name="CodAutorizador" Type="varchar" MaxLength="10" />
+          <Property Name="IdPersona" Type="int" Nullable="false" />
+          <Property Name="Estado" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="DatosEscaneoValidador">
+          <Key>
+            <PropertyRef Name="IdDatoEscaneoValidador" />
+          </Key>
+          <Property Name="IdDatoEscaneoValidador" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="IdDetEscaneoValidacion" Type="int" Nullable="false" />
+          <Property Name="ArchivoEscaneado" Type="xml" />
+          <Property Name="FechaCreacion" Type="datetime" Nullable="false" />
+          <Property Name="EstadoActivo" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="DetalleAprovisionamiento">
+          <Key>
+            <PropertyRef Name="IdDetAprovisionamiento" />
+          </Key>
+          <Property Name="IdDetAprovisionamiento" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="IdAprovisionamiento" Type="int" Nullable="false" />
+          <Property Name="IdPersona" Type="int" Nullable="false" />
+          <Property Name="IdAplicacion" Type="int" Nullable="false" />
+          <Property Name="CuentaUsuario" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="ClaveGenerada" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="FechaCreacion" Type="date" Nullable="false" />
+          <Property Name="IdEstado" Type="int" Nullable="false" />
+          <Property Name="EstadoActivo" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="DetalleEscaneoValidador">
+          <Key>
+            <PropertyRef Name="IdDetEscaneoValidacion" />
+          </Key>
+          <Property Name="IdDetEscaneoValidacion" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="IdEscaneoAgenciaSuc" Type="int" Nullable="false" />
+          <Property Name="IdDetAgenValidador" Type="int" Nullable="false" />
+          <Property Name="FechaHoraEscaneo" Type="datetime" Nullable="false" />
+          <Property Name="EstadoEscaneo" Type="int" Nullable="false" />
+          <Property Name="FechaCreacion" Type="datetime" Nullable="false" />
+          <Property Name="EstadoActivo" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="DetalleGenAgenValidador">
+          <Key>
+            <PropertyRef Name="IdDetAgenValidador" />
+          </Key>
+          <Property Name="IdDetAgenValidador" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="IdGenAgenteValidador" Type="int" Nullable="false" />
+          <Property Name="CodGenerado" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Activador" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="FechaCreacion" Type="date" Nullable="false" />
+          <Property Name="FechaCaducidad" Type="date" Nullable="false" />
+          <Property Name="Estado" Type="int" Nullable="false" />
+          <Property Name="EstadoActivo" Type="bit" Nullable="false" />
+          <Property Name="RutaValidador" Type="varchar" MaxLength="200" />
+          <Property Name="NombreValidador" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="DetalleSolicAplicaPuesto">
+          <Key>
+            <PropertyRef Name="IdDetSolicAplicaPuesto" />
+          </Key>
+          <Property Name="IdDetSolicAplicaPuesto" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="IdDetalleSolicitudAcceso" Type="int" Nullable="false" />
+          <Property Name="FechaRegistro" Type="datetime" Nullable="false" />
+          <Property Name="IdAplicacion" Type="int" Nullable="false" />
+          <Property Name="IdPuesto" Type="int" Nullable="false" />
+          <Property Name="EstadoActivo" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="DetalleSolicitudAcceso">
+          <Key>
+            <PropertyRef Name="IdDetalleSolicitudAcceso" />
+          </Key>
+          <Property Name="IdDetalleSolicitudAcceso" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="IdSolicitudAcceso" Type="int" Nullable="false" />
+          <Property Name="IdPersona" Type="int" Nullable="false" />
+          <Property Name="FechaRegistro" Type="datetime" />
+          <Property Name="EstadoActivo" Type="bit" />
+          <Property Name="IdEstado" Type="int" Nullable="false" />
+          <Property Name="ObservacionValidacion" Type="varchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="EscaneoAgenciaSucursal">
+          <Key>
+            <PropertyRef Name="IdEscaneoAgenciaSuc" />
+          </Key>
+          <Property Name="IdEscaneoAgenciaSuc" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="IdAgencia" Type="int" Nullable="false" />
+          <Property Name="IdSucursal" Type="int" Nullable="false" />
+          <Property Name="Fecha" Type="date" Nullable="false" />
+          <Property Name="Estado" Type="int" Nullable="false" />
+          <Property Name="EstadoActivo" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Estado">
+          <Key>
+            <PropertyRef Name="IdEstado" />
+          </Key>
+          <Property Name="IdEstado" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="NombreEstado" Type="varchar" MaxLength="50" />
+          <Property Name="EstadoActivo" Type="bit" Nullable="false" />
+          <Property Name="TipoEstado" Type="int" />
+        </EntityType>
+        <EntityType Name="GenAgenValidador">
+          <Key>
+            <PropertyRef Name="IdGenAgenteValidador" />
+          </Key>
+          <Property Name="IdGenAgenteValidador" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="IdSolicitud" Type="int" Nullable="false" />
+          <Property Name="FechaCreacion" Type="date" Nullable="false" />
+          <Property Name="IdUsuarioCreacion" Type="int" Nullable="false" />
+          <Property Name="IdEstadoGeneracion" Type="int" Nullable="false" />
+          <Property Name="EstadoActivo" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Menu">
+          <Key>
+            <PropertyRef Name="IdMenu" />
+          </Key>
+          <Property Name="IdMenu" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="NombreFisicoMenu" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="DescripcionMenu" Type="varchar" MaxLength="150" />
+          <Property Name="EtiquetaMenu" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="UrlMenu" Type="varchar" MaxLength="60" />
+          <Property Name="IdMenuPadre" Type="int" />
+          <Property Name="EstadoMenu" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ParametroGeneracionCuenta">
+          <Key>
+            <PropertyRef Name="IdParametro" />
+          </Key>
+          <Property Name="IdParametro" Type="int" Nullable="false" />
+          <Property Name="DescripcionParametro" Type="varchar" MaxLength="150" />
+          <Property Name="Prefijo" Type="varchar" MaxLength="50" />
+          <Property Name="LongitudCuenta" Type="int" />
+          <Property Name="Correlativo" Type="int" />
+          <Property Name="FechaRegistro" Type="date" Nullable="false" />
+          <Property Name="EstadoActivo" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PermisoMenu">
+          <Key>
+            <PropertyRef Name="IdPermisoMenu" />
+          </Key>
+          <Property Name="IdPermisoMenu" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="IdMenu" Type="int" Nullable="false" />
+          <Property Name="IdRol" Type="int" Nullable="false" />
+          <Property Name="EstadoPermisoMenu" Type="bit" Nullable="false" />
+          <Property Name="FechaCreacion" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PermisoUsuario">
+          <Key>
+            <PropertyRef Name="IdPermisoUsuario" />
+          </Key>
+          <Property Name="IdPermisoUsuario" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="IdUsuario" Type="int" Nullable="false" />
+          <Property Name="IdRol" Type="int" Nullable="false" />
+          <Property Name="IdUsuarioCreacion" Type="int" Nullable="false" />
+          <Property Name="FechaCreacion" Type="datetime" Nullable="false" />
+          <Property Name="Estado" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Persona">
+          <Key>
+            <PropertyRef Name="IdPersona" />
+          </Key>
+          <Property Name="IdPersona" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Nombres" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="ApePaterno" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="ApeMaterno" Type="varchar" MaxLength="100" />
+          <Property Name="FechaCreacion" Type="datetime" Nullable="false" />
+          <Property Name="DocumentoIdentidad" Type="varchar" MaxLength="10" />
+          <Property Name="Estado" Type="bit" Nullable="false" />
+          <Property Name="Correo" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="procesos">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="varchar" MaxLength="50" />
+          <Property Name="pid" Type="varchar" MaxLength="10" />
+          <Property Name="pcid" Type="uniqueidentifier" />
+        </EntityType>
+        <EntityType Name="Puesto">
+          <Key>
+            <PropertyRef Name="IdPuesto" />
+          </Key>
+          <Property Name="IdPuesto" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="NombrePuesto" Type="varchar" Nullable="false" MaxLength="150" />
+          <Property Name="FechaCreacion" Type="datetime" Nullable="false" />
+          <Property Name="UsuarioCreacion" Type="char" Nullable="false" MaxLength="10" />
+          <Property Name="IdResponsable" Type="int" Nullable="false" />
+          <Property Name="Fl_Critico" Type="varchar" MaxLength="10" />
+          <Property Name="Estado" Type="bit" Nullable="false" />
+          <Property Name="IdAplicacion" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ResultadoValidacionEquipo">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="pcid" Type="varchar" MaxLength="250" />
+          <Property Name="Tipo" Type="varchar" MaxLength="20" />
+          <Property Name="Descripcion" Type="varchar" MaxLength="250" />
+        </EntityType>
+        <EntityType Name="Rol">
+          <Key>
+            <PropertyRef Name="IdRol" />
+          </Key>
+          <Property Name="IdRol" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="NombreRol" Type="varchar" MaxLength="50" />
+          <Property Name="DescripcionRol" Type="varchar" MaxLength="200" />
+          <Property Name="EstadoRol" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SolicitudAcceso">
+          <Key>
+            <PropertyRef Name="IdSolicitudAcceso" />
+          </Key>
+          <Property Name="IdSolicitudAcceso" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="NroSolicitud" Type="char" Nullable="false" MaxLength="10" />
+          <Property Name="FechaRegistro" Type="date" Nullable="false" />
+          <Property Name="UsuarioCreacion" Type="char" Nullable="false" MaxLength="10" />
+          <Property Name="IdTipoAcceso" Type="int" Nullable="false" />
+          <Property Name="IdSolicitante" Type="int" Nullable="false" />
+          <Property Name="IdAutorizante" Type="int" />
+          <Property Name="FechaAsignacion" Type="date" />
+          <Property Name="IdEstado" Type="int" Nullable="false" />
+          <Property Name="EstadoActivo" Type="bit" Nullable="false" />
+          <Property Name="IdAgencia" Type="int" Nullable="false" />
+          <Property Name="IdSucursal" Type="int" Nullable="false" />
+          <Property Name="FechaValidacion" Type="date" />
+          <Property Name="NumEquipos" Type="int" Nullable="false" />
+          <Property Name="IdEspecialista" Type="int" />
+          <Property Name="FechaCierre" Type="date" />
+        </EntityType>
+        <EntityType Name="Sucursal">
+          <Key>
+            <PropertyRef Name="IdSucursal" />
+          </Key>
+          <Property Name="IdSucursal" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="NombreSucursal" Type="varchar" MaxLength="100" />
+          <Property Name="DireccionSucursal" Type="varchar" MaxLength="100" />
+          <Property Name="IdAgencia" Type="int" Nullable="false" />
+          <Property Name="Estado" Type="bit" Nullable="false" />
+          <Property Name="CodUbigeo" Type="char" Nullable="false" MaxLength="6" />
+        </EntityType>
+        <EntityType Name="SwMalicioso">
+          <Key>
+            <PropertyRef Name="idPrograma" />
+          </Key>
+          <Property Name="idPrograma" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="NombrePrograma" Type="varchar" Nullable="false" MaxLength="250" />
+          <Property Name="TipoPrograma" Type="varchar" Nullable="false" MaxLength="250" />
+        </EntityType>
+        <EntityType Name="TipoAcceso">
+          <Key>
+            <PropertyRef Name="IdTipoAcceso" />
+          </Key>
+          <Property Name="IdTipoAcceso" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre" Type="varchar" MaxLength="50" />
+          <Property Name="Estado" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Ubigeo">
+          <Key>
+            <PropertyRef Name="CodUbigeo" />
+          </Key>
+          <Property Name="CodUbigeo" Type="char" Nullable="false" MaxLength="6" />
+          <Property Name="Pais" Type="varchar" MaxLength="100" />
+          <Property Name="Departamento" Type="varchar" MaxLength="100" />
+          <Property Name="Provincia" Type="varchar" MaxLength="100" />
+          <Property Name="Distrito" Type="varchar" MaxLength="100" />
+          <Property Name="Estado" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="UsuarioObservado">
+          <Key>
+            <PropertyRef Name="IdUsuarioObservado" />
+          </Key>
+          <Property Name="IdUsuarioObservado" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="IdPersona" Type="int" Nullable="false" />
+          <Property Name="IdAplicacion" Type="int" Nullable="false" />
+          <Property Name="FechaRegistro" Type="date" />
+          <Property Name="EstadoActivo" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="UsuarioSistema">
+          <Key>
+            <PropertyRef Name="IdUsuario" />
+          </Key>
+          <Property Name="IdUsuario" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="CodUsuario" Type="char" Nullable="false" MaxLength="10" />
+          <Property Name="ClaveUsuario" Type="varchar" MaxLength="150" />
+          <Property Name="FechaCreacion" Type="datetime" />
+          <Property Name="Estado" Type="bit" />
+          <Property Name="IdPersona" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="xmls">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="pcname" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="idagente" Type="varchar" MaxLength="50" />
+          <Property Name="idsolicitud" Type="char" MaxLength="10" />
+          <Property Name="fsolicitud" Type="datetime2" />
+          <Property Name="faprobacion" Type="datetime2" />
+          <Property Name="estado" Type="bit" Nullable="false" />
+          <Property Name="fconexion" Type="datetime2" />
+          <Property Name="ip" Type="varchar" MaxLength="50" />
+          <Property Name="idComputer" Type="varchar" MaxLength="100" />
+          <Property Name="userName" Type="varchar" MaxLength="50" />
+          <Property Name="cpuInfo" Type="varchar" MaxLength="100" />
+          <Property Name="memoryRam" Type="varchar" MaxLength="80" />
+          <Property Name="systemArquitecture" Type="varchar" MaxLength="90" />
+          <Property Name="operatingSystem" Type="varchar" MaxLength="90" />
+          <Property Name="servicePack" Type="varchar" MaxLength="80" />
+        </EntityType>
+        <Association Name="FK_apps_xmls">
+          <End Role="xmls" Type="SGA_GestionAccesoModel.Store.xmls" Multiplicity="0..1" />
+          <End Role="apps" Type="SGA_GestionAccesoModel.Store.apps" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="xmls">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="apps">
+              <PropertyRef Name="pcid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Aprovisionamiento_SolicitudAcceso">
+          <End Role="SolicitudAcceso" Type="SGA_GestionAccesoModel.Store.SolicitudAcceso" Multiplicity="1" />
+          <End Role="Aprovisionamiento" Type="SGA_GestionAccesoModel.Store.Aprovisionamiento" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SolicitudAcceso">
+              <PropertyRef Name="IdSolicitudAcceso" />
+            </Principal>
+            <Dependent Role="Aprovisionamiento">
+              <PropertyRef Name="IdSolicitud" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Autorizante_Persona">
+          <End Role="Persona" Type="SGA_GestionAccesoModel.Store.Persona" Multiplicity="1" />
+          <End Role="Autorizante" Type="SGA_GestionAccesoModel.Store.Autorizante" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Persona">
+              <PropertyRef Name="IdPersona" />
+            </Principal>
+            <Dependent Role="Autorizante">
+              <PropertyRef Name="IdPersona" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DatosEscaneoValidador_DetalleEscaneoValidador">
+          <End Role="DetalleEscaneoValidador" Type="SGA_GestionAccesoModel.Store.DetalleEscaneoValidador" Multiplicity="1" />
+          <End Role="DatosEscaneoValidador" Type="SGA_GestionAccesoModel.Store.DatosEscaneoValidador" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DetalleEscaneoValidador">
+              <PropertyRef Name="IdDetEscaneoValidacion" />
+            </Principal>
+            <Dependent Role="DatosEscaneoValidador">
+              <PropertyRef Name="IdDetEscaneoValidacion" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DetalleAprovisionamiento_Aplicacion">
+          <End Role="Aplicacion" Type="SGA_GestionAccesoModel.Store.Aplicacion" Multiplicity="1" />
+          <End Role="DetalleAprovisionamiento" Type="SGA_GestionAccesoModel.Store.DetalleAprovisionamiento" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Aplicacion">
+              <PropertyRef Name="IdAplicacion" />
+            </Principal>
+            <Dependent Role="DetalleAprovisionamiento">
+              <PropertyRef Name="IdAplicacion" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DetalleAprovisionamiento_Aprovisionamiento">
+          <End Role="Aprovisionamiento" Type="SGA_GestionAccesoModel.Store.Aprovisionamiento" Multiplicity="1" />
+          <End Role="DetalleAprovisionamiento" Type="SGA_GestionAccesoModel.Store.DetalleAprovisionamiento" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Aprovisionamiento">
+              <PropertyRef Name="IdAprovisionamiento" />
+            </Principal>
+            <Dependent Role="DetalleAprovisionamiento">
+              <PropertyRef Name="IdAprovisionamiento" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DetalleAprovisionamiento_Persona">
+          <End Role="Persona" Type="SGA_GestionAccesoModel.Store.Persona" Multiplicity="1" />
+          <End Role="DetalleAprovisionamiento" Type="SGA_GestionAccesoModel.Store.DetalleAprovisionamiento" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Persona">
+              <PropertyRef Name="IdPersona" />
+            </Principal>
+            <Dependent Role="DetalleAprovisionamiento">
+              <PropertyRef Name="IdPersona" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DetalleEscaneoValidador_DetalleGenAgenValidador">
+          <End Role="DetalleGenAgenValidador" Type="SGA_GestionAccesoModel.Store.DetalleGenAgenValidador" Multiplicity="1" />
+          <End Role="DetalleEscaneoValidador" Type="SGA_GestionAccesoModel.Store.DetalleEscaneoValidador" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DetalleGenAgenValidador">
+              <PropertyRef Name="IdDetAgenValidador" />
+            </Principal>
+            <Dependent Role="DetalleEscaneoValidador">
+              <PropertyRef Name="IdDetAgenValidador" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DetalleEscaneoValidador_EscaneoAgenciaSucursal">
+          <End Role="EscaneoAgenciaSucursal" Type="SGA_GestionAccesoModel.Store.EscaneoAgenciaSucursal" Multiplicity="1" />
+          <End Role="DetalleEscaneoValidador" Type="SGA_GestionAccesoModel.Store.DetalleEscaneoValidador" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EscaneoAgenciaSucursal">
+              <PropertyRef Name="IdEscaneoAgenciaSuc" />
+            </Principal>
+            <Dependent Role="DetalleEscaneoValidador">
+              <PropertyRef Name="IdEscaneoAgenciaSuc" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DetalleSolicAplicaPuesto_Aplicacion">
+          <End Role="Aplicacion" Type="SGA_GestionAccesoModel.Store.Aplicacion" Multiplicity="1" />
+          <End Role="DetalleSolicAplicaPuesto" Type="SGA_GestionAccesoModel.Store.DetalleSolicAplicaPuesto" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Aplicacion">
+              <PropertyRef Name="IdAplicacion" />
+            </Principal>
+            <Dependent Role="DetalleSolicAplicaPuesto">
+              <PropertyRef Name="IdAplicacion" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DetalleSolicAplicaPuesto_DetalleSolicitudAcceso">
+          <End Role="DetalleSolicitudAcceso" Type="SGA_GestionAccesoModel.Store.DetalleSolicitudAcceso" Multiplicity="1" />
+          <End Role="DetalleSolicAplicaPuesto" Type="SGA_GestionAccesoModel.Store.DetalleSolicAplicaPuesto" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DetalleSolicitudAcceso">
+              <PropertyRef Name="IdDetalleSolicitudAcceso" />
+            </Principal>
+            <Dependent Role="DetalleSolicAplicaPuesto">
+              <PropertyRef Name="IdDetalleSolicitudAcceso" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DetalleSolicAplicaPuesto_Puesto">
+          <End Role="Puesto" Type="SGA_GestionAccesoModel.Store.Puesto" Multiplicity="1" />
+          <End Role="DetalleSolicAplicaPuesto" Type="SGA_GestionAccesoModel.Store.DetalleSolicAplicaPuesto" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Puesto">
+              <PropertyRef Name="IdPuesto" />
+            </Principal>
+            <Dependent Role="DetalleSolicAplicaPuesto">
+              <PropertyRef Name="IdPuesto" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DetalleSolicitudAcceso_Persona">
+          <End Role="Persona" Type="SGA_GestionAccesoModel.Store.Persona" Multiplicity="1" />
+          <End Role="DetalleSolicitudAcceso" Type="SGA_GestionAccesoModel.Store.DetalleSolicitudAcceso" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Persona">
+              <PropertyRef Name="IdPersona" />
+            </Principal>
+            <Dependent Role="DetalleSolicitudAcceso">
+              <PropertyRef Name="IdPersona" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DetalleSolicitudAcceso_SolicitudAcceso">
+          <End Role="SolicitudAcceso" Type="SGA_GestionAccesoModel.Store.SolicitudAcceso" Multiplicity="1" />
+          <End Role="DetalleSolicitudAcceso" Type="SGA_GestionAccesoModel.Store.DetalleSolicitudAcceso" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SolicitudAcceso">
+              <PropertyRef Name="IdSolicitudAcceso" />
+            </Principal>
+            <Dependent Role="DetalleSolicitudAcceso">
+              <PropertyRef Name="IdSolicitudAcceso" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EscaneoAgenciaSucursal_Agencia">
+          <End Role="Agencia" Type="SGA_GestionAccesoModel.Store.Agencia" Multiplicity="1" />
+          <End Role="EscaneoAgenciaSucursal" Type="SGA_GestionAccesoModel.Store.EscaneoAgenciaSucursal" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Agencia">
+              <PropertyRef Name="IdAgencia" />
+            </Principal>
+            <Dependent Role="EscaneoAgenciaSucursal">
+              <PropertyRef Name="IdAgencia" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EscaneoAgenciaSucursal_Sucursal">
+          <End Role="Sucursal" Type="SGA_GestionAccesoModel.Store.Sucursal" Multiplicity="1" />
+          <End Role="EscaneoAgenciaSucursal" Type="SGA_GestionAccesoModel.Store.EscaneoAgenciaSucursal" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Sucursal">
+              <PropertyRef Name="IdSucursal" />
+            </Principal>
+            <Dependent Role="EscaneoAgenciaSucursal">
+              <PropertyRef Name="IdSucursal" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PermisoMenu_Menu">
+          <End Role="Menu" Type="SGA_GestionAccesoModel.Store.Menu" Multiplicity="1" />
+          <End Role="PermisoMenu" Type="SGA_GestionAccesoModel.Store.PermisoMenu" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Menu">
+              <PropertyRef Name="IdMenu" />
+            </Principal>
+            <Dependent Role="PermisoMenu">
+              <PropertyRef Name="IdMenu" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PermisoMenu_Rol">
+          <End Role="Rol" Type="SGA_GestionAccesoModel.Store.Rol" Multiplicity="1" />
+          <End Role="PermisoMenu" Type="SGA_GestionAccesoModel.Store.PermisoMenu" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Rol">
+              <PropertyRef Name="IdRol" />
+            </Principal>
+            <Dependent Role="PermisoMenu">
+              <PropertyRef Name="IdRol" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PermisoUsuario_Rol">
+          <End Role="Rol" Type="SGA_GestionAccesoModel.Store.Rol" Multiplicity="1" />
+          <End Role="PermisoUsuario" Type="SGA_GestionAccesoModel.Store.PermisoUsuario" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Rol">
+              <PropertyRef Name="IdRol" />
+            </Principal>
+            <Dependent Role="PermisoUsuario">
+              <PropertyRef Name="IdRol" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_procesos_xmls">
+          <End Role="xmls" Type="SGA_GestionAccesoModel.Store.xmls" Multiplicity="0..1" />
+          <End Role="procesos" Type="SGA_GestionAccesoModel.Store.procesos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="xmls">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="procesos">
+              <PropertyRef Name="pcid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Puesto_Aplicacion">
+          <End Role="Aplicacion" Type="SGA_GestionAccesoModel.Store.Aplicacion" Multiplicity="1" />
+          <End Role="Puesto" Type="SGA_GestionAccesoModel.Store.Puesto" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Aplicacion">
+              <PropertyRef Name="IdAplicacion" />
+            </Principal>
+            <Dependent Role="Puesto">
+              <PropertyRef Name="IdAplicacion" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SolicitudAcceso_Agencia">
+          <End Role="Agencia" Type="SGA_GestionAccesoModel.Store.Agencia" Multiplicity="1" />
+          <End Role="SolicitudAcceso" Type="SGA_GestionAccesoModel.Store.SolicitudAcceso" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Agencia">
+              <PropertyRef Name="IdAgencia" />
+            </Principal>
+            <Dependent Role="SolicitudAcceso">
+              <PropertyRef Name="IdAgencia" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SolicitudAcceso_Autorizante">
+          <End Role="Autorizante" Type="SGA_GestionAccesoModel.Store.Autorizante" Multiplicity="0..1" />
+          <End Role="SolicitudAcceso" Type="SGA_GestionAccesoModel.Store.SolicitudAcceso" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Autorizante">
+              <PropertyRef Name="IdAutorizante" />
+            </Principal>
+            <Dependent Role="SolicitudAcceso">
+              <PropertyRef Name="IdAutorizante" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SolicitudAcceso_Estado">
+          <End Role="Estado" Type="SGA_GestionAccesoModel.Store.Estado" Multiplicity="1" />
+          <End Role="SolicitudAcceso" Type="SGA_GestionAccesoModel.Store.SolicitudAcceso" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Estado">
+              <PropertyRef Name="IdEstado" />
+            </Principal>
+            <Dependent Role="SolicitudAcceso">
+              <PropertyRef Name="IdEstado" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SolicitudAcceso_Sucursal">
+          <End Role="Sucursal" Type="SGA_GestionAccesoModel.Store.Sucursal" Multiplicity="1" />
+          <End Role="SolicitudAcceso" Type="SGA_GestionAccesoModel.Store.SolicitudAcceso" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Sucursal">
+              <PropertyRef Name="IdSucursal" />
+            </Principal>
+            <Dependent Role="SolicitudAcceso">
+              <PropertyRef Name="IdSucursal" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SolicitudAcceso_TipoAcceso">
+          <End Role="TipoAcceso" Type="SGA_GestionAccesoModel.Store.TipoAcceso" Multiplicity="1" />
+          <End Role="SolicitudAcceso" Type="SGA_GestionAccesoModel.Store.SolicitudAcceso" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TipoAcceso">
+              <PropertyRef Name="IdTipoAcceso" />
+            </Principal>
+            <Dependent Role="SolicitudAcceso">
+              <PropertyRef Name="IdTipoAcceso" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Sucursal_Agencia">
+          <End Role="Agencia" Type="SGA_GestionAccesoModel.Store.Agencia" Multiplicity="1" />
+          <End Role="Sucursal" Type="SGA_GestionAccesoModel.Store.Sucursal" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Agencia">
+              <PropertyRef Name="IdAgencia" />
+            </Principal>
+            <Dependent Role="Sucursal">
+              <PropertyRef Name="IdAgencia" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Sucursal_Ubigeo">
+          <End Role="Ubigeo" Type="SGA_GestionAccesoModel.Store.Ubigeo" Multiplicity="1" />
+          <End Role="Sucursal" Type="SGA_GestionAccesoModel.Store.Sucursal" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Ubigeo">
+              <PropertyRef Name="CodUbigeo" />
+            </Principal>
+            <Dependent Role="Sucursal">
+              <PropertyRef Name="CodUbigeo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UsuarioSistema_Persona">
+          <End Role="Persona" Type="SGA_GestionAccesoModel.Store.Persona" Multiplicity="1" />
+          <End Role="UsuarioSistema" Type="SGA_GestionAccesoModel.Store.UsuarioSistema" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Persona">
+              <PropertyRef Name="IdPersona" />
+            </Principal>
+            <Dependent Role="UsuarioSistema">
+              <PropertyRef Name="IdPersona" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="ListarSolicitudReporte" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IdEstado" Type="int" Mode="In" />
+          <Parameter Name="IdSolicitante" Type="int" Mode="In" />
+          <Parameter Name="IdAutorizante" Type="int" Mode="In" />
+          <Parameter Name="IdEspecialista" Type="int" Mode="In" />
+          <Parameter Name="IdAgencia" Type="int" Mode="In" />
+          <Parameter Name="FechaIniSol" Type="datetime" Mode="In" />
+          <Parameter Name="FechaFinSol" Type="datetime" Mode="In" />
+          <Parameter Name="FechaIniCie" Type="datetime" Mode="In" />
+          <Parameter Name="FechaFinCie" Type="datetime" Mode="In" />
+        </Function>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="SGA_GestionAccesoModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="SGA_GestionAccesoEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Agencia" EntityType="SGA_GestionAccesoModel.Agencia" />
+          <EntitySet Name="Aplicacion" EntityType="SGA_GestionAccesoModel.Aplicacion" />
+          <EntitySet Name="apps" EntityType="SGA_GestionAccesoModel.apps" />
+          <EntitySet Name="Aprovisionamiento" EntityType="SGA_GestionAccesoModel.Aprovisionamiento" />
+          <EntitySet Name="Autorizante" EntityType="SGA_GestionAccesoModel.Autorizante" />
+          <EntitySet Name="DatosEscaneoValidador" EntityType="SGA_GestionAccesoModel.DatosEscaneoValidador" />
+          <EntitySet Name="DetalleAprovisionamiento" EntityType="SGA_GestionAccesoModel.DetalleAprovisionamiento" />
+          <EntitySet Name="DetalleEscaneoValidador" EntityType="SGA_GestionAccesoModel.DetalleEscaneoValidador" />
+          <EntitySet Name="DetalleGenAgenValidador" EntityType="SGA_GestionAccesoModel.DetalleGenAgenValidador" />
+          <EntitySet Name="DetalleSolicAplicaPuesto" EntityType="SGA_GestionAccesoModel.DetalleSolicAplicaPuesto" />
+          <EntitySet Name="DetalleSolicitudAcceso" EntityType="SGA_GestionAccesoModel.DetalleSolicitudAcceso" />
+          <EntitySet Name="EscaneoAgenciaSucursal" EntityType="SGA_GestionAccesoModel.EscaneoAgenciaSucursal" />
+          <EntitySet Name="Estado" EntityType="SGA_GestionAccesoModel.Estado" />
+          <EntitySet Name="GenAgenValidador" EntityType="SGA_GestionAccesoModel.GenAgenValidador" />
+          <EntitySet Name="Menu" EntityType="SGA_GestionAccesoModel.Menu" />
+          <EntitySet Name="ParametroGeneracionCuenta" EntityType="SGA_GestionAccesoModel.ParametroGeneracionCuenta" />
+          <EntitySet Name="PermisoMenu" EntityType="SGA_GestionAccesoModel.PermisoMenu" />
+          <EntitySet Name="PermisoUsuario" EntityType="SGA_GestionAccesoModel.PermisoUsuario" />
+          <EntitySet Name="Persona" EntityType="SGA_GestionAccesoModel.Persona" />
+          <EntitySet Name="procesos" EntityType="SGA_GestionAccesoModel.procesos" />
+          <EntitySet Name="Puesto" EntityType="SGA_GestionAccesoModel.Puesto" />
+          <EntitySet Name="ResultadoValidacionEquipo" EntityType="SGA_GestionAccesoModel.ResultadoValidacionEquipo" />
+          <EntitySet Name="Rol" EntityType="SGA_GestionAccesoModel.Rol" />
+          <EntitySet Name="SolicitudAcceso" EntityType="SGA_GestionAccesoModel.SolicitudAcceso" />
+          <EntitySet Name="Sucursal" EntityType="SGA_GestionAccesoModel.Sucursal" />
+          <EntitySet Name="SwMalicioso" EntityType="SGA_GestionAccesoModel.SwMalicioso" />
+          <EntitySet Name="TipoAcceso" EntityType="SGA_GestionAccesoModel.TipoAcceso" />
+          <EntitySet Name="Ubigeo" EntityType="SGA_GestionAccesoModel.Ubigeo" />
+          <EntitySet Name="UsuarioObservado" EntityType="SGA_GestionAccesoModel.UsuarioObservado" />
+          <EntitySet Name="UsuarioSistema" EntityType="SGA_GestionAccesoModel.UsuarioSistema" />
+          <EntitySet Name="xmls" EntityType="SGA_GestionAccesoModel.xmls" />
+          <AssociationSet Name="FK_EscaneoAgenciaSucursal_Agencia" Association="SGA_GestionAccesoModel.FK_EscaneoAgenciaSucursal_Agencia">
+            <End Role="Agencia" EntitySet="Agencia" />
+            <End Role="EscaneoAgenciaSucursal" EntitySet="EscaneoAgenciaSucursal" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SolicitudAcceso_Agencia" Association="SGA_GestionAccesoModel.FK_SolicitudAcceso_Agencia">
+            <End Role="Agencia" EntitySet="Agencia" />
+            <End Role="SolicitudAcceso" EntitySet="SolicitudAcceso" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Sucursal_Agencia" Association="SGA_GestionAccesoModel.FK_Sucursal_Agencia">
+            <End Role="Agencia" EntitySet="Agencia" />
+            <End Role="Sucursal" EntitySet="Sucursal" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DetalleAprovisionamiento_Aplicacion" Association="SGA_GestionAccesoModel.FK_DetalleAprovisionamiento_Aplicacion">
+            <End Role="Aplicacion" EntitySet="Aplicacion" />
+            <End Role="DetalleAprovisionamiento" EntitySet="DetalleAprovisionamiento" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DetalleSolicAplicaPuesto_Aplicacion" Association="SGA_GestionAccesoModel.FK_DetalleSolicAplicaPuesto_Aplicacion">
+            <End Role="Aplicacion" EntitySet="Aplicacion" />
+            <End Role="DetalleSolicAplicaPuesto" EntitySet="DetalleSolicAplicaPuesto" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Puesto_Aplicacion" Association="SGA_GestionAccesoModel.FK_Puesto_Aplicacion">
+            <End Role="Aplicacion" EntitySet="Aplicacion" />
+            <End Role="Puesto" EntitySet="Puesto" />
+          </AssociationSet>
+          <AssociationSet Name="FK_apps_xmls" Association="SGA_GestionAccesoModel.FK_apps_xmls">
+            <End Role="xmls" EntitySet="xmls" />
+            <End Role="apps" EntitySet="apps" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Aprovisionamiento_SolicitudAcceso" Association="SGA_GestionAccesoModel.FK_Aprovisionamiento_SolicitudAcceso">
+            <End Role="SolicitudAcceso" EntitySet="SolicitudAcceso" />
+            <End Role="Aprovisionamiento" EntitySet="Aprovisionamiento" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DetalleAprovisionamiento_Aprovisionamiento" Association="SGA_GestionAccesoModel.FK_DetalleAprovisionamiento_Aprovisionamiento">
+            <End Role="Aprovisionamiento" EntitySet="Aprovisionamiento" />
+            <End Role="DetalleAprovisionamiento" EntitySet="DetalleAprovisionamiento" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Autorizante_Persona" Association="SGA_GestionAccesoModel.FK_Autorizante_Persona">
+            <End Role="Persona" EntitySet="Persona" />
+            <End Role="Autorizante" EntitySet="Autorizante" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SolicitudAcceso_Autorizante" Association="SGA_GestionAccesoModel.FK_SolicitudAcceso_Autorizante">
+            <End Role="Autorizante" EntitySet="Autorizante" />
+            <End Role="SolicitudAcceso" EntitySet="SolicitudAcceso" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DatosEscaneoValidador_DetalleEscaneoValidador" Association="SGA_GestionAccesoModel.FK_DatosEscaneoValidador_DetalleEscaneoValidador">
+            <End Role="DetalleEscaneoValidador" EntitySet="DetalleEscaneoValidador" />
+            <End Role="DatosEscaneoValidador" EntitySet="DatosEscaneoValidador" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DetalleAprovisionamiento_Persona" Association="SGA_GestionAccesoModel.FK_DetalleAprovisionamiento_Persona">
+            <End Role="Persona" EntitySet="Persona" />
+            <End Role="DetalleAprovisionamiento" EntitySet="DetalleAprovisionamiento" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DetalleEscaneoValidador_DetalleGenAgenValidador" Association="SGA_GestionAccesoModel.FK_DetalleEscaneoValidador_DetalleGenAgenValidador">
+            <End Role="DetalleGenAgenValidador" EntitySet="DetalleGenAgenValidador" />
+            <End Role="DetalleEscaneoValidador" EntitySet="DetalleEscaneoValidador" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DetalleEscaneoValidador_EscaneoAgenciaSucursal" Association="SGA_GestionAccesoModel.FK_DetalleEscaneoValidador_EscaneoAgenciaSucursal">
+            <End Role="EscaneoAgenciaSucursal" EntitySet="EscaneoAgenciaSucursal" />
+            <End Role="DetalleEscaneoValidador" EntitySet="DetalleEscaneoValidador" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DetalleSolicAplicaPuesto_DetalleSolicitudAcceso" Association="SGA_GestionAccesoModel.FK_DetalleSolicAplicaPuesto_DetalleSolicitudAcceso">
+            <End Role="DetalleSolicitudAcceso" EntitySet="DetalleSolicitudAcceso" />
+            <End Role="DetalleSolicAplicaPuesto" EntitySet="DetalleSolicAplicaPuesto" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DetalleSolicAplicaPuesto_Puesto" Association="SGA_GestionAccesoModel.FK_DetalleSolicAplicaPuesto_Puesto">
+            <End Role="Puesto" EntitySet="Puesto" />
+            <End Role="DetalleSolicAplicaPuesto" EntitySet="DetalleSolicAplicaPuesto" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DetalleSolicitudAcceso_Persona" Association="SGA_GestionAccesoModel.FK_DetalleSolicitudAcceso_Persona">
+            <End Role="Persona" EntitySet="Persona" />
+            <End Role="DetalleSolicitudAcceso" EntitySet="DetalleSolicitudAcceso" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DetalleSolicitudAcceso_SolicitudAcceso" Association="SGA_GestionAccesoModel.FK_DetalleSolicitudAcceso_SolicitudAcceso">
+            <End Role="SolicitudAcceso" EntitySet="SolicitudAcceso" />
+            <End Role="DetalleSolicitudAcceso" EntitySet="DetalleSolicitudAcceso" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EscaneoAgenciaSucursal_Sucursal" Association="SGA_GestionAccesoModel.FK_EscaneoAgenciaSucursal_Sucursal">
+            <End Role="Sucursal" EntitySet="Sucursal" />
+            <End Role="EscaneoAgenciaSucursal" EntitySet="EscaneoAgenciaSucursal" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SolicitudAcceso_Estado" Association="SGA_GestionAccesoModel.FK_SolicitudAcceso_Estado">
+            <End Role="Estado" EntitySet="Estado" />
+            <End Role="SolicitudAcceso" EntitySet="SolicitudAcceso" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PermisoMenu_Menu" Association="SGA_GestionAccesoModel.FK_PermisoMenu_Menu">
+            <End Role="Menu" EntitySet="Menu" />
+            <End Role="PermisoMenu" EntitySet="PermisoMenu" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PermisoMenu_Rol" Association="SGA_GestionAccesoModel.FK_PermisoMenu_Rol">
+            <End Role="Rol" EntitySet="Rol" />
+            <End Role="PermisoMenu" EntitySet="PermisoMenu" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PermisoUsuario_Rol" Association="SGA_GestionAccesoModel.FK_PermisoUsuario_Rol">
+            <End Role="Rol" EntitySet="Rol" />
+            <End Role="PermisoUsuario" EntitySet="PermisoUsuario" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UsuarioSistema_Persona" Association="SGA_GestionAccesoModel.FK_UsuarioSistema_Persona">
+            <End Role="Persona" EntitySet="Persona" />
+            <End Role="UsuarioSistema" EntitySet="UsuarioSistema" />
+          </AssociationSet>
+          <AssociationSet Name="FK_procesos_xmls" Association="SGA_GestionAccesoModel.FK_procesos_xmls">
+            <End Role="xmls" EntitySet="xmls" />
+            <End Role="procesos" EntitySet="procesos" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SolicitudAcceso_Sucursal" Association="SGA_GestionAccesoModel.FK_SolicitudAcceso_Sucursal">
+            <End Role="Sucursal" EntitySet="Sucursal" />
+            <End Role="SolicitudAcceso" EntitySet="SolicitudAcceso" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SolicitudAcceso_TipoAcceso" Association="SGA_GestionAccesoModel.FK_SolicitudAcceso_TipoAcceso">
+            <End Role="TipoAcceso" EntitySet="TipoAcceso" />
+            <End Role="SolicitudAcceso" EntitySet="SolicitudAcceso" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Sucursal_Ubigeo" Association="SGA_GestionAccesoModel.FK_Sucursal_Ubigeo">
+            <End Role="Ubigeo" EntitySet="Ubigeo" />
+            <End Role="Sucursal" EntitySet="Sucursal" />
+          </AssociationSet>
+          <FunctionImport Name="ListarSolicitudReporte" ReturnType="Collection(SGA_GestionAccesoModel.ListarSolicitudReporte)">
+            <Parameter Name="IdEstado" Mode="In" Type="Int32" />
+            <Parameter Name="IdSolicitante" Mode="In" Type="Int32" />
+            <Parameter Name="IdAutorizante" Mode="In" Type="Int32" />
+            <Parameter Name="IdEspecialista" Mode="In" Type="Int32" />
+            <Parameter Name="IdAgencia" Mode="In" Type="Int32" />
+            <Parameter Name="FechaIniSol" Mode="In" Type="DateTime" />
+            <Parameter Name="FechaFinSol" Mode="In" Type="DateTime" />
+            <Parameter Name="FechaIniCie" Mode="In" Type="DateTime" />
+            <Parameter Name="FechaFinCie" Mode="In" Type="DateTime" />
+          </FunctionImport>
+        </EntityContainer>
+        <EntityType Name="Agencia">
+          <Key>
+            <PropertyRef Name="IdAgencia" />
+          </Key>
+          <Property Type="Int32" Name="IdAgencia" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="NombreAgencia" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="IdRepresentante" Nullable="false" />
+          <Property Type="String" Name="RUC" MaxLength="11" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="Nemotecnico_ag" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Boolean" Name="Estado" Nullable="false" />
+          <NavigationProperty Name="EscaneoAgenciaSucursal" Relationship="SGA_GestionAccesoModel.FK_EscaneoAgenciaSucursal_Agencia" FromRole="Agencia" ToRole="EscaneoAgenciaSucursal" />
+          <NavigationProperty Name="SolicitudAcceso" Relationship="SGA_GestionAccesoModel.FK_SolicitudAcceso_Agencia" FromRole="Agencia" ToRole="SolicitudAcceso" />
+          <NavigationProperty Name="Sucursal" Relationship="SGA_GestionAccesoModel.FK_Sucursal_Agencia" FromRole="Agencia" ToRole="Sucursal" />
+        </EntityType>
+        <EntityType Name="Aplicacion">
+          <Key>
+            <PropertyRef Name="IdAplicacion" />
+          </Key>
+          <Property Type="Int32" Name="IdAplicacion" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="NombreAplicacion" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="UsuarioCreacion" Nullable="false" MaxLength="10" FixedLength="true" Unicode="false" />
+          <Property Type="DateTime" Name="FechaCreacion" />
+          <Property Type="Boolean" Name="Estado" Nullable="false" />
+          <Property Type="Int32" Name="IdLogicaGeneracionUsuario" Nullable="false" />
+          <NavigationProperty Name="DetalleAprovisionamiento" Relationship="SGA_GestionAccesoModel.FK_DetalleAprovisionamiento_Aplicacion" FromRole="Aplicacion" ToRole="DetalleAprovisionamiento" />
+          <NavigationProperty Name="DetalleSolicAplicaPuesto" Relationship="SGA_GestionAccesoModel.FK_DetalleSolicAplicaPuesto_Aplicacion" FromRole="Aplicacion" ToRole="DetalleSolicAplicaPuesto" />
+          <NavigationProperty Name="Puesto" Relationship="SGA_GestionAccesoModel.FK_Puesto_Aplicacion" FromRole="Aplicacion" ToRole="Puesto" />
+        </EntityType>
+        <EntityType Name="apps">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Name" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Version" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Publisher" MaxLength="80" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="InstallDate" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Guid" Name="pcid" />
+          <NavigationProperty Name="xmls" Relationship="SGA_GestionAccesoModel.FK_apps_xmls" FromRole="apps" ToRole="xmls" />
+        </EntityType>
+        <EntityType Name="Aprovisionamiento">
+          <Key>
+            <PropertyRef Name="IdAprovisionamiento" />
+          </Key>
+          <Property Type="Int32" Name="IdAprovisionamiento" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="NumeroCertificado" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="IdSolicitud" Nullable="false" />
+          <Property Type="DateTime" Name="FechaAprovisionamiento" Nullable="false" />
+          <Property Type="Boolean" Name="EstadoActivo" Nullable="false" />
+          <NavigationProperty Name="SolicitudAcceso" Relationship="SGA_GestionAccesoModel.FK_Aprovisionamiento_SolicitudAcceso" FromRole="Aprovisionamiento" ToRole="SolicitudAcceso" />
+          <NavigationProperty Name="DetalleAprovisionamiento" Relationship="SGA_GestionAccesoModel.FK_DetalleAprovisionamiento_Aprovisionamiento" FromRole="Aprovisionamiento" ToRole="DetalleAprovisionamiento" />
+        </EntityType>
+        <EntityType Name="Autorizante">
+          <Key>
+            <PropertyRef Name="IdAutorizante" />
+          </Key>
+          <Property Type="Int32" Name="IdAutorizante" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="DateTime" Name="FechaIngreso" />
+          <Property Type="DateTime" Name="FechaCese" />
+          <Property Type="String" Name="CodAutorizador" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="IdPersona" Nullable="false" />
+          <Property Type="Boolean" Name="Estado" Nullable="false" />
+          <NavigationProperty Name="Persona" Relationship="SGA_GestionAccesoModel.FK_Autorizante_Persona" FromRole="Autorizante" ToRole="Persona" />
+          <NavigationProperty Name="SolicitudAcceso" Relationship="SGA_GestionAccesoModel.FK_SolicitudAcceso_Autorizante" FromRole="Autorizante" ToRole="SolicitudAcceso" />
+        </EntityType>
+        <EntityType Name="DatosEscaneoValidador">
+          <Key>
+            <PropertyRef Name="IdDatoEscaneoValidador" />
+          </Key>
+          <Property Type="Int32" Name="IdDatoEscaneoValidador" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="IdDetEscaneoValidacion" Nullable="false" />
+          <Property Type="String" Name="ArchivoEscaneado" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="FechaCreacion" Nullable="false" />
+          <Property Type="Boolean" Name="EstadoActivo" Nullable="false" />
+          <NavigationProperty Name="DetalleEscaneoValidador" Relationship="SGA_GestionAccesoModel.FK_DatosEscaneoValidador_DetalleEscaneoValidador" FromRole="DatosEscaneoValidador" ToRole="DetalleEscaneoValidador" />
+        </EntityType>
+        <EntityType Name="DetalleAprovisionamiento">
+          <Key>
+            <PropertyRef Name="IdDetAprovisionamiento" />
+          </Key>
+          <Property Type="Int32" Name="IdDetAprovisionamiento" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="IdAprovisionamiento" Nullable="false" />
+          <Property Type="Int32" Name="IdPersona" Nullable="false" />
+          <Property Type="Int32" Name="IdAplicacion" Nullable="false" />
+          <Property Type="String" Name="CuentaUsuario" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="ClaveGenerada" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="FechaCreacion" Nullable="false" />
+          <Property Type="Int32" Name="IdEstado" Nullable="false" />
+          <Property Type="Boolean" Name="EstadoActivo" Nullable="false" />
+          <NavigationProperty Name="Aplicacion" Relationship="SGA_GestionAccesoModel.FK_DetalleAprovisionamiento_Aplicacion" FromRole="DetalleAprovisionamiento" ToRole="Aplicacion" />
+          <NavigationProperty Name="Aprovisionamiento" Relationship="SGA_GestionAccesoModel.FK_DetalleAprovisionamiento_Aprovisionamiento" FromRole="DetalleAprovisionamiento" ToRole="Aprovisionamiento" />
+          <NavigationProperty Name="Persona" Relationship="SGA_GestionAccesoModel.FK_DetalleAprovisionamiento_Persona" FromRole="DetalleAprovisionamiento" ToRole="Persona" />
+        </EntityType>
+        <EntityType Name="DetalleEscaneoValidador">
+          <Key>
+            <PropertyRef Name="IdDetEscaneoValidacion" />
+          </Key>
+          <Property Type="Int32" Name="IdDetEscaneoValidacion" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="IdEscaneoAgenciaSuc" Nullable="false" />
+          <Property Type="Int32" Name="IdDetAgenValidador" Nullable="false" />
+          <Property Type="DateTime" Name="FechaHoraEscaneo" Nullable="false" />
+          <Property Type="Int32" Name="EstadoEscaneo" Nullable="false" />
+          <Property Type="DateTime" Name="FechaCreacion" Nullable="false" />
+          <Property Type="Boolean" Name="EstadoActivo" Nullable="false" />
+          <NavigationProperty Name="DatosEscaneoValidador" Relationship="SGA_GestionAccesoModel.FK_DatosEscaneoValidador_DetalleEscaneoValidador" FromRole="DetalleEscaneoValidador" ToRole="DatosEscaneoValidador" />
+          <NavigationProperty Name="DetalleGenAgenValidador" Relationship="SGA_GestionAccesoModel.FK_DetalleEscaneoValidador_DetalleGenAgenValidador" FromRole="DetalleEscaneoValidador" ToRole="DetalleGenAgenValidador" />
+          <NavigationProperty Name="EscaneoAgenciaSucursal" Relationship="SGA_GestionAccesoModel.FK_DetalleEscaneoValidador_EscaneoAgenciaSucursal" FromRole="DetalleEscaneoValidador" ToRole="EscaneoAgenciaSucursal" />
+        </EntityType>
+        <EntityType Name="DetalleGenAgenValidador">
+          <Key>
+            <PropertyRef Name="IdDetAgenValidador" />
+          </Key>
+          <Property Type="Int32" Name="IdDetAgenValidador" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="IdGenAgenteValidador" Nullable="false" />
+          <Property Type="String" Name="CodGenerado" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Activador" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="FechaCreacion" Nullable="false" />
+          <Property Type="DateTime" Name="FechaCaducidad" Nullable="false" />
+          <Property Type="Int32" Name="Estado" Nullable="false" />
+          <Property Type="Boolean" Name="EstadoActivo" Nullable="false" />
+          <Property Type="String" Name="RutaValidador" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="NombreValidador" MaxLength="100" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="DetalleEscaneoValidador" Relationship="SGA_GestionAccesoModel.FK_DetalleEscaneoValidador_DetalleGenAgenValidador" FromRole="DetalleGenAgenValidador" ToRole="DetalleEscaneoValidador" />
+        </EntityType>
+        <EntityType Name="DetalleSolicAplicaPuesto">
+          <Key>
+            <PropertyRef Name="IdDetSolicAplicaPuesto" />
+          </Key>
+          <Property Type="Int32" Name="IdDetSolicAplicaPuesto" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="IdDetalleSolicitudAcceso" Nullable="false" />
+          <Property Type="DateTime" Name="FechaRegistro" Nullable="false" />
+          <Property Type="Int32" Name="IdAplicacion" Nullable="false" />
+          <Property Type="Int32" Name="IdPuesto" Nullable="false" />
+          <Property Type="Boolean" Name="EstadoActivo" Nullable="false" />
+          <NavigationProperty Name="Aplicacion" Relationship="SGA_GestionAccesoModel.FK_DetalleSolicAplicaPuesto_Aplicacion" FromRole="DetalleSolicAplicaPuesto" ToRole="Aplicacion" />
+          <NavigationProperty Name="DetalleSolicitudAcceso" Relationship="SGA_GestionAccesoModel.FK_DetalleSolicAplicaPuesto_DetalleSolicitudAcceso" FromRole="DetalleSolicAplicaPuesto" ToRole="DetalleSolicitudAcceso" />
+          <NavigationProperty Name="Puesto" Relationship="SGA_GestionAccesoModel.FK_DetalleSolicAplicaPuesto_Puesto" FromRole="DetalleSolicAplicaPuesto" ToRole="Puesto" />
+        </EntityType>
+        <EntityType Name="DetalleSolicitudAcceso">
+          <Key>
+            <PropertyRef Name="IdDetalleSolicitudAcceso" />
+          </Key>
+          <Property Type="Int32" Name="IdDetalleSolicitudAcceso" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="IdSolicitudAcceso" Nullable="false" />
+          <Property Type="Int32" Name="IdPersona" Nullable="false" />
+          <Property Type="DateTime" Name="FechaRegistro" />
+          <Property Type="Boolean" Name="EstadoActivo" />
+          <Property Type="Int32" Name="IdEstado" Nullable="false" />
+          <Property Type="String" Name="ObservacionValidacion" MaxLength="200" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="DetalleSolicAplicaPuesto" Relationship="SGA_GestionAccesoModel.FK_DetalleSolicAplicaPuesto_DetalleSolicitudAcceso" FromRole="DetalleSolicitudAcceso" ToRole="DetalleSolicAplicaPuesto" />
+          <NavigationProperty Name="Persona" Relationship="SGA_GestionAccesoModel.FK_DetalleSolicitudAcceso_Persona" FromRole="DetalleSolicitudAcceso" ToRole="Persona" />
+          <NavigationProperty Name="SolicitudAcceso" Relationship="SGA_GestionAccesoModel.FK_DetalleSolicitudAcceso_SolicitudAcceso" FromRole="DetalleSolicitudAcceso" ToRole="SolicitudAcceso" />
+        </EntityType>
+        <EntityType Name="EscaneoAgenciaSucursal">
+          <Key>
+            <PropertyRef Name="IdEscaneoAgenciaSuc" />
+          </Key>
+          <Property Type="Int32" Name="IdEscaneoAgenciaSuc" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="IdAgencia" Nullable="false" />
+          <Property Type="Int32" Name="IdSucursal" Nullable="false" />
+          <Property Type="DateTime" Name="Fecha" Nullable="false" />
+          <Property Type="Int32" Name="Estado" Nullable="false" />
+          <Property Type="Boolean" Name="EstadoActivo" Nullable="false" />
+          <NavigationProperty Name="Agencia" Relationship="SGA_GestionAccesoModel.FK_EscaneoAgenciaSucursal_Agencia" FromRole="EscaneoAgenciaSucursal" ToRole="Agencia" />
+          <NavigationProperty Name="DetalleEscaneoValidador" Relationship="SGA_GestionAccesoModel.FK_DetalleEscaneoValidador_EscaneoAgenciaSucursal" FromRole="EscaneoAgenciaSucursal" ToRole="DetalleEscaneoValidador" />
+          <NavigationProperty Name="Sucursal" Relationship="SGA_GestionAccesoModel.FK_EscaneoAgenciaSucursal_Sucursal" FromRole="EscaneoAgenciaSucursal" ToRole="Sucursal" />
+        </EntityType>
+        <EntityType Name="Estado">
+          <Key>
+            <PropertyRef Name="IdEstado" />
+          </Key>
+          <Property Type="Int32" Name="IdEstado" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="NombreEstado" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Boolean" Name="EstadoActivo" Nullable="false" />
+          <Property Type="Int32" Name="TipoEstado" />
+          <NavigationProperty Name="SolicitudAcceso" Relationship="SGA_GestionAccesoModel.FK_SolicitudAcceso_Estado" FromRole="Estado" ToRole="SolicitudAcceso" />
+        </EntityType>
+        <EntityType Name="GenAgenValidador">
+          <Key>
+            <PropertyRef Name="IdGenAgenteValidador" />
+          </Key>
+          <Property Type="Int32" Name="IdGenAgenteValidador" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="IdSolicitud" Nullable="false" />
+          <Property Type="DateTime" Name="FechaCreacion" Nullable="false" />
+          <Property Type="Int32" Name="IdUsuarioCreacion" Nullable="false" />
+          <Property Type="Int32" Name="IdEstadoGeneracion" Nullable="false" />
+          <Property Type="Boolean" Name="EstadoActivo" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Menu">
+          <Key>
+            <PropertyRef Name="IdMenu" />
+          </Key>
+          <Property Type="Int32" Name="IdMenu" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="NombreFisicoMenu" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="DescripcionMenu" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="EtiquetaMenu" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="UrlMenu" MaxLength="60" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="IdMenuPadre" />
+          <Property Type="Boolean" Name="EstadoMenu" Nullable="false" />
+          <NavigationProperty Name="PermisoMenu" Relationship="SGA_GestionAccesoModel.FK_PermisoMenu_Menu" FromRole="Menu" ToRole="PermisoMenu" />
+        </EntityType>
+        <EntityType Name="ParametroGeneracionCuenta">
+          <Key>
+            <PropertyRef Name="IdParametro" />
+          </Key>
+          <Property Type="Int32" Name="IdParametro" Nullable="false" />
+          <Property Type="String" Name="DescripcionParametro" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Prefijo" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="LongitudCuenta" />
+          <Property Type="Int32" Name="Correlativo" />
+          <Property Type="DateTime" Name="FechaRegistro" Nullable="false" />
+          <Property Type="Boolean" Name="EstadoActivo" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PermisoMenu">
+          <Key>
+            <PropertyRef Name="IdPermisoMenu" />
+          </Key>
+          <Property Type="Int32" Name="IdPermisoMenu" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="IdMenu" Nullable="false" />
+          <Property Type="Int32" Name="IdRol" Nullable="false" />
+          <Property Type="Boolean" Name="EstadoPermisoMenu" Nullable="false" />
+          <Property Type="DateTime" Name="FechaCreacion" Nullable="false" />
+          <NavigationProperty Name="Menu" Relationship="SGA_GestionAccesoModel.FK_PermisoMenu_Menu" FromRole="PermisoMenu" ToRole="Menu" />
+          <NavigationProperty Name="Rol" Relationship="SGA_GestionAccesoModel.FK_PermisoMenu_Rol" FromRole="PermisoMenu" ToRole="Rol" />
+        </EntityType>
+        <EntityType Name="PermisoUsuario">
+          <Key>
+            <PropertyRef Name="IdPermisoUsuario" />
+          </Key>
+          <Property Type="Int32" Name="IdPermisoUsuario" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="IdUsuario" Nullable="false" />
+          <Property Type="Int32" Name="IdRol" Nullable="false" />
+          <Property Type="Int32" Name="IdUsuarioCreacion" Nullable="false" />
+          <Property Type="DateTime" Name="FechaCreacion" Nullable="false" />
+          <Property Type="Boolean" Name="Estado" Nullable="false" />
+          <NavigationProperty Name="Rol" Relationship="SGA_GestionAccesoModel.FK_PermisoUsuario_Rol" FromRole="PermisoUsuario" ToRole="Rol" />
+        </EntityType>
+        <EntityType Name="Persona">
+          <Key>
+            <PropertyRef Name="IdPersona" />
+          </Key>
+          <Property Type="Int32" Name="IdPersona" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Nombres" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="ApePaterno" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="ApeMaterno" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="FechaCreacion" Nullable="false" />
+          <Property Type="String" Name="DocumentoIdentidad" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Type="Boolean" Name="Estado" Nullable="false" />
+          <Property Type="String" Name="Correo" MaxLength="100" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Autorizante" Relationship="SGA_GestionAccesoModel.FK_Autorizante_Persona" FromRole="Persona" ToRole="Autorizante" />
+          <NavigationProperty Name="DetalleAprovisionamiento" Relationship="SGA_GestionAccesoModel.FK_DetalleAprovisionamiento_Persona" FromRole="Persona" ToRole="DetalleAprovisionamiento" />
+          <NavigationProperty Name="DetalleSolicitudAcceso" Relationship="SGA_GestionAccesoModel.FK_DetalleSolicitudAcceso_Persona" FromRole="Persona" ToRole="DetalleSolicitudAcceso" />
+          <NavigationProperty Name="UsuarioSistema" Relationship="SGA_GestionAccesoModel.FK_UsuarioSistema_Persona" FromRole="Persona" ToRole="UsuarioSistema" />
+        </EntityType>
+        <EntityType Name="procesos">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Name" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="pid" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Type="Guid" Name="pcid" />
+          <NavigationProperty Name="xmls" Relationship="SGA_GestionAccesoModel.FK_procesos_xmls" FromRole="procesos" ToRole="xmls" />
+        </EntityType>
+        <EntityType Name="Puesto">
+          <Key>
+            <PropertyRef Name="IdPuesto" />
+          </Key>
+          <Property Type="Int32" Name="IdPuesto" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="NombrePuesto" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="FechaCreacion" Nullable="false" />
+          <Property Type="String" Name="UsuarioCreacion" Nullable="false" MaxLength="10" FixedLength="true" Unicode="false" />
+          <Property Type="Int32" Name="IdResponsable" Nullable="false" />
+          <Property Type="String" Name="Fl_Critico" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Type="Boolean" Name="Estado" Nullable="false" />
+          <Property Type="Int32" Name="IdAplicacion" Nullable="false" />
+          <NavigationProperty Name="Aplicacion" Relationship="SGA_GestionAccesoModel.FK_Puesto_Aplicacion" FromRole="Puesto" ToRole="Aplicacion" />
+          <NavigationProperty Name="DetalleSolicAplicaPuesto" Relationship="SGA_GestionAccesoModel.FK_DetalleSolicAplicaPuesto_Puesto" FromRole="Puesto" ToRole="DetalleSolicAplicaPuesto" />
+        </EntityType>
+        <EntityType Name="ResultadoValidacionEquipo">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="pcid" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Tipo" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Descripcion" MaxLength="250" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Rol">
+          <Key>
+            <PropertyRef Name="IdRol" />
+          </Key>
+          <Property Type="Int32" Name="IdRol" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="NombreRol" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="DescripcionRol" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Type="Boolean" Name="EstadoRol" Nullable="false" />
+          <NavigationProperty Name="PermisoMenu" Relationship="SGA_GestionAccesoModel.FK_PermisoMenu_Rol" FromRole="Rol" ToRole="PermisoMenu" />
+          <NavigationProperty Name="PermisoUsuario" Relationship="SGA_GestionAccesoModel.FK_PermisoUsuario_Rol" FromRole="Rol" ToRole="PermisoUsuario" />
+        </EntityType>
+        <EntityType Name="SolicitudAcceso">
+          <Key>
+            <PropertyRef Name="IdSolicitudAcceso" />
+          </Key>
+          <Property Type="Int32" Name="IdSolicitudAcceso" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="NroSolicitud" Nullable="false" MaxLength="10" FixedLength="true" Unicode="false" />
+          <Property Type="DateTime" Name="FechaRegistro" Nullable="false" />
+          <Property Type="String" Name="UsuarioCreacion" Nullable="false" MaxLength="10" FixedLength="true" Unicode="false" />
+          <Property Type="Int32" Name="IdTipoAcceso" Nullable="false" />
+          <Property Type="Int32" Name="IdSolicitante" Nullable="false" />
+          <Property Type="Int32" Name="IdAutorizante" />
+          <Property Type="DateTime" Name="FechaAsignacion" />
+          <Property Type="Int32" Name="IdEstado" Nullable="false" />
+          <Property Type="Boolean" Name="EstadoActivo" Nullable="false" />
+          <Property Type="Int32" Name="IdAgencia" Nullable="false" />
+          <Property Type="Int32" Name="IdSucursal" Nullable="false" />
+          <Property Type="DateTime" Name="FechaValidacion" />
+          <Property Type="Int32" Name="NumEquipos" Nullable="false" />
+          <NavigationProperty Name="Agencia" Relationship="SGA_GestionAccesoModel.FK_SolicitudAcceso_Agencia" FromRole="SolicitudAcceso" ToRole="Agencia" />
+          <NavigationProperty Name="Aprovisionamiento" Relationship="SGA_GestionAccesoModel.FK_Aprovisionamiento_SolicitudAcceso" FromRole="SolicitudAcceso" ToRole="Aprovisionamiento" />
+          <NavigationProperty Name="Autorizante" Relationship="SGA_GestionAccesoModel.FK_SolicitudAcceso_Autorizante" FromRole="SolicitudAcceso" ToRole="Autorizante" />
+          <NavigationProperty Name="DetalleSolicitudAcceso" Relationship="SGA_GestionAccesoModel.FK_DetalleSolicitudAcceso_SolicitudAcceso" FromRole="SolicitudAcceso" ToRole="DetalleSolicitudAcceso" />
+          <NavigationProperty Name="Estado" Relationship="SGA_GestionAccesoModel.FK_SolicitudAcceso_Estado" FromRole="SolicitudAcceso" ToRole="Estado" />
+          <NavigationProperty Name="Sucursal" Relationship="SGA_GestionAccesoModel.FK_SolicitudAcceso_Sucursal" FromRole="SolicitudAcceso" ToRole="Sucursal" />
+          <NavigationProperty Name="TipoAcceso" Relationship="SGA_GestionAccesoModel.FK_SolicitudAcceso_TipoAcceso" FromRole="SolicitudAcceso" ToRole="TipoAcceso" />
+          <Property Type="Int32" Name="IdEspecialista" />
+          <Property Type="DateTime" Name="FechaCierre" />
+        </EntityType>
+        <EntityType Name="Sucursal">
+          <Key>
+            <PropertyRef Name="IdSucursal" />
+          </Key>
+          <Property Type="Int32" Name="IdSucursal" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="NombreSucursal" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="DireccionSucursal" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="IdAgencia" Nullable="false" />
+          <Property Type="Boolean" Name="Estado" Nullable="false" />
+          <Property Type="String" Name="CodUbigeo" Nullable="false" MaxLength="6" FixedLength="true" Unicode="false" />
+          <NavigationProperty Name="Agencia" Relationship="SGA_GestionAccesoModel.FK_Sucursal_Agencia" FromRole="Sucursal" ToRole="Agencia" />
+          <NavigationProperty Name="EscaneoAgenciaSucursal" Relationship="SGA_GestionAccesoModel.FK_EscaneoAgenciaSucursal_Sucursal" FromRole="Sucursal" ToRole="EscaneoAgenciaSucursal" />
+          <NavigationProperty Name="SolicitudAcceso" Relationship="SGA_GestionAccesoModel.FK_SolicitudAcceso_Sucursal" FromRole="Sucursal" ToRole="SolicitudAcceso" />
+          <NavigationProperty Name="Ubigeo" Relationship="SGA_GestionAccesoModel.FK_Sucursal_Ubigeo" FromRole="Sucursal" ToRole="Ubigeo" />
+        </EntityType>
+        <EntityType Name="SwMalicioso">
+          <Key>
+            <PropertyRef Name="idPrograma" />
+          </Key>
+          <Property Type="Int32" Name="idPrograma" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="NombrePrograma" Nullable="false" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TipoPrograma" Nullable="false" MaxLength="250" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="TipoAcceso">
+          <Key>
+            <PropertyRef Name="IdTipoAcceso" />
+          </Key>
+          <Property Type="Int32" Name="IdTipoAcceso" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Nombre" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Boolean" Name="Estado" Nullable="false" />
+          <NavigationProperty Name="SolicitudAcceso" Relationship="SGA_GestionAccesoModel.FK_SolicitudAcceso_TipoAcceso" FromRole="TipoAcceso" ToRole="SolicitudAcceso" />
+        </EntityType>
+        <EntityType Name="Ubigeo">
+          <Key>
+            <PropertyRef Name="CodUbigeo" />
+          </Key>
+          <Property Type="String" Name="CodUbigeo" Nullable="false" MaxLength="6" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="Pais" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Departamento" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Provincia" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Distrito" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="Boolean" Name="Estado" Nullable="false" />
+          <NavigationProperty Name="Sucursal" Relationship="SGA_GestionAccesoModel.FK_Sucursal_Ubigeo" FromRole="Ubigeo" ToRole="Sucursal" />
+        </EntityType>
+        <EntityType Name="UsuarioObservado">
+          <Key>
+            <PropertyRef Name="IdUsuarioObservado" />
+          </Key>
+          <Property Type="Int32" Name="IdUsuarioObservado" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="IdPersona" Nullable="false" />
+          <Property Type="Int32" Name="IdAplicacion" Nullable="false" />
+          <Property Type="DateTime" Name="FechaRegistro" />
+          <Property Type="Boolean" Name="EstadoActivo" Nullable="false" />
+        </EntityType>
+        <EntityType Name="UsuarioSistema">
+          <Key>
+            <PropertyRef Name="IdUsuario" />
+          </Key>
+          <Property Type="Int32" Name="IdUsuario" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="CodUsuario" Nullable="false" MaxLength="10" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="ClaveUsuario" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="FechaCreacion" />
+          <Property Type="Boolean" Name="Estado" />
+          <Property Type="Int32" Name="IdPersona" Nullable="false" />
+          <NavigationProperty Name="Persona" Relationship="SGA_GestionAccesoModel.FK_UsuarioSistema_Persona" FromRole="UsuarioSistema" ToRole="Persona" />
+        </EntityType>
+        <EntityType Name="xmls">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Type="Guid" Name="id" Nullable="false" />
+          <Property Type="String" Name="pcname" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="idagente" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="idsolicitud" MaxLength="10" FixedLength="true" Unicode="false" />
+          <Property Type="DateTime" Name="fsolicitud" />
+          <Property Type="DateTime" Name="faprobacion" />
+          <Property Type="Boolean" Name="estado" Nullable="false" />
+          <Property Type="DateTime" Name="fconexion" />
+          <Property Type="String" Name="ip" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="idComputer" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="userName" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="cpuInfo" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="memoryRam" MaxLength="80" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="systemArquitecture" MaxLength="90" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="operatingSystem" MaxLength="90" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="servicePack" MaxLength="80" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="apps" Relationship="SGA_GestionAccesoModel.FK_apps_xmls" FromRole="xmls" ToRole="apps" />
+          <NavigationProperty Name="procesos" Relationship="SGA_GestionAccesoModel.FK_procesos_xmls" FromRole="xmls" ToRole="procesos" />
+        </EntityType>
+        <Association Name="FK_EscaneoAgenciaSucursal_Agencia">
+          <End Type="SGA_GestionAccesoModel.Agencia" Role="Agencia" Multiplicity="1" />
+          <End Type="SGA_GestionAccesoModel.EscaneoAgenciaSucursal" Role="EscaneoAgenciaSucursal" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Agencia">
+              <PropertyRef Name="IdAgencia" />
+            </Principal>
+            <Dependent Role="EscaneoAgenciaSucursal">
+              <PropertyRef Name="IdAgencia" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SolicitudAcceso_Agencia">
+          <End Type="SGA_GestionAccesoModel.Agencia" Role="Agencia" Multiplicity="1" />
+          <End Type="SGA_GestionAccesoModel.SolicitudAcceso" Role="SolicitudAcceso" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Agencia">
+              <PropertyRef Name="IdAgencia" />
+            </Principal>
+            <Dependent Role="SolicitudAcceso">
+              <PropertyRef Name="IdAgencia" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Sucursal_Agencia">
+          <End Type="SGA_GestionAccesoModel.Agencia" Role="Agencia" Multiplicity="1" />
+          <End Type="SGA_GestionAccesoModel.Sucursal" Role="Sucursal" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Agencia">
+              <PropertyRef Name="IdAgencia" />
+            </Principal>
+            <Dependent Role="Sucursal">
+              <PropertyRef Name="IdAgencia" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DetalleAprovisionamiento_Aplicacion">
+          <End Type="SGA_GestionAccesoModel.Aplicacion" Role="Aplicacion" Multiplicity="1" />
+          <End Type="SGA_GestionAccesoModel.DetalleAprovisionamiento" Role="DetalleAprovisionamiento" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Aplicacion">
+              <PropertyRef Name="IdAplicacion" />
+            </Principal>
+            <Dependent Role="DetalleAprovisionamiento">
+              <PropertyRef Name="IdAplicacion" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DetalleSolicAplicaPuesto_Aplicacion">
+          <End Type="SGA_GestionAccesoModel.Aplicacion" Role="Aplicacion" Multiplicity="1" />
+          <End Type="SGA_GestionAccesoModel.DetalleSolicAplicaPuesto" Role="DetalleSolicAplicaPuesto" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Aplicacion">
+              <PropertyRef Name="IdAplicacion" />
+            </Principal>
+            <Dependent Role="DetalleSolicAplicaPuesto">
+              <PropertyRef Name="IdAplicacion" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Puesto_Aplicacion">
+          <End Type="SGA_GestionAccesoModel.Aplicacion" Role="Aplicacion" Multiplicity="1" />
+          <End Type="SGA_GestionAccesoModel.Puesto" Role="Puesto" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Aplicacion">
+              <PropertyRef Name="IdAplicacion" />
+            </Principal>
+            <Dependent Role="Puesto">
+              <PropertyRef Name="IdAplicacion" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_apps_xmls">
+          <End Type="SGA_GestionAccesoModel.xmls" Role="xmls" Multiplicity="0..1" />
+          <End Type="SGA_GestionAccesoModel.apps" Role="apps" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="xmls">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="apps">
+              <PropertyRef Name="pcid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Aprovisionamiento_SolicitudAcceso">
+          <End Type="SGA_GestionAccesoModel.SolicitudAcceso" Role="SolicitudAcceso" Multiplicity="1" />
+          <End Type="SGA_GestionAccesoModel.Aprovisionamiento" Role="Aprovisionamiento" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SolicitudAcceso">
+              <PropertyRef Name="IdSolicitudAcceso" />
+            </Principal>
+            <Dependent Role="Aprovisionamiento">
+              <PropertyRef Name="IdSolicitud" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DetalleAprovisionamiento_Aprovisionamiento">
+          <End Type="SGA_GestionAccesoModel.Aprovisionamiento" Role="Aprovisionamiento" Multiplicity="1" />
+          <End Type="SGA_GestionAccesoModel.DetalleAprovisionamiento" Role="DetalleAprovisionamiento" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Aprovisionamiento">
+              <PropertyRef Name="IdAprovisionamiento" />
+            </Principal>
+            <Dependent Role="DetalleAprovisionamiento">
+              <PropertyRef Name="IdAprovisionamiento" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Autorizante_Persona">
+          <End Type="SGA_GestionAccesoModel.Persona" Role="Persona" Multiplicity="1" />
+          <End Type="SGA_GestionAccesoModel.Autorizante" Role="Autorizante" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Persona">
+              <PropertyRef Name="IdPersona" />
+            </Principal>
+            <Dependent Role="Autorizante">
+              <PropertyRef Name="IdPersona" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SolicitudAcceso_Autorizante">
+          <End Type="SGA_GestionAccesoModel.Autorizante" Role="Autorizante" Multiplicity="0..1" />
+          <End Type="SGA_GestionAccesoModel.SolicitudAcceso" Role="SolicitudAcceso" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Autorizante">
+              <PropertyRef Name="IdAutorizante" />
+            </Principal>
+            <Dependent Role="SolicitudAcceso">
+              <PropertyRef Name="IdAutorizante" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DatosEscaneoValidador_DetalleEscaneoValidador">
+          <End Type="SGA_GestionAccesoModel.DetalleEscaneoValidador" Role="DetalleEscaneoValidador" Multiplicity="1" />
+          <End Type="SGA_GestionAccesoModel.DatosEscaneoValidador" Role="DatosEscaneoValidador" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DetalleEscaneoValidador">
+              <PropertyRef Name="IdDetEscaneoValidacion" />
+            </Principal>
+            <Dependent Role="DatosEscaneoValidador">
+              <PropertyRef Name="IdDetEscaneoValidacion" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DetalleAprovisionamiento_Persona">
+          <End Type="SGA_GestionAccesoModel.Persona" Role="Persona" Multiplicity="1" />
+          <End Type="SGA_GestionAccesoModel.DetalleAprovisionamiento" Role="DetalleAprovisionamiento" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Persona">
+              <PropertyRef Name="IdPersona" />
+            </Principal>
+            <Dependent Role="DetalleAprovisionamiento">
+              <PropertyRef Name="IdPersona" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DetalleEscaneoValidador_DetalleGenAgenValidador">
+          <End Type="SGA_GestionAccesoModel.DetalleGenAgenValidador" Role="DetalleGenAgenValidador" Multiplicity="1" />
+          <End Type="SGA_GestionAccesoModel.DetalleEscaneoValidador" Role="DetalleEscaneoValidador" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DetalleGenAgenValidador">
+              <PropertyRef Name="IdDetAgenValidador" />
+            </Principal>
+            <Dependent Role="DetalleEscaneoValidador">
+              <PropertyRef Name="IdDetAgenValidador" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DetalleEscaneoValidador_EscaneoAgenciaSucursal">
+          <End Type="SGA_GestionAccesoModel.EscaneoAgenciaSucursal" Role="EscaneoAgenciaSucursal" Multiplicity="1" />
+          <End Type="SGA_GestionAccesoModel.DetalleEscaneoValidador" Role="DetalleEscaneoValidador" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EscaneoAgenciaSucursal">
+              <PropertyRef Name="IdEscaneoAgenciaSuc" />
+            </Principal>
+            <Dependent Role="DetalleEscaneoValidador">
+              <PropertyRef Name="IdEscaneoAgenciaSuc" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DetalleSolicAplicaPuesto_DetalleSolicitudAcceso">
+          <End Type="SGA_GestionAccesoModel.DetalleSolicitudAcceso" Role="DetalleSolicitudAcceso" Multiplicity="1" />
+          <End Type="SGA_GestionAccesoModel.DetalleSolicAplicaPuesto" Role="DetalleSolicAplicaPuesto" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DetalleSolicitudAcceso">
+              <PropertyRef Name="IdDetalleSolicitudAcceso" />
+            </Principal>
+            <Dependent Role="DetalleSolicAplicaPuesto">
+              <PropertyRef Name="IdDetalleSolicitudAcceso" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DetalleSolicAplicaPuesto_Puesto">
+          <End Type="SGA_GestionAccesoModel.Puesto" Role="Puesto" Multiplicity="1" />
+          <End Type="SGA_GestionAccesoModel.DetalleSolicAplicaPuesto" Role="DetalleSolicAplicaPuesto" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Puesto">
+              <PropertyRef Name="IdPuesto" />
+            </Principal>
+            <Dependent Role="DetalleSolicAplicaPuesto">
+              <PropertyRef Name="IdPuesto" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DetalleSolicitudAcceso_Persona">
+          <End Type="SGA_GestionAccesoModel.Persona" Role="Persona" Multiplicity="1" />
+          <End Type="SGA_GestionAccesoModel.DetalleSolicitudAcceso" Role="DetalleSolicitudAcceso" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Persona">
+              <PropertyRef Name="IdPersona" />
+            </Principal>
+            <Dependent Role="DetalleSolicitudAcceso">
+              <PropertyRef Name="IdPersona" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DetalleSolicitudAcceso_SolicitudAcceso">
+          <End Type="SGA_GestionAccesoModel.SolicitudAcceso" Role="SolicitudAcceso" Multiplicity="1" />
+          <End Type="SGA_GestionAccesoModel.DetalleSolicitudAcceso" Role="DetalleSolicitudAcceso" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SolicitudAcceso">
+              <PropertyRef Name="IdSolicitudAcceso" />
+            </Principal>
+            <Dependent Role="DetalleSolicitudAcceso">
+              <PropertyRef Name="IdSolicitudAcceso" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EscaneoAgenciaSucursal_Sucursal">
+          <End Type="SGA_GestionAccesoModel.Sucursal" Role="Sucursal" Multiplicity="1" />
+          <End Type="SGA_GestionAccesoModel.EscaneoAgenciaSucursal" Role="EscaneoAgenciaSucursal" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Sucursal">
+              <PropertyRef Name="IdSucursal" />
+            </Principal>
+            <Dependent Role="EscaneoAgenciaSucursal">
+              <PropertyRef Name="IdSucursal" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SolicitudAcceso_Estado">
+          <End Type="SGA_GestionAccesoModel.Estado" Role="Estado" Multiplicity="1" />
+          <End Type="SGA_GestionAccesoModel.SolicitudAcceso" Role="SolicitudAcceso" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Estado">
+              <PropertyRef Name="IdEstado" />
+            </Principal>
+            <Dependent Role="SolicitudAcceso">
+              <PropertyRef Name="IdEstado" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PermisoMenu_Menu">
+          <End Type="SGA_GestionAccesoModel.Menu" Role="Menu" Multiplicity="1" />
+          <End Type="SGA_GestionAccesoModel.PermisoMenu" Role="PermisoMenu" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Menu">
+              <PropertyRef Name="IdMenu" />
+            </Principal>
+            <Dependent Role="PermisoMenu">
+              <PropertyRef Name="IdMenu" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PermisoMenu_Rol">
+          <End Type="SGA_GestionAccesoModel.Rol" Role="Rol" Multiplicity="1" />
+          <End Type="SGA_GestionAccesoModel.PermisoMenu" Role="PermisoMenu" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Rol">
+              <PropertyRef Name="IdRol" />
+            </Principal>
+            <Dependent Role="PermisoMenu">
+              <PropertyRef Name="IdRol" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PermisoUsuario_Rol">
+          <End Type="SGA_GestionAccesoModel.Rol" Role="Rol" Multiplicity="1" />
+          <End Type="SGA_GestionAccesoModel.PermisoUsuario" Role="PermisoUsuario" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Rol">
+              <PropertyRef Name="IdRol" />
+            </Principal>
+            <Dependent Role="PermisoUsuario">
+              <PropertyRef Name="IdRol" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UsuarioSistema_Persona">
+          <End Type="SGA_GestionAccesoModel.Persona" Role="Persona" Multiplicity="1" />
+          <End Type="SGA_GestionAccesoModel.UsuarioSistema" Role="UsuarioSistema" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Persona">
+              <PropertyRef Name="IdPersona" />
+            </Principal>
+            <Dependent Role="UsuarioSistema">
+              <PropertyRef Name="IdPersona" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_procesos_xmls">
+          <End Type="SGA_GestionAccesoModel.xmls" Role="xmls" Multiplicity="0..1" />
+          <End Type="SGA_GestionAccesoModel.procesos" Role="procesos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="xmls">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="procesos">
+              <PropertyRef Name="pcid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SolicitudAcceso_Sucursal">
+          <End Type="SGA_GestionAccesoModel.Sucursal" Role="Sucursal" Multiplicity="1" />
+          <End Type="SGA_GestionAccesoModel.SolicitudAcceso" Role="SolicitudAcceso" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Sucursal">
+              <PropertyRef Name="IdSucursal" />
+            </Principal>
+            <Dependent Role="SolicitudAcceso">
+              <PropertyRef Name="IdSucursal" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SolicitudAcceso_TipoAcceso">
+          <End Type="SGA_GestionAccesoModel.TipoAcceso" Role="TipoAcceso" Multiplicity="1" />
+          <End Type="SGA_GestionAccesoModel.SolicitudAcceso" Role="SolicitudAcceso" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TipoAcceso">
+              <PropertyRef Name="IdTipoAcceso" />
+            </Principal>
+            <Dependent Role="SolicitudAcceso">
+              <PropertyRef Name="IdTipoAcceso" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Sucursal_Ubigeo">
+          <End Type="SGA_GestionAccesoModel.Ubigeo" Role="Ubigeo" Multiplicity="1" />
+          <End Type="SGA_GestionAccesoModel.Sucursal" Role="Sucursal" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Ubigeo">
+              <PropertyRef Name="CodUbigeo" />
+            </Principal>
+            <Dependent Role="Sucursal">
+              <PropertyRef Name="CodUbigeo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <ComplexType Name="ListarSolicitudReporte">
+          <Property Type="String" Name="NroSolicitud" Nullable="false" MaxLength="10" />
+          <Property Type="DateTime" Name="FechaRegistro" Nullable="false" />
+          <Property Type="DateTime" Name="FechaCierre" Nullable="true" />
+          <Property Type="String" Name="NombreEstado" Nullable="true" MaxLength="50" />
+          <Property Type="Int32" Name="Atención" Nullable="true" />
+          <Property Type="String" Name="Solicitante" Nullable="true" MaxLength="302" />
+          <Property Type="String" Name="Autorizante" Nullable="true" MaxLength="302" />
+          <Property Type="String" Name="NombreAgencia" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="Departamento" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="Provincia" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="Distrito" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="Especialista" Nullable="true" MaxLength="302" />
+          <Property Type="Int32" Name="Mes" Nullable="true" />
+          <Property Type="Int32" Name="Año" Nullable="true" />
+        </ComplexType>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="SGA_GestionAccesoModelStoreContainer" CdmEntityContainer="SGA_GestionAccesoEntities">
+          <EntitySetMapping Name="Agencia">
+            <EntityTypeMapping TypeName="SGA_GestionAccesoModel.Agencia">
+              <MappingFragment StoreEntitySet="Agencia">
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+                <ScalarProperty Name="Nemotecnico_ag" ColumnName="Nemotecnico_ag" />
+                <ScalarProperty Name="RUC" ColumnName="RUC" />
+                <ScalarProperty Name="IdRepresentante" ColumnName="IdRepresentante" />
+                <ScalarProperty Name="NombreAgencia" ColumnName="NombreAgencia" />
+                <ScalarProperty Name="IdAgencia" ColumnName="IdAgencia" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Aplicacion">
+            <EntityTypeMapping TypeName="SGA_GestionAccesoModel.Aplicacion">
+              <MappingFragment StoreEntitySet="Aplicacion">
+                <ScalarProperty Name="IdLogicaGeneracionUsuario" ColumnName="IdLogicaGeneracionUsuario" />
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+                <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+                <ScalarProperty Name="UsuarioCreacion" ColumnName="UsuarioCreacion" />
+                <ScalarProperty Name="NombreAplicacion" ColumnName="NombreAplicacion" />
+                <ScalarProperty Name="IdAplicacion" ColumnName="IdAplicacion" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="apps">
+            <EntityTypeMapping TypeName="SGA_GestionAccesoModel.apps">
+              <MappingFragment StoreEntitySet="apps">
+                <ScalarProperty Name="pcid" ColumnName="pcid" />
+                <ScalarProperty Name="InstallDate" ColumnName="InstallDate" />
+                <ScalarProperty Name="Publisher" ColumnName="Publisher" />
+                <ScalarProperty Name="Version" ColumnName="Version" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Aprovisionamiento">
+            <EntityTypeMapping TypeName="SGA_GestionAccesoModel.Aprovisionamiento">
+              <MappingFragment StoreEntitySet="Aprovisionamiento">
+                <ScalarProperty Name="EstadoActivo" ColumnName="EstadoActivo" />
+                <ScalarProperty Name="FechaAprovisionamiento" ColumnName="FechaAprovisionamiento" />
+                <ScalarProperty Name="IdSolicitud" ColumnName="IdSolicitud" />
+                <ScalarProperty Name="NumeroCertificado" ColumnName="NumeroCertificado" />
+                <ScalarProperty Name="IdAprovisionamiento" ColumnName="IdAprovisionamiento" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Autorizante">
+            <EntityTypeMapping TypeName="SGA_GestionAccesoModel.Autorizante">
+              <MappingFragment StoreEntitySet="Autorizante">
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+                <ScalarProperty Name="IdPersona" ColumnName="IdPersona" />
+                <ScalarProperty Name="CodAutorizador" ColumnName="CodAutorizador" />
+                <ScalarProperty Name="FechaCese" ColumnName="FechaCese" />
+                <ScalarProperty Name="FechaIngreso" ColumnName="FechaIngreso" />
+                <ScalarProperty Name="IdAutorizante" ColumnName="IdAutorizante" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DatosEscaneoValidador">
+            <EntityTypeMapping TypeName="SGA_GestionAccesoModel.DatosEscaneoValidador">
+              <MappingFragment StoreEntitySet="DatosEscaneoValidador">
+                <ScalarProperty Name="EstadoActivo" ColumnName="EstadoActivo" />
+                <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+                <ScalarProperty Name="ArchivoEscaneado" ColumnName="ArchivoEscaneado" />
+                <ScalarProperty Name="IdDetEscaneoValidacion" ColumnName="IdDetEscaneoValidacion" />
+                <ScalarProperty Name="IdDatoEscaneoValidador" ColumnName="IdDatoEscaneoValidador" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DetalleAprovisionamiento">
+            <EntityTypeMapping TypeName="SGA_GestionAccesoModel.DetalleAprovisionamiento">
+              <MappingFragment StoreEntitySet="DetalleAprovisionamiento">
+                <ScalarProperty Name="EstadoActivo" ColumnName="EstadoActivo" />
+                <ScalarProperty Name="IdEstado" ColumnName="IdEstado" />
+                <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+                <ScalarProperty Name="ClaveGenerada" ColumnName="ClaveGenerada" />
+                <ScalarProperty Name="CuentaUsuario" ColumnName="CuentaUsuario" />
+                <ScalarProperty Name="IdAplicacion" ColumnName="IdAplicacion" />
+                <ScalarProperty Name="IdPersona" ColumnName="IdPersona" />
+                <ScalarProperty Name="IdAprovisionamiento" ColumnName="IdAprovisionamiento" />
+                <ScalarProperty Name="IdDetAprovisionamiento" ColumnName="IdDetAprovisionamiento" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DetalleEscaneoValidador">
+            <EntityTypeMapping TypeName="SGA_GestionAccesoModel.DetalleEscaneoValidador">
+              <MappingFragment StoreEntitySet="DetalleEscaneoValidador">
+                <ScalarProperty Name="EstadoActivo" ColumnName="EstadoActivo" />
+                <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+                <ScalarProperty Name="EstadoEscaneo" ColumnName="EstadoEscaneo" />
+                <ScalarProperty Name="FechaHoraEscaneo" ColumnName="FechaHoraEscaneo" />
+                <ScalarProperty Name="IdDetAgenValidador" ColumnName="IdDetAgenValidador" />
+                <ScalarProperty Name="IdEscaneoAgenciaSuc" ColumnName="IdEscaneoAgenciaSuc" />
+                <ScalarProperty Name="IdDetEscaneoValidacion" ColumnName="IdDetEscaneoValidacion" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DetalleGenAgenValidador">
+            <EntityTypeMapping TypeName="SGA_GestionAccesoModel.DetalleGenAgenValidador">
+              <MappingFragment StoreEntitySet="DetalleGenAgenValidador">
+                <ScalarProperty Name="NombreValidador" ColumnName="NombreValidador" />
+                <ScalarProperty Name="RutaValidador" ColumnName="RutaValidador" />
+                <ScalarProperty Name="EstadoActivo" ColumnName="EstadoActivo" />
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+                <ScalarProperty Name="FechaCaducidad" ColumnName="FechaCaducidad" />
+                <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+                <ScalarProperty Name="Activador" ColumnName="Activador" />
+                <ScalarProperty Name="CodGenerado" ColumnName="CodGenerado" />
+                <ScalarProperty Name="IdGenAgenteValidador" ColumnName="IdGenAgenteValidador" />
+                <ScalarProperty Name="IdDetAgenValidador" ColumnName="IdDetAgenValidador" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DetalleSolicAplicaPuesto">
+            <EntityTypeMapping TypeName="SGA_GestionAccesoModel.DetalleSolicAplicaPuesto">
+              <MappingFragment StoreEntitySet="DetalleSolicAplicaPuesto">
+                <ScalarProperty Name="EstadoActivo" ColumnName="EstadoActivo" />
+                <ScalarProperty Name="IdPuesto" ColumnName="IdPuesto" />
+                <ScalarProperty Name="IdAplicacion" ColumnName="IdAplicacion" />
+                <ScalarProperty Name="FechaRegistro" ColumnName="FechaRegistro" />
+                <ScalarProperty Name="IdDetalleSolicitudAcceso" ColumnName="IdDetalleSolicitudAcceso" />
+                <ScalarProperty Name="IdDetSolicAplicaPuesto" ColumnName="IdDetSolicAplicaPuesto" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DetalleSolicitudAcceso">
+            <EntityTypeMapping TypeName="SGA_GestionAccesoModel.DetalleSolicitudAcceso">
+              <MappingFragment StoreEntitySet="DetalleSolicitudAcceso">
+                <ScalarProperty Name="ObservacionValidacion" ColumnName="ObservacionValidacion" />
+                <ScalarProperty Name="IdEstado" ColumnName="IdEstado" />
+                <ScalarProperty Name="EstadoActivo" ColumnName="EstadoActivo" />
+                <ScalarProperty Name="FechaRegistro" ColumnName="FechaRegistro" />
+                <ScalarProperty Name="IdPersona" ColumnName="IdPersona" />
+                <ScalarProperty Name="IdSolicitudAcceso" ColumnName="IdSolicitudAcceso" />
+                <ScalarProperty Name="IdDetalleSolicitudAcceso" ColumnName="IdDetalleSolicitudAcceso" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EscaneoAgenciaSucursal">
+            <EntityTypeMapping TypeName="SGA_GestionAccesoModel.EscaneoAgenciaSucursal">
+              <MappingFragment StoreEntitySet="EscaneoAgenciaSucursal">
+                <ScalarProperty Name="EstadoActivo" ColumnName="EstadoActivo" />
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+                <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+                <ScalarProperty Name="IdSucursal" ColumnName="IdSucursal" />
+                <ScalarProperty Name="IdAgencia" ColumnName="IdAgencia" />
+                <ScalarProperty Name="IdEscaneoAgenciaSuc" ColumnName="IdEscaneoAgenciaSuc" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Estado">
+            <EntityTypeMapping TypeName="SGA_GestionAccesoModel.Estado">
+              <MappingFragment StoreEntitySet="Estado">
+                <ScalarProperty Name="TipoEstado" ColumnName="TipoEstado" />
+                <ScalarProperty Name="EstadoActivo" ColumnName="EstadoActivo" />
+                <ScalarProperty Name="NombreEstado" ColumnName="NombreEstado" />
+                <ScalarProperty Name="IdEstado" ColumnName="IdEstado" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GenAgenValidador">
+            <EntityTypeMapping TypeName="SGA_GestionAccesoModel.GenAgenValidador">
+              <MappingFragment StoreEntitySet="GenAgenValidador">
+                <ScalarProperty Name="EstadoActivo" ColumnName="EstadoActivo" />
+                <ScalarProperty Name="IdEstadoGeneracion" ColumnName="IdEstadoGeneracion" />
+                <ScalarProperty Name="IdUsuarioCreacion" ColumnName="IdUsuarioCreacion" />
+                <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+                <ScalarProperty Name="IdSolicitud" ColumnName="IdSolicitud" />
+                <ScalarProperty Name="IdGenAgenteValidador" ColumnName="IdGenAgenteValidador" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Menu">
+            <EntityTypeMapping TypeName="SGA_GestionAccesoModel.Menu">
+              <MappingFragment StoreEntitySet="Menu">
+                <ScalarProperty Name="EstadoMenu" ColumnName="EstadoMenu" />
+                <ScalarProperty Name="IdMenuPadre" ColumnName="IdMenuPadre" />
+                <ScalarProperty Name="UrlMenu" ColumnName="UrlMenu" />
+                <ScalarProperty Name="EtiquetaMenu" ColumnName="EtiquetaMenu" />
+                <ScalarProperty Name="DescripcionMenu" ColumnName="DescripcionMenu" />
+                <ScalarProperty Name="NombreFisicoMenu" ColumnName="NombreFisicoMenu" />
+                <ScalarProperty Name="IdMenu" ColumnName="IdMenu" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ParametroGeneracionCuenta">
+            <EntityTypeMapping TypeName="SGA_GestionAccesoModel.ParametroGeneracionCuenta">
+              <MappingFragment StoreEntitySet="ParametroGeneracionCuenta">
+                <ScalarProperty Name="EstadoActivo" ColumnName="EstadoActivo" />
+                <ScalarProperty Name="FechaRegistro" ColumnName="FechaRegistro" />
+                <ScalarProperty Name="Correlativo" ColumnName="Correlativo" />
+                <ScalarProperty Name="LongitudCuenta" ColumnName="LongitudCuenta" />
+                <ScalarProperty Name="Prefijo" ColumnName="Prefijo" />
+                <ScalarProperty Name="DescripcionParametro" ColumnName="DescripcionParametro" />
+                <ScalarProperty Name="IdParametro" ColumnName="IdParametro" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PermisoMenu">
+            <EntityTypeMapping TypeName="SGA_GestionAccesoModel.PermisoMenu">
+              <MappingFragment StoreEntitySet="PermisoMenu">
+                <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+                <ScalarProperty Name="EstadoPermisoMenu" ColumnName="EstadoPermisoMenu" />
+                <ScalarProperty Name="IdRol" ColumnName="IdRol" />
+                <ScalarProperty Name="IdMenu" ColumnName="IdMenu" />
+                <ScalarProperty Name="IdPermisoMenu" ColumnName="IdPermisoMenu" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PermisoUsuario">
+            <EntityTypeMapping TypeName="SGA_GestionAccesoModel.PermisoUsuario">
+              <MappingFragment StoreEntitySet="PermisoUsuario">
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+                <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+                <ScalarProperty Name="IdUsuarioCreacion" ColumnName="IdUsuarioCreacion" />
+                <ScalarProperty Name="IdRol" ColumnName="IdRol" />
+                <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
+                <ScalarProperty Name="IdPermisoUsuario" ColumnName="IdPermisoUsuario" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Persona">
+            <EntityTypeMapping TypeName="SGA_GestionAccesoModel.Persona">
+              <MappingFragment StoreEntitySet="Persona">
+                <ScalarProperty Name="Correo" ColumnName="Correo" />
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+                <ScalarProperty Name="DocumentoIdentidad" ColumnName="DocumentoIdentidad" />
+                <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+                <ScalarProperty Name="ApeMaterno" ColumnName="ApeMaterno" />
+                <ScalarProperty Name="ApePaterno" ColumnName="ApePaterno" />
+                <ScalarProperty Name="Nombres" ColumnName="Nombres" />
+                <ScalarProperty Name="IdPersona" ColumnName="IdPersona" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="procesos">
+            <EntityTypeMapping TypeName="SGA_GestionAccesoModel.procesos">
+              <MappingFragment StoreEntitySet="procesos">
+                <ScalarProperty Name="pcid" ColumnName="pcid" />
+                <ScalarProperty Name="pid" ColumnName="pid" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Puesto">
+            <EntityTypeMapping TypeName="SGA_GestionAccesoModel.Puesto">
+              <MappingFragment StoreEntitySet="Puesto">
+                <ScalarProperty Name="IdAplicacion" ColumnName="IdAplicacion" />
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+                <ScalarProperty Name="Fl_Critico" ColumnName="Fl_Critico" />
+                <ScalarProperty Name="IdResponsable" ColumnName="IdResponsable" />
+                <ScalarProperty Name="UsuarioCreacion" ColumnName="UsuarioCreacion" />
+                <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+                <ScalarProperty Name="NombrePuesto" ColumnName="NombrePuesto" />
+                <ScalarProperty Name="IdPuesto" ColumnName="IdPuesto" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ResultadoValidacionEquipo">
+            <EntityTypeMapping TypeName="SGA_GestionAccesoModel.ResultadoValidacionEquipo">
+              <MappingFragment StoreEntitySet="ResultadoValidacionEquipo">
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+                <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+                <ScalarProperty Name="pcid" ColumnName="pcid" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Rol">
+            <EntityTypeMapping TypeName="SGA_GestionAccesoModel.Rol">
+              <MappingFragment StoreEntitySet="Rol">
+                <ScalarProperty Name="EstadoRol" ColumnName="EstadoRol" />
+                <ScalarProperty Name="DescripcionRol" ColumnName="DescripcionRol" />
+                <ScalarProperty Name="NombreRol" ColumnName="NombreRol" />
+                <ScalarProperty Name="IdRol" ColumnName="IdRol" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SolicitudAcceso">
+            <EntityTypeMapping TypeName="SGA_GestionAccesoModel.SolicitudAcceso">
+              <MappingFragment StoreEntitySet="SolicitudAcceso">
+                <ScalarProperty Name="FechaCierre" ColumnName="FechaCierre" />
+                <ScalarProperty Name="IdEspecialista" ColumnName="IdEspecialista" />
+                <ScalarProperty Name="NumEquipos" ColumnName="NumEquipos" />
+                <ScalarProperty Name="FechaValidacion" ColumnName="FechaValidacion" />
+                <ScalarProperty Name="IdSucursal" ColumnName="IdSucursal" />
+                <ScalarProperty Name="IdAgencia" ColumnName="IdAgencia" />
+                <ScalarProperty Name="EstadoActivo" ColumnName="EstadoActivo" />
+                <ScalarProperty Name="IdEstado" ColumnName="IdEstado" />
+                <ScalarProperty Name="FechaAsignacion" ColumnName="FechaAsignacion" />
+                <ScalarProperty Name="IdAutorizante" ColumnName="IdAutorizante" />
+                <ScalarProperty Name="IdSolicitante" ColumnName="IdSolicitante" />
+                <ScalarProperty Name="IdTipoAcceso" ColumnName="IdTipoAcceso" />
+                <ScalarProperty Name="UsuarioCreacion" ColumnName="UsuarioCreacion" />
+                <ScalarProperty Name="FechaRegistro" ColumnName="FechaRegistro" />
+                <ScalarProperty Name="NroSolicitud" ColumnName="NroSolicitud" />
+                <ScalarProperty Name="IdSolicitudAcceso" ColumnName="IdSolicitudAcceso" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Sucursal">
+            <EntityTypeMapping TypeName="SGA_GestionAccesoModel.Sucursal">
+              <MappingFragment StoreEntitySet="Sucursal">
+                <ScalarProperty Name="CodUbigeo" ColumnName="CodUbigeo" />
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+                <ScalarProperty Name="IdAgencia" ColumnName="IdAgencia" />
+                <ScalarProperty Name="DireccionSucursal" ColumnName="DireccionSucursal" />
+                <ScalarProperty Name="NombreSucursal" ColumnName="NombreSucursal" />
+                <ScalarProperty Name="IdSucursal" ColumnName="IdSucursal" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SwMalicioso">
+            <EntityTypeMapping TypeName="SGA_GestionAccesoModel.SwMalicioso">
+              <MappingFragment StoreEntitySet="SwMalicioso">
+                <ScalarProperty Name="TipoPrograma" ColumnName="TipoPrograma" />
+                <ScalarProperty Name="NombrePrograma" ColumnName="NombrePrograma" />
+                <ScalarProperty Name="idPrograma" ColumnName="idPrograma" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TipoAcceso">
+            <EntityTypeMapping TypeName="SGA_GestionAccesoModel.TipoAcceso">
+              <MappingFragment StoreEntitySet="TipoAcceso">
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="IdTipoAcceso" ColumnName="IdTipoAcceso" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Ubigeo">
+            <EntityTypeMapping TypeName="SGA_GestionAccesoModel.Ubigeo">
+              <MappingFragment StoreEntitySet="Ubigeo">
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+                <ScalarProperty Name="Distrito" ColumnName="Distrito" />
+                <ScalarProperty Name="Provincia" ColumnName="Provincia" />
+                <ScalarProperty Name="Departamento" ColumnName="Departamento" />
+                <ScalarProperty Name="Pais" ColumnName="Pais" />
+                <ScalarProperty Name="CodUbigeo" ColumnName="CodUbigeo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UsuarioObservado">
+            <EntityTypeMapping TypeName="SGA_GestionAccesoModel.UsuarioObservado">
+              <MappingFragment StoreEntitySet="UsuarioObservado">
+                <ScalarProperty Name="EstadoActivo" ColumnName="EstadoActivo" />
+                <ScalarProperty Name="FechaRegistro" ColumnName="FechaRegistro" />
+                <ScalarProperty Name="IdAplicacion" ColumnName="IdAplicacion" />
+                <ScalarProperty Name="IdPersona" ColumnName="IdPersona" />
+                <ScalarProperty Name="IdUsuarioObservado" ColumnName="IdUsuarioObservado" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UsuarioSistema">
+            <EntityTypeMapping TypeName="SGA_GestionAccesoModel.UsuarioSistema">
+              <MappingFragment StoreEntitySet="UsuarioSistema">
+                <ScalarProperty Name="IdPersona" ColumnName="IdPersona" />
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+                <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+                <ScalarProperty Name="ClaveUsuario" ColumnName="ClaveUsuario" />
+                <ScalarProperty Name="CodUsuario" ColumnName="CodUsuario" />
+                <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="xmls">
+            <EntityTypeMapping TypeName="SGA_GestionAccesoModel.xmls">
+              <MappingFragment StoreEntitySet="xmls">
+                <ScalarProperty Name="servicePack" ColumnName="servicePack" />
+                <ScalarProperty Name="operatingSystem" ColumnName="operatingSystem" />
+                <ScalarProperty Name="systemArquitecture" ColumnName="systemArquitecture" />
+                <ScalarProperty Name="memoryRam" ColumnName="memoryRam" />
+                <ScalarProperty Name="cpuInfo" ColumnName="cpuInfo" />
+                <ScalarProperty Name="userName" ColumnName="userName" />
+                <ScalarProperty Name="idComputer" ColumnName="idComputer" />
+                <ScalarProperty Name="ip" ColumnName="ip" />
+                <ScalarProperty Name="fconexion" ColumnName="fconexion" />
+                <ScalarProperty Name="estado" ColumnName="estado" />
+                <ScalarProperty Name="faprobacion" ColumnName="faprobacion" />
+                <ScalarProperty Name="fsolicitud" ColumnName="fsolicitud" />
+                <ScalarProperty Name="idsolicitud" ColumnName="idsolicitud" />
+                <ScalarProperty Name="idagente" ColumnName="idagente" />
+                <ScalarProperty Name="pcname" ColumnName="pcname" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="ListarSolicitudReporte" FunctionName="SGA_GestionAccesoModel.Store.ListarSolicitudReporte">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="SGA_GestionAccesoModel.ListarSolicitudReporte">
+                <ScalarProperty Name="NroSolicitud" ColumnName="NroSolicitud" />
+                <ScalarProperty Name="FechaRegistro" ColumnName="FechaRegistro" />
+                <ScalarProperty Name="FechaCierre" ColumnName="FechaCierre" />
+                <ScalarProperty Name="NombreEstado" ColumnName="NombreEstado" />
+                <ScalarProperty Name="Atención" ColumnName="Atención" />
+                <ScalarProperty Name="Solicitante" ColumnName="Solicitante" />
+                <ScalarProperty Name="Autorizante" ColumnName="Autorizante" />
+                <ScalarProperty Name="NombreAgencia" ColumnName="NombreAgencia" />
+                <ScalarProperty Name="Departamento" ColumnName="Departamento" />
+                <ScalarProperty Name="Provincia" ColumnName="Provincia" />
+                <ScalarProperty Name="Distrito" ColumnName="Distrito" />
+                <ScalarProperty Name="Especialista" ColumnName="Especialista" />
+                <ScalarProperty Name="Mes" ColumnName="Mes" />
+                <ScalarProperty Name="Año" ColumnName="Año" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="SGA_GestionAcceso">
+        <EntityTypeShape EntityType="SGA_GestionAccesoModel.Agencia" Width="1.5" PointX="3" PointY="11.625" Height="2.7494921875000102" />
+        <EntityTypeShape EntityType="SGA_GestionAccesoModel.Aplicacion" Width="1.5" PointX="7.5" PointY="0.75" Height="2.7494921875000102" />
+        <EntityTypeShape EntityType="SGA_GestionAccesoModel.apps" Width="1.5" PointX="14" PointY="2.375" Height="2.3648893229166674" />
+        <EntityTypeShape EntityType="SGA_GestionAccesoModel.Aprovisionamiento" Width="1.5" PointX="7.5" PointY="4.875" Height="2.3648893229166674" />
+        <EntityTypeShape EntityType="SGA_GestionAccesoModel.Autorizante" Width="1.5" PointX="3" PointY="4.875" Height="2.5571907552083388" />
+        <EntityTypeShape EntityType="SGA_GestionAccesoModel.DatosEscaneoValidador" Width="1.5" PointX="9.75" PointY="17.125" Height="2.172587890624996" />
+        <EntityTypeShape EntityType="SGA_GestionAccesoModel.DetalleAprovisionamiento" Width="1.5" PointX="9.75" PointY="5.5" Height="3.3263964843750102" />
+        <EntityTypeShape EntityType="SGA_GestionAccesoModel.DetalleEscaneoValidador" Width="1.5" PointX="7.5" PointY="16.75" Height="2.9417936197916674" />
+        <EntityTypeShape EntityType="SGA_GestionAccesoModel.DetalleGenAgenValidador" Width="1.5" PointX="5.25" PointY="18.625" Height="3.1340950520833246" />
+        <EntityTypeShape EntityType="SGA_GestionAccesoModel.DetalleSolicAplicaPuesto" Width="1.5" PointX="9.75" PointY="10.125" Height="2.7494921875000102" />
+        <EntityTypeShape EntityType="SGA_GestionAccesoModel.DetalleSolicitudAcceso" Width="1.5" PointX="7.5" PointY="9" Height="2.9417936197916674" />
+        <EntityTypeShape EntityType="SGA_GestionAccesoModel.EscaneoAgenciaSucursal" Width="1.5" PointX="5.25" PointY="14.875" Height="2.749492187499996" />
+        <EntityTypeShape EntityType="SGA_GestionAccesoModel.Estado" Width="1.5" PointX="3" PointY="15.125" Height="1.9802864583333388" />
+        <EntityTypeShape EntityType="SGA_GestionAccesoModel.GenAgenValidador" Width="1.5" PointX="9.75" PointY="14" Height="2.1725878906250102" />
+        <EntityTypeShape EntityType="SGA_GestionAccesoModel.Menu" Width="1.5" PointX="11.75" PointY="20.875" Height="2.557190755208353" />
+        <EntityTypeShape EntityType="SGA_GestionAccesoModel.ParametroGeneracionCuenta" Width="1.5" PointX="16.75" PointY="2" Height="2.3648893229166674" />
+        <EntityTypeShape EntityType="SGA_GestionAccesoModel.PermisoMenu" Width="1.5" PointX="14" PointY="10.875" Height="2.3648893229166674" />
+        <EntityTypeShape EntityType="SGA_GestionAccesoModel.PermisoUsuario" Width="1.5" PointX="14" PointY="14" Height="2.3648893229166656" />
+        <EntityTypeShape EntityType="SGA_GestionAccesoModel.Persona" Width="1.5" PointX="0.75" PointY="6" Height="3.3263964843749818" />
+        <EntityTypeShape EntityType="SGA_GestionAccesoModel.procesos" Width="1.5" PointX="14" PointY="5.5" Height="1.980286458333353" />
+        <EntityTypeShape EntityType="SGA_GestionAccesoModel.Puesto" Width="1.5" PointX="7.5" PointY="13" Height="2.9417936197916674" />
+        <EntityTypeShape EntityType="SGA_GestionAccesoModel.ResultadoValidacionEquipo" Width="1.5" PointX="0.75" PointY="2" Height="1.7879850260416674" />
+        <EntityTypeShape EntityType="SGA_GestionAccesoModel.Rol" Width="1.5" PointX="11.75" PointY="11" Height="2.1725878906249818" />
+        <EntityTypeShape EntityType="SGA_GestionAccesoModel.SolicitudAcceso" Width="1.5" PointX="5.25" PointY="3.625" Height="5.0571093749999818" />
+        <EntityTypeShape EntityType="SGA_GestionAccesoModel.Sucursal" Width="1.5" PointX="3" PointY="17.875" Height="2.9417936197916674" />
+        <EntityTypeShape EntityType="SGA_GestionAccesoModel.SwMalicioso" Width="1.5" PointX="16.75" PointY="6" Height="1.5956835937499818" />
+        <EntityTypeShape EntityType="SGA_GestionAccesoModel.TipoAcceso" Width="1.5" PointX="3" PointY="21.5" Height="1.7879850260416674" />
+        <EntityTypeShape EntityType="SGA_GestionAccesoModel.Ubigeo" Width="1.5" PointX="0.75" PointY="18.125" Height="2.3648893229166674" />
+        <EntityTypeShape EntityType="SGA_GestionAccesoModel.UsuarioObservado" Width="1.5" PointX="16.75" PointY="9" Height="1.9802864583333246" />
+        <EntityTypeShape EntityType="SGA_GestionAccesoModel.UsuarioSistema" Width="1.5" PointX="3" PointY="8.125" Height="2.3648893229166674" />
+        <EntityTypeShape EntityType="SGA_GestionAccesoModel.xmls" Width="1.5" PointX="11.75" PointY="2.625" Height="4.4802050781249818" />
+        <AssociationConnector Association="SGA_GestionAccesoModel.FK_EscaneoAgenciaSucursal_Agencia" >
+          <ConnectorPoint PointX="4.5" PointY="12.999746093750005" />
+          <ConnectorPoint PointX="4.979166666666667" PointY="12.999746093750003" />
+          <ConnectorPoint PointX="5.270833333333333" PointY="12.999746093750005" />
+          <ConnectorPoint PointX="6" PointY="12.999746093750005" />
+          <ConnectorPoint PointX="6" PointY="14.875" />
+        </AssociationConnector>
+        <AssociationConnector Association="SGA_GestionAccesoModel.FK_SolicitudAcceso_Agencia" >
+          <ConnectorPoint PointX="4.5" PointY="12.281120546875009" />
+          <ConnectorPoint PointX="4.979166666666667" PointY="12.281120546875007" />
+          <ConnectorPoint PointX="5.270833333333333" PointY="12.281120546875009" />
+          <ConnectorPoint PointX="5.625" PointY="12.281120546875009" />
+          <ConnectorPoint PointX="5.625" PointY="8.6821093749999818" />
+        </AssociationConnector>
+        <AssociationConnector Association="SGA_GestionAccesoModel.FK_Sucursal_Agencia" >
+          <ConnectorPoint PointX="4.5" PointY="14.37449218750001" />
+          <ConnectorPoint PointX="4.90625" PointY="14.78074218750001" />
+          <ConnectorPoint PointX="4.90625" PointY="17.431826923076922" />
+          <ConnectorPoint PointX="4.4630769230769225" PointY="17.875" />
+        </AssociationConnector>
+        <AssociationConnector Association="SGA_GestionAccesoModel.FK_DetalleAprovisionamiento_Aplicacion" >
+          <ConnectorPoint PointX="9" PointY="2.1247460937500051" />
+          <ConnectorPoint PointX="10.5" PointY="2.1247460937500051" />
+          <ConnectorPoint PointX="10.5" PointY="5.5" />
+        </AssociationConnector>
+        <AssociationConnector Association="SGA_GestionAccesoModel.FK_DetalleSolicAplicaPuesto_Aplicacion" >
+          <ConnectorPoint PointX="9" PointY="3.498337341346164" />
+          <ConnectorPoint PointX="9.375" PointY="3.873337341346164" />
+          <ConnectorPoint PointX="9.375" PointY="11.499746093750005" />
+          <ConnectorPoint PointX="9.75" PointY="11.499746093750005" />
+        </AssociationConnector>
+        <AssociationConnector Association="SGA_GestionAccesoModel.FK_Puesto_Aplicacion" >
+          <ConnectorPoint PointX="7.5" PointY="3.4994921875000102" />
+          <ConnectorPoint PointX="7.125" PointY="3.8744921875000102" />
+          <ConnectorPoint PointX="7.125" PointY="12.623847153846153" />
+          <ConnectorPoint PointX="7.5011528461538459" PointY="13" />
+        </AssociationConnector>
+        <AssociationConnector Association="SGA_GestionAccesoModel.FK_apps_xmls" >
+          <ConnectorPoint PointX="13.25" PointY="3.6824446614583337" />
+          <ConnectorPoint PointX="14" PointY="3.6824446614583337" />
+        </AssociationConnector>
+        <AssociationConnector Association="SGA_GestionAccesoModel.FK_Aprovisionamiento_SolicitudAcceso" >
+          <ConnectorPoint PointX="6.75" PointY="6.0574446614583337" />
+          <ConnectorPoint PointX="7.041666666666667" PointY="6.0574446614583328" />
+          <ConnectorPoint PointX="7.208333333333333" PointY="6.0574446614583337" />
+          <ConnectorPoint PointX="7.5" PointY="6.0574446614583337" />
+        </AssociationConnector>
+        <AssociationConnector Association="SGA_GestionAccesoModel.FK_DetalleAprovisionamiento_Aprovisionamiento" >
+          <ConnectorPoint PointX="9" PointY="6.3699446614583337" />
+          <ConnectorPoint PointX="9.2916666666666661" PointY="6.3699446614583328" />
+          <ConnectorPoint PointX="9.4583333333333339" PointY="6.3699446614583337" />
+          <ConnectorPoint PointX="9.75" PointY="6.3699446614583337" />
+        </AssociationConnector>
+        <AssociationConnector Association="SGA_GestionAccesoModel.FK_Autorizante_Persona" >
+          <ConnectorPoint PointX="2.25" PointY="6.7160953776041694" />
+          <ConnectorPoint PointX="3" PointY="6.7160953776041694" />
+        </AssociationConnector>
+        <AssociationConnector Association="SGA_GestionAccesoModel.FK_SolicitudAcceso_Autorizante" >
+          <ConnectorPoint PointX="4.5" PointY="6.1535953776041694" />
+          <ConnectorPoint PointX="5.041666666666667" PointY="6.1535953776041685" />
+          <ConnectorPoint PointX="5.208333333333333" PointY="6.1535953776041694" />
+          <ConnectorPoint PointX="5.25" PointY="6.1535953776041694" />
+        </AssociationConnector>
+        <AssociationConnector Association="SGA_GestionAccesoModel.FK_DatosEscaneoValidador_DetalleEscaneoValidador" >
+          <ConnectorPoint PointX="9" PointY="18.211293945312498" />
+          <ConnectorPoint PointX="9.75" PointY="18.211293945312498" />
+        </AssociationConnector>
+        <AssociationConnector Association="SGA_GestionAccesoModel.FK_DetalleAprovisionamiento_Persona" >
+          <ConnectorPoint PointX="1.5" PointY="9.3263964843749818" />
+          <ConnectorPoint PointX="1.5" PointY="9.5763964843749818" />
+          <ConnectorPoint PointX="1.8229191666666667" PointY="9.5763964843749818" />
+          <ConnectorPoint PointX="1.9895858333333332" PointY="9.5763964843749818" />
+          <ConnectorPoint PointX="2.75" PointY="9.5763964843749818" />
+          <ConnectorPoint PointX="2.75" PointY="7.6821907552083388" />
+          <ConnectorPoint PointX="5" PointY="7.6821907552083388" />
+          <ConnectorPoint PointX="5" PointY="8.9321093749999818" />
+          <ConnectorPoint PointX="5.041666666666667" PointY="8.9321093749999818" />
+          <ConnectorPoint PointX="5.270833333333333" PointY="8.9321093749999818" />
+          <ConnectorPoint PointX="5.541666666666667" PointY="8.9321093749999818" />
+          <ConnectorPoint PointX="5.708333333333333" PointY="8.9321093749999818" />
+          <ConnectorPoint PointX="6.1354191666666669" PointY="8.9321093749999818" />
+          <ConnectorPoint PointX="6.3020858333333329" PointY="8.9321093749999818" />
+          <ConnectorPoint PointX="7.041666666666667" PointY="8.9321093749999818" />
+          <ConnectorPoint PointX="7.208333333333333" PointY="8.9321093749999818" />
+          <ConnectorPoint PointX="7.25" PointY="8.9321093749999818" />
+          <ConnectorPoint PointX="7.25" PointY="8.75" />
+          <ConnectorPoint PointX="9.125" PointY="8.75" />
+          <ConnectorPoint PointX="9.125" PointY="7.629422572916666" />
+          <ConnectorPoint PointX="9.2916666666666661" PointY="7.6294225729166651" />
+          <ConnectorPoint PointX="9.4583333333333339" PointY="7.629422572916666" />
+          <ConnectorPoint PointX="9.75" PointY="7.629422572916666" />
+        </AssociationConnector>
+        <AssociationConnector Association="SGA_GestionAccesoModel.FK_DetalleEscaneoValidador_DetalleGenAgenValidador" >
+          <ConnectorPoint PointX="6.75" PointY="19.158396809895834" />
+          <ConnectorPoint PointX="7.5" PointY="19.158396809895834" />
+        </AssociationConnector>
+        <AssociationConnector Association="SGA_GestionAccesoModel.FK_DetalleEscaneoValidador_EscaneoAgenciaSucursal" >
+          <ConnectorPoint PointX="6.75" PointY="17.187246093749998" />
+          <ConnectorPoint PointX="7.5" PointY="17.187246093749998" />
+        </AssociationConnector>
+        <AssociationConnector Association="SGA_GestionAccesoModel.FK_DetalleSolicAplicaPuesto_DetalleSolicitudAcceso" >
+          <ConnectorPoint PointX="9" PointY="10.749873046875003" />
+          <ConnectorPoint PointX="9.2916666666666661" PointY="10.749873046875003" />
+          <ConnectorPoint PointX="9.4583333333333339" PointY="10.749873046875003" />
+          <ConnectorPoint PointX="9.75" PointY="10.749873046875003" />
+        </AssociationConnector>
+        <AssociationConnector Association="SGA_GestionAccesoModel.FK_DetalleSolicAplicaPuesto_Puesto" >
+          <ConnectorPoint PointX="9" PointY="13" />
+          <ConnectorPoint PointX="9.375" PointY="12.625" />
+          <ConnectorPoint PointX="9.375" PointY="13.24949218750001" />
+          <ConnectorPoint PointX="9.75" PointY="12.87449218750001" />
+        </AssociationConnector>
+        <AssociationConnector Association="SGA_GestionAccesoModel.FK_DetalleSolicitudAcceso_Persona" >
+          <ConnectorPoint PointX="1.9062525" PointY="9.3263964843749818" />
+          <ConnectorPoint PointX="1.9062525" PointY="11.057444661458334" />
+          <ConnectorPoint PointX="4.979166666666667" PointY="11.057444661458332" />
+          <ConnectorPoint PointX="5.270833333333333" PointY="11.057444661458334" />
+          <ConnectorPoint PointX="5.541666666666667" PointY="11.057444661458334" />
+          <ConnectorPoint PointX="5.708333333333333" PointY="11.057444661458334" />
+          <ConnectorPoint PointX="7.041666666666667" PointY="11.057444661458334" />
+          <ConnectorPoint PointX="7.208333333333333" PointY="11.057444661458334" />
+          <ConnectorPoint PointX="7.5" PointY="11.057444661458334" />
+        </AssociationConnector>
+        <AssociationConnector Association="SGA_GestionAccesoModel.FK_DetalleSolicitudAcceso_SolicitudAcceso" >
+          <ConnectorPoint PointX="6.2187525" PointY="8.6821093749999818" />
+          <ConnectorPoint PointX="6.2187525" PointY="9.9974698307291732" />
+          <ConnectorPoint PointX="7.041666666666667" PointY="9.9974698307291732" />
+          <ConnectorPoint PointX="7.208333333333333" PointY="9.9974698307291732" />
+          <ConnectorPoint PointX="7.5" PointY="9.9974698307291732" />
+        </AssociationConnector>
+        <AssociationConnector Association="SGA_GestionAccesoModel.FK_EscaneoAgenciaSucursal_Sucursal" >
+          <ConnectorPoint PointX="4.5" PointY="17.913075923076921" />
+          <ConnectorPoint PointX="4.75" PointY="17.663075923076921" />
+          <ConnectorPoint PointX="4.75" PointY="18.125645033653843" />
+          <ConnectorPoint PointX="5.1285744349011209" PointY="17.747070598752725" />
+          <ConnectorPoint PointX="5.2464255650988791" PointY="17.629219468554968" />
+          <ConnectorPoint PointX="5.2511528461538459" PointY="17.624492187499996" />
+        </AssociationConnector>
+        <AssociationConnector Association="SGA_GestionAccesoModel.FK_SolicitudAcceso_Estado" >
+          <ConnectorPoint PointX="4.5" PointY="15.126152846153847" />
+          <ConnectorPoint PointX="5.0035744349011209" PointY="14.622578411252725" />
+          <ConnectorPoint PointX="5.1214255650988791" PointY="14.504727281054969" />
+          <ConnectorPoint PointX="5.125" PointY="14.501152846153847" />
+          <ConnectorPoint PointX="5.125" PointY="4.8580456888020915" />
+          <ConnectorPoint PointX="5.25" PointY="4.8580456888020915" />
+        </AssociationConnector>
+        <AssociationConnector Association="SGA_GestionAccesoModel.FK_PermisoMenu_Menu" >
+          <ConnectorPoint PointX="13.25" PointY="20.875" />
+          <ConnectorPoint PointX="13.625" PointY="20.5" />
+          <ConnectorPoint PointX="13.625" PointY="12.057444661458334" />
+          <ConnectorPoint PointX="14" PointY="12.057444661458334" />
+        </AssociationConnector>
+        <AssociationConnector Association="SGA_GestionAccesoModel.FK_PermisoMenu_Rol" >
+          <ConnectorPoint PointX="13.25" PointY="12.677516276041658" />
+          <ConnectorPoint PointX="13.541666666666666" PointY="12.677516276041658" />
+          <ConnectorPoint PointX="13.708333333333334" PointY="12.677516276041658" />
+          <ConnectorPoint PointX="14" PointY="12.677516276041658" />
+        </AssociationConnector>
+        <AssociationConnector Association="SGA_GestionAccesoModel.FK_PermisoUsuario_Rol" >
+          <ConnectorPoint PointX="12.5" PointY="13.172587890624982" />
+          <ConnectorPoint PointX="12.5" PointY="15.182444661458334" />
+          <ConnectorPoint PointX="13.541666666666666" PointY="15.182444661458334" />
+          <ConnectorPoint PointX="13.708333333333334" PointY="15.182444661458334" />
+          <ConnectorPoint PointX="14" PointY="15.182444661458334" />
+        </AssociationConnector>
+        <AssociationConnector Association="SGA_GestionAccesoModel.FK_UsuarioSistema_Persona" >
+          <ConnectorPoint PointX="2.25" PointY="8.7256982421874909" />
+          <ConnectorPoint PointX="2.6666666666666665" PointY="8.7256982421874909" />
+          <ConnectorPoint PointX="2.8333333333333335" PointY="8.7256982421874909" />
+          <ConnectorPoint PointX="3" PointY="8.7256982421874909" />
+        </AssociationConnector>
+        <AssociationConnector Association="SGA_GestionAccesoModel.FK_procesos_xmls" >
+          <ConnectorPoint PointX="13.25" PointY="6.3026025390624909" />
+          <ConnectorPoint PointX="14" PointY="6.3026025390624909" />
+        </AssociationConnector>
+        <AssociationConnector Association="SGA_GestionAccesoModel.FK_SolicitudAcceso_Sucursal" >
+          <ConnectorPoint PointX="4.5" PointY="17.876152846153843" />
+          <ConnectorPoint PointX="5.0625" PointY="17.313652846153843" />
+          <ConnectorPoint PointX="5.0625" PointY="6.9491455664062478" />
+          <ConnectorPoint PointX="5.25" PointY="6.9491455664062478" />
+        </AssociationConnector>
+        <AssociationConnector Association="SGA_GestionAccesoModel.FK_SolicitudAcceso_TipoAcceso" >
+          <ConnectorPoint PointX="4.5" PointY="21.501152846153843" />
+          <ConnectorPoint PointX="5.1875" PointY="20.813652846153843" />
+          <ConnectorPoint PointX="5.1875" PointY="5.5058205332031305" />
+          <ConnectorPoint PointX="5.25" PointY="5.5058205332031305" />
+        </AssociationConnector>
+        <AssociationConnector Association="SGA_GestionAccesoModel.FK_Sucursal_Ubigeo" >
+          <ConnectorPoint PointX="2.25" PointY="19.307444661458334" />
+          <ConnectorPoint PointX="3" PointY="19.307444661458334" />
+        </AssociationConnector>
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,6 @@
+git remote add googlecode https://pe.dominguez.br@code.google.com/p/gestion-acceso-git/ 
+
+
+git push googlecode master:master
+
+passswopr: ks7bt2zd5vu3

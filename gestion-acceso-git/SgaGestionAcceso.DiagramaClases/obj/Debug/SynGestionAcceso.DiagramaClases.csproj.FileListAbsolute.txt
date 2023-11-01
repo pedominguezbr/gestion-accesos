@@ -1,0 +1,5 @@
+E:\Proyectos\GestionAcceso\SynGestionAcceso.DiagramaClases\bin\Debug\SynGestionAcceso.DiagramaClases.dll
+E:\Proyectos\GestionAcceso\SynGestionAcceso.DiagramaClases\bin\Debug\SynGestionAcceso.DiagramaClases.pdb
+E:\Proyectos\GestionAcceso\SynGestionAcceso.DiagramaClases\obj\Debug\ResolveAssemblyReference.cache
+E:\Proyectos\GestionAcceso\SynGestionAcceso.DiagramaClases\obj\Debug\SynGestionAcceso.DiagramaClases.dll
+E:\Proyectos\GestionAcceso\SynGestionAcceso.DiagramaClases\obj\Debug\SynGestionAcceso.DiagramaClases.pdb

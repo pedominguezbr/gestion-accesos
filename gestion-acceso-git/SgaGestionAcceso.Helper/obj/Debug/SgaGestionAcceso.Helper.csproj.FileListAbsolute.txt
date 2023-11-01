@@ -1,0 +1,35 @@
+E:\Proyectos\GestionAcceso\SgaGestionAcceso.Helper\bin\Debug\SgaGestionAcceso.Helper.dll
+E:\Proyectos\GestionAcceso\SgaGestionAcceso.Helper\bin\Debug\SgaGestionAcceso.Helper.pdb
+E:\Proyectos\GestionAcceso\SgaGestionAcceso.Helper\obj\Debug\ResolveAssemblyReference.cache
+E:\Proyectos\GestionAcceso\SgaGestionAcceso.Helper\obj\Debug\SgaGestionAcceso.Helper.dll
+E:\Proyectos\GestionAcceso\SgaGestionAcceso.Helper\obj\Debug\SgaGestionAcceso.Helper.pdb
+D:\Pedro_Dominguez\Sistema GES A\GestionAcceso\SgaGestionAcceso.Helper\bin\Debug\SgaGestionAcceso.Helper.dll
+D:\Pedro_Dominguez\Sistema GES A\GestionAcceso\SgaGestionAcceso.Helper\bin\Debug\SgaGestionAcceso.Helper.pdb
+D:\Pedro_Dominguez\Sistema GES A\GestionAcceso\SgaGestionAcceso.Helper\obj\Debug\ResolveAssemblyReference.cache
+D:\Pedro_Dominguez\Sistema GES A\GestionAcceso\SgaGestionAcceso.Helper\obj\Debug\SgaGestionAcceso.Helper.dll
+D:\Pedro_Dominguez\Sistema GES A\GestionAcceso\SgaGestionAcceso.Helper\obj\Debug\SgaGestionAcceso.Helper.pdb
+C:\Users\aguerrerog\Downloads\GestionAcceso\SgaGestionAcceso.Helper\bin\Debug\SgaGestionAcceso.Helper.dll
+C:\Users\aguerrerog\Downloads\GestionAcceso\SgaGestionAcceso.Helper\bin\Debug\SgaGestionAcceso.Helper.pdb
+C:\Users\aguerrerog\Downloads\GestionAcceso\SgaGestionAcceso.Helper\obj\Debug\SgaGestionAcceso.Helper.csprojResolveAssemblyReference.cache
+C:\Users\aguerrerog\Downloads\GestionAcceso\SgaGestionAcceso.Helper\obj\Debug\SgaGestionAcceso.Helper.dll
+C:\Users\aguerrerog\Downloads\GestionAcceso\SgaGestionAcceso.Helper\obj\Debug\SgaGestionAcceso.Helper.pdb
+C:\Users\aguerrerog\Desktop\GestionAcceso\SgaGestionAcceso.Helper\bin\Debug\SgaGestionAcceso.Helper.dll
+C:\Users\aguerrerog\Desktop\GestionAcceso\SgaGestionAcceso.Helper\bin\Debug\SgaGestionAcceso.Helper.pdb
+C:\Users\aguerrerog\Desktop\GestionAcceso\SgaGestionAcceso.Helper\obj\Debug\SgaGestionAcceso.Helper.csprojResolveAssemblyReference.cache
+C:\Users\aguerrerog\Desktop\GestionAcceso\SgaGestionAcceso.Helper\obj\Debug\SgaGestionAcceso.Helper.dll
+C:\Users\aguerrerog\Desktop\GestionAcceso\SgaGestionAcceso.Helper\obj\Debug\SgaGestionAcceso.Helper.pdb
+E:\Proyectos\GestionAcceso\Sistema SGA\GestionAcceso\SgaGestionAcceso.Helper\bin\Debug\SgaGestionAcceso.Helper.dll
+E:\Proyectos\GestionAcceso\Sistema SGA\GestionAcceso\SgaGestionAcceso.Helper\bin\Debug\SgaGestionAcceso.Helper.pdb
+E:\Proyectos\GestionAcceso\Sistema SGA\GestionAcceso\SgaGestionAcceso.Helper\obj\Debug\ResolveAssemblyReference.cache
+E:\Proyectos\GestionAcceso\Sistema SGA\GestionAcceso\SgaGestionAcceso.Helper\obj\Debug\SgaGestionAcceso.Helper.dll
+E:\Proyectos\GestionAcceso\Sistema SGA\GestionAcceso\SgaGestionAcceso.Helper\obj\Debug\SgaGestionAcceso.Helper.pdb
+E:\RepoGIT\gestion-acceso-git\SgaGestionAcceso.Helper\bin\Debug\SgaGestionAcceso.Helper.dll
+E:\RepoGIT\gestion-acceso-git\SgaGestionAcceso.Helper\bin\Debug\SgaGestionAcceso.Helper.pdb
+E:\RepoGIT\gestion-acceso-git\SgaGestionAcceso.Helper\obj\Debug\ResolveAssemblyReference.cache
+E:\RepoGIT\gestion-acceso-git\SgaGestionAcceso.Helper\obj\Debug\SgaGestionAcceso.Helper.dll
+E:\RepoGIT\gestion-acceso-git\SgaGestionAcceso.Helper\obj\Debug\SgaGestionAcceso.Helper.pdb
+D:\PDOMINGUEZ\GESTION_ACCESO\SgaGestionAcceso.Helper\bin\Debug\SgaGestionAcceso.Helper.dll
+D:\PDOMINGUEZ\GESTION_ACCESO\SgaGestionAcceso.Helper\bin\Debug\SgaGestionAcceso.Helper.pdb
+D:\PDOMINGUEZ\GESTION_ACCESO\SgaGestionAcceso.Helper\obj\Debug\ResolveAssemblyReference.cache
+D:\PDOMINGUEZ\GESTION_ACCESO\SgaGestionAcceso.Helper\obj\Debug\SgaGestionAcceso.Helper.dll
+D:\PDOMINGUEZ\GESTION_ACCESO\SgaGestionAcceso.Helper\obj\Debug\SgaGestionAcceso.Helper.pdb

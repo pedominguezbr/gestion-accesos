@@ -1,0 +1,150 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SgaGestionAcceso.Master.cs"
+    Inherits="SgaGestionAcceso.WEB.SgaGestionAcceso" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajax" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    
+    <title>Sistema Gestion de Accesos | Módulo de Seguridad</title>
+    <link href="Recursos/css/clean.css" rel="stylesheet" type="text/css" />
+    <link href="Recursos/css/main.css" rel="stylesheet" type="text/css" />
+    <!--[if IE]>
+        <link href="/Recursos/css/ie.css" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    <!--[if lte IE 7]>
+        <link href="/Recursos/css/ie7.css" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div id="BigPage">
+        <form id="form1" runat="server">
+        <asp:UpdatePanel ID="upMensaje" runat="server">
+            <ContentTemplate>
+                <div id="header">
+                    <div class="logo">
+                    </div>
+                    <div class="top-nav">
+                        <ul class="listah">
+                            <li><a>Bienvenido</a></li>
+                            <li><a><asp:Label ID="lblUsuario" runat="server" Text="Pedro Miguel Dominguez Bruno" 
+                                    Font-Bold="True"></asp:Label></a></li>
+                            <li>
+                                <asp:LinkButton ID="lnkLogout" runat="server" CssClass="login" OnClick="lnkLogout_Click">Logout</asp:LinkButton></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- FIN HEADER -->
+                <div id="container">
+                    <div class="welcome rounded">
+                        <div class="sombra">
+                        </div>
+                        <ajax:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server" EnableScriptGlobalization='True'
+                            EnableScriptLocalization='True'>
+                        </ajax:ToolkitScriptManager>
+                        <div>
+                            <div class="menu-left">
+                                <ul class="listav">
+                                    <li>
+                                        <h3 class="rounded">
+                                            Opciones</h3>
+                                    </li>
+                                   <!-- <li class="fixinicio">
+                                        <asp:HyperLink ID="HyperLink1" NavigateUrl="~/Solicitud/frmSolicitudAccesoSeguim.aspx" CssClass="aleft-current"
+                                            runat="server"><span class="aright-current">Solicitud de Credenciales</span></asp:HyperLink></li>
+                                    <li class="fixinicio">
+                                        <asp:HyperLink ID="HyperLink2" NavigateUrl="~/Validacion/frmValidacionSeguim.aspx" CssClass="aleft-current" runat="server"><span class="aright-current">Validación</span></asp:HyperLink></li>
+                                    
+                                    <li class="fixinicio">
+                                        <asp:HyperLink ID="HyperLink4" NavigateUrl="~/Aprovisionamiento/frmAprovisionamientoSeguim.aspx" CssClass="aleft-current" runat="server"><span class="aright-current">Generación de Credenciales</span></asp:HyperLink></li>
+                                     
+                                    <li class="fixinicio">
+                                        <asp:HyperLink ID="HyperLink3" NavigateUrl="#" CssClass="aleft-current" runat="server"><span class="aright-current">Planificación de Entrega de Credenciales</span></asp:HyperLink></li>
+                                    <li class="fixinicio">
+                                        <asp:HyperLink ID="HyperLink5" NavigateUrl="#" CssClass="aleft-current" runat="server"><span class="aright-current">Validación de Puntos de Acceso</span></asp:HyperLink></li>
+                                    <li class="fixinicio">
+                                        <asp:HyperLink ID="HyperLink6" NavigateUrl="#" CssClass="aleft-current" runat="server"><span class="aright-current">Distribución de Credenciales</span></asp:HyperLink></li>
+                                    <li class="fixinicio">
+                                        <asp:HyperLink ID="HyperLink7" NavigateUrl="#" CssClass="aleft-current" runat="server"><span class="aright-current">Monitoreo de Accesos</span></asp:HyperLink></li>
+                                    <li>
+                                        <h3 class="rounded">
+                                            Reportes</h3>
+                                    </li>
+                                    <li class="fixinicio">
+                                        <asp:HyperLink ID="HyperLink8" NavigateUrl="#" CssClass="aleft-current" runat="server"><span class="aright-current">Reporte de Gestion de Accesos</span></asp:HyperLink></li>
+                                    <li>
+                                        <h3 class="rounded">
+                                            Mantenimiento</h3>
+                                    </li>
+                                    <li class="fixinicio">
+                                        <asp:HyperLink ID="HyperLink9" NavigateUrl="#" CssClass="aleft-current" runat="server"><span class="aright-current">Agencias</span></asp:HyperLink></li>
+                                    <li class="fixinicio">
+                                        <asp:HyperLink ID="HyperLink10" NavigateUrl="#" CssClass="aleft-current" runat="server"><span class="aright-current">Personas</span></asp:HyperLink></li>
+                                -->
+                                  <asp:Literal ID="ltrMenuOpciones" runat="server"></asp:Literal>
+                                </ul>
+                            </div>
+                            <div class="cuerpo">
+                                <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </div>
+                        </div>
+                        <!-- MENSAJE DE CONFIRMACION -->
+                        <asp:Button ID="btnConfirmar" runat="server" Style="display: none;" />
+                        <ajax:ModalPopupExtender ID="mpeMensaje" runat="server" TargetControlID="btnConfirmar"
+                            PopupControlID="pnlMensaje" BackgroundCssClass="mpeBackground" Drag="true" OkControlID="btnAceptar"
+                            PopupDragHandleControlID="pnlTitulo" DropShadow="false">
+                        </ajax:ModalPopupExtender>
+                        <asp:Panel ID="pnlMensaje" runat="server" CssClass="pnlModal" Width="340px" Style="display: none;">
+                            <div class="efecto-borde rounded">
+                                <asp:Panel ID="pnlTitulo" runat="server" CssClass="pnlTitulo">
+                                    <h2>
+                                        <asp:Label ID="lbTitulo" runat="server" Text=""></asp:Label></h2>
+                                </asp:Panel>
+                                <div class="pnlMensaje info">
+                                    <span>
+                                        <asp:Label ID="lbMensaje" runat="server" Text=""></asp:Label></span>
+                                    <asp:Button ID="btnAceptar" runat="server" CssClass="btn rounded" Text="Aceptar" />
+                                </div>
+                            </div>
+                        </asp:Panel>
+                        <!-- FIN MENSAJE DE CONFIRMACION -->
+                        <!-- MENSAJE OK CANCEL -->
+                        <ajax:ModalPopupExtender ID="mpeMensajeOKCancel" runat="server" TargetControlID="lnkLogout"
+                            PopupControlID="pnlMensajeOKCancel" OkControlID="BtnOK" CancelControlID="BtnCancel"
+                            BackgroundCssClass="mpeBackground">
+                        </ajax:ModalPopupExtender>
+                        <ajax:ConfirmButtonExtender ID="cbeMensajeOKCancel" runat="server" TargetControlID="lnkLogout"
+                            DisplayModalPopupID="mpeMensajeOKCancel">
+                        </ajax:ConfirmButtonExtender>
+                        <asp:Panel ID="pnlMensajeOKCancel" runat="server" CssClass="pnlModal" Width="340px"
+                            Style="display: none;">
+                            <div class="efecto-borde rounded">
+                                <asp:Panel ID="pnlTituloOKCancel" runat="server" CssClass="pnlTitulo">
+                                    <h2>
+                                        <asp:Label ID="lbTituloOKCancel" runat="server" Text=""></asp:Label></h2>
+                                </asp:Panel>
+                                <div class="pnlMensaje info">
+                                    <span>
+                                        <asp:Label ID="lbMensajeOKCancel" runat="server" Text=""></asp:Label></span>
+                                    <asp:Button ID="BtnOK" runat="server" CssClass="btn rounded" Text="Aceptar" />
+                                    <asp:Button ID="BtnCancel" runat="server" CssClass="btn rounded" Text="Cancelar" />
+                                </div>
+                            </div>
+                        </asp:Panel>
+                        <!-- FIN MENSAJE OK CANCEL -->
+            </ContentTemplate>
+        </asp:UpdatePanel>
+        <div class="clear">
+        </div>
+        <div class="sombra-inv">
+        </div>
+        </form>
+    </div>
+    <!-- FIN WELCOME -->
+    </div><!-- FIN CONTAINER -->
+    </div><!-- FIN BIGPAGE -->
+</body>
+</html>

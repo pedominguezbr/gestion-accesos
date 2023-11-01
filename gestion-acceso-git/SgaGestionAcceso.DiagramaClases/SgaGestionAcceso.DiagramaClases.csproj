@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{69B96DFB-5B9F-42EA-A31E-4EAA076A45F7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SgaGestionAcceso.DiagramaClases</RootNamespace>
+    <AssemblyName>SgaGestionAcceso.DiagramaClases</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BEAgencia.cs" />
+    <Compile Include="BEAplicacion.cs" />
+    <Compile Include="BEAprovisionamiento.cs" />
+    <Compile Include="BEAutorizante.cs" />
+    <Compile Include="BEBusquedaAgencia.cs" />
+    <Compile Include="BEBusquedaSolicitud.cs" />
+    <Compile Include="BEDatosEscaneoValidador.cs" />
+    <Compile Include="BEDetalleAprovisionamiento.cs" />
+    <Compile Include="BEDetalleEscaneoValidador.cs" />
+    <Compile Include="BEDetalleGenAgenValidador.cs" />
+    <Compile Include="BEDetalleSolicitud.cs" />
+    <Compile Include="BEDetSolAplicaciPuesto.cs" />
+    <Compile Include="BEEscaneoAgenciaSucursal.cs" />
+    <Compile Include="BEEstado.cs" />
+    <Compile Include="BEGenAgenValidador.cs" />
+    <Compile Include="BEParametroGeneracionCuenta.cs" />
+    <Compile Include="BEPersona.cs" />
+    <Compile Include="BEPuesto.cs" />
+    <Compile Include="BERepresentateLegal.cs" />
+    <Compile Include="BESolicitante.cs" />
+    <Compile Include="BESolicitudAcceso.cs" />
+    <Compile Include="BESucursal.cs" />
+    <Compile Include="BETipoAcceso.cs" />
+    <Compile Include="BEUbigeo.cs" />
+    <Compile Include="BEUsuarioObservado.cs" />
+    <Compile Include="BEUsuarioSistema.cs" />
+    <Compile Include="BLAgencia.cs" />
+    <Compile Include="BLAplicacion.cs" />
+    <Compile Include="BLAprovisionamiento.cs" />
+    <Compile Include="BLDetalleAprovisionamiento.cs" />
+    <Compile Include="BLDetalleEscaneoValidador.cs" />
+    <Compile Include="BLDetalleGenAgenValidador.cs" />
+    <Compile Include="BLDetalleSolicitud.cs" />
+    <Compile Include="BLDetSolAplicaPuesto.cs" />
+    <Compile Include="BLEscaneoAgenciaSucursal.cs" />
+    <Compile Include="BLEstado.cs" />
+    <Compile Include="BLGenAgenValidador.cs" />
+    <Compile Include="BLParametroGeneracionCuenta.cs" />
+    <Compile Include="BLPersona.cs" />
+    <Compile Include="BLPuesto.cs" />
+    <Compile Include="BLSolicitudAcceso.cs" />
+    <Compile Include="BLSucursal.cs" />
+    <Compile Include="BLTipoAcceso.cs" />
+    <Compile Include="DAAgencia.cs" />
+    <Compile Include="DAAplicacion.cs" />
+    <Compile Include="DAAprovisionamiento.cs" />
+    <Compile Include="DADetalleAprovisionamiento.cs" />
+    <Compile Include="DADetalleEscaneoValidador.cs" />
+    <Compile Include="DADetalleGenAgenValidador.cs" />
+    <Compile Include="DADetalleSolicitud.cs" />
+    <Compile Include="DADetSolAplicaPuesto.cs" />
+    <Compile Include="DAEscaneoAgenciaSucursal.cs" />
+    <Compile Include="DAEstado.cs" />
+    <Compile Include="DAGenAgenValidador.cs" />
+    <Compile Include="DAParametroGeneracionCuenta.cs" />
+    <Compile Include="DAPersona.cs" />
+    <Compile Include="DAPuesto.cs" />
+    <Compile Include="DASolicitudAcceso.cs" />
+    <Compile Include="DASucursal.cs" />
+    <Compile Include="DATipoAcceso.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Entidades.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
